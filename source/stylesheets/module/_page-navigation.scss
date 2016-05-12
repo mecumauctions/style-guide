@@ -1,0 +1,111 @@
+// Navigation Module Stylesheet
+// ========================================
+
+// Variables
+$page-navogation-padding:           $spacer-delta;
+$page-navigation-position:          0 null -10px 0;
+$page-navigation-position-type:     fixed;
+$page-navigation-spread:            0 -6px 11px 0;
+$page-navigation-shadow:            rgba(34,23,78,0.40);
+$page-navigation-width:             14rem;
+
+$page-navigation-header-border:     1px solid #493A85;
+
+$page-navbar-title-color:           $white-base;
+$page-navbar-title-txt-transform:   uppercase;
+
+$page-navbar-link-border:           3px solid transparent;
+$page-navbar-link-color:            $white-base;
+$page-navbar-link-txt-transform:    uppercase;
+
+$page-navbar-link-background-hover: rgba(27, 15, 69, 0.15);
+$page-navbar-link-border-hover:     3px solid $blue-base;
+
+$navbar-link-icon-dimensions:       8px;
+$navbar-link-icon-size:             100%;
+$navbar-link-icon-transform:        -90deg;
+
+$navbar-link-icon-transform-active: 0deg;
+
+
+// Structure
+.page__navigation {
+  @include box-shadow(inset $page-navigation-spread, $page-navigation-shadow);
+  @include linear-gradient(-162deg, $purple-base 28%, $blue-base 100%);
+  @include position($page-navigation-position-type, $page-navigation-position);
+  width: $page-navigation-width;
+}
+
+.page__navigation__header {
+  border-bottom: $page-navigation-header-border;
+  margin-bottom: $spacer-delta;
+  padding: $page-navogation-padding;
+  text-align: center;
+}
+
+.navbar__title {
+  @include s-hotel;
+  color: $page-navbar-title-color;
+  padding: $page-navogation-padding $page-navogation-padding 0;
+  text-transform: $page-navbar-title-txt-transform;
+  text-indent: 3px;
+}
+
+.navbar__item {
+  border-left: $page-navbar-link-border;
+  @include position(relative);
+  @include transition(background-color 0.5s ease);
+
+  &:hover,
+  &.navbar__item--active {
+    border-left: $page-navbar-link-border-hover;
+    background-color: $page-navbar-link-background-hover;
+  }
+
+  .navbar__link--toggle,
+  .navbar__link {
+    @include font-type($primary-sans-serif, normal, 700);
+    color: $page-navbar-link-color;
+    display: block;
+    padding: $page-navogation-padding;
+    text-transform: $page-navbar-link-txt-transform;
+  }
+
+  .navbar__link--toggle::after {
+    @include position(absolute, 20px 10px null null);
+    @include transition(transform 0.3s ease);
+    @include transform(rotate($navbar-link-icon-transform));
+    background: image-url('icons/misc/navigation-arrow.svg') no-repeat;
+    background-size: 100%;
+    content: "";
+    display: block;
+    height: $navbar-link-icon-dimensions;
+    width: $navbar-link-icon-dimensions;
+  }
+
+  &.navbar__item--active .navbar__link--toggle::after {
+     @include transform(rotate($navbar-link-icon-transform-active));
+  }
+}
+
+.navbar__submenu {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+
+  &.navbar__submenu--active {
+    height: auto;
+    padding: 0 $spacer-delta $spacer-delta;
+  }
+}
+
+.submenu__item__link {
+  @include transform(opacity 0.3s ease);
+  color: $white-base;
+  display: block;
+  padding: $spacer-echo $spacer-charlie;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

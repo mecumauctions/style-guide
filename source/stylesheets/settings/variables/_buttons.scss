@@ -1,0 +1,21 @@
+// Buttons
+// ========================================
+
+$buttons: (
+  'primary': (
+    $black-base,
+    $white-base
+  ),
+  'secondary': (
+    $blue-base,
+    $white-base
+  ),
+  'tertiary': (
+    $white-base,
+    $white-base
+  ),
+  'default': (
+    $grey-base,
+    $grey-dark
+  )
+);

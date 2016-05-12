@@ -1,0 +1,7 @@
+alerts:
+  - type: success
+    msg: High fives! You have successfully completed an action.
+  - type: danger
+    msg: Well this is awkward. That action didn't go as planned.
+  - type: warning
+    msg: Oh snap! That wasn't suppose to happen. Give it another try.

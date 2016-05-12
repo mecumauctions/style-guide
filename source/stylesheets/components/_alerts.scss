@@ -1,0 +1,77 @@
+// Alerts Component
+// ========================================
+
+// Variables
+$alert-border-radius:     3px;
+$alert-box-shadow:        rgba(0, 0, 0, 0.25);
+$alert-box-spread:        0 0 10px;
+$alert-margin:            0 auto $spacer-delta;
+$alert-padding:           $spacer-delta;
+$alert-position:          -9999px 0 null 0;
+$alert-transition:        all 0.8s ease;
+$alert-width:             100%;
+$alert-z-index:           1001;
+
+$alert-title-color:       $white-base;
+
+$alet-icon-position-type: absolute;
+$alert-icon-position:     5px 5px null null;
+$alert-icon-width:        15px;
+
+
+// Structure
+@each $alert in $alerts {
+  $name:     nth($alert, 1);
+  $color-1:  nth($alert, 2);
+  $color-2:  nth($alert, 3);
+
+  .alert--#{$name} {
+    @include box-shadow($alert-box-spread, $alert-box-shadow);
+    @include font-type($primary-sans-serif, normal, 600);
+    @include position(relative);
+    @include transition($alert-transition);
+    background: $color-1;
+    border: 1px solid $color-2;
+    border-radius: $alert-border-radius;
+    margin: $alert-margin;
+    padding: $alert-padding;
+    text-align: center;
+    width: $alert-width;
+    z-index: $alert-z-index;
+
+    .alert__icon-trigger {
+      @include transition(opacity 0.5s ease);
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    #app-icon{
+      fill: $color-2;
+      display: block;
+    }
+
+    .alert__title {
+      @include s-foxtrot;
+      color: $alert-title-color;
+      margin: 0;
+    }
+  }
+
+  .alert__icon {
+    @include position($alet-icon-position-type, $alert-icon-position);
+    color: $color-2;
+    width: $alert-icon-width;
+  }
+};
+
+
+// Dismiss Alert
+.alert--dismissed {
+  @include transform(translate(0, -50em));
+}
+
+.alert--hidden {
+  display: none;
+}

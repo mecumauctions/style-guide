@@ -1,0 +1,85 @@
+// Layout Module Stylesheet
+// ========================================
+
+// Variables
+$page-offset:                   14rem;
+$page-height:                   100vh;
+$page-spacing:                  $spacer-charlie;
+
+$page-section-max-width:        64rem;
+
+$section-header-background:     $white-dark;
+$section-header-background-alt: $white-base;
+$section-header-border:         1px solid $grey-alt;
+$section-header-border-alt:     1px solid $grey-alt;
+$section-header-spread:         0px 3px 6px 0px;
+$section-header-shadwow:        rgba(172,172,179,0.40);
+
+$section-header-containe-width: 600px;
+
+$section-body-margin:           $spacer-echo;
+
+$section-body-title-color:      $black-base;
+
+
+// Structure
+.page {
+  margin-left: $page-offset;
+  height: $page-height;
+  overflow-x: scroll;
+}
+
+.page__section {
+  max-width: $page-section-max-width;
+}
+
+// Page Section Header
+.section__header {
+  background-color: $section-header-background;
+  border-bottom: $section-header-border;
+  padding: $spacer-alpha $page-spacing $page-spacing;
+
+  &.section__header--shadow {
+    @include position(relative);
+    @include box-shadow($section-header-spread, $section-header-shadwow);
+    z-index: 99;
+  }
+
+  &.section__header--alt {
+    background-color: $section-header-background-alt;
+    border-bottom: $section-header-border-alt;
+    margin: 0 $page-spacing;
+    padding: $page-spacing 0;
+  }
+}
+
+.header__container {
+  width: $section-header-containe-width;
+}
+
+.header__title {
+  @include font-type($primary-sans-serif, normal, 100);
+}
+
+.header__title--section {
+  @include font-type($primary-sans-serif, normal, 400);
+  margin-bottom: 0;
+  color: $purple-base;
+}
+
+
+// Page Section Body
+.section__body {
+  margin-top: $section-body-margin;
+  padding: $page-spacing;
+}
+
+.body__header {
+  margin-bottom: $spacer-charlie;
+}
+
+.body__header__title {
+  @include s-delta;
+  color: $section-body-title-color;
+}
+

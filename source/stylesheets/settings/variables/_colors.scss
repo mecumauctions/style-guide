@@ -1,0 +1,54 @@
+// Colors Variables
+// ========================================
+
+  // Black
+  $black-base:    #3F3F44;
+
+  // Blue
+  $blue-base:     #3A89E6;
+
+  // Green
+  $green-base:    #76C187;
+  $green-dark:    #579A66;
+
+  // Grey
+  $grey-light:    #E7E7EC;
+  $grey-base:     #CBCBD2;
+  $grey-dark:     #ACACB4;
+
+  $grey-alt:      #D4D3DD;
+
+  // Purple
+  $purple-base:   #534292;
+
+  // Red
+  $red-base:      #FF5454;
+  $red-dark:      #D83333;
+
+  // White
+  $white-base:    #FFFFFF;
+  $white-dark:    #F5F5F7;
+
+  // Yellow
+  $yellow-base:   #FFAF50;
+  $yellow-dark:   #E0943A;
+
+
+  //MAIN PALETTE LIST
+  $colors: (
+    black-base:   $black-base,
+    blue-base:    $blue-base,
+    green-base:   $green-base,
+    green-dark:   $green-dark,
+    grey-light:   $grey-light,
+    grey-base:    $grey-base,
+    grey-dark:    $grey-dark,
+    grey-alt:     $grey-alt,
+    purple-base:  $purple-base,
+    red-base:     $red-base,
+    red-dark:     $red-dark,
+    white-base:   $white-base,
+    white-dark:   $white-dark,
+    yellow-base:  $yellow-base,
+    yellow-dark:  $yellow-dark
+  );

@@ -1,0 +1,49 @@
+// Base Layout Stylesheets
+// ========================================
+
+// Variables
+$site-background:             $white-base;
+
+
+// Global Styles
+html,
+body {
+  background-color: $site-background;
+  overflow: hidden;
+
+  &.is-fixed {
+    @include position(absolute);
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+
+// Clears + Resets
+.clear { clear: both; }
+
+@each $reset in $resets {
+  $position:  nth($reset, 1);
+  $zero:      nth($reset, 2);
+
+  .reset-margin-#{$position} {
+    margin-#{$position}: $zero;
+  }
+
+  .reset-padding-#{$position} {
+    padding-#{$position}: $zero;
+  }
+};
+
+.reset-padding { padding: 0; }
+.reset-margin  { margin:  0; }
+
+
+// Floats
+.float--left {
+  @include media($tablet) { float: left; }
+}
+
+.float--right {
+  @include media($tablet) { float: right; }
+}
