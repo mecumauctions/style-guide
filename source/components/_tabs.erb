@@ -37,7 +37,7 @@
   <div class="section__body">
     <header role="title" class="body__header">
       <h5 class="body__header__title">Component Usage</h5>
-      <p>Tabs should be used to seperate views within views. The content should be related in some way. For example, the account view should be made of of three tabs: Account Details, Permaleased Numbers and Edit Account. The goal is to allow users to move from one section of an account, site or pool fluidly without having to search for navigation items.</p>
+      <p>Tabs should be used to seperate views within views. The content should be related in some way. For example, the account view should be made up of three tabs: Account Details, Permaleased Numbers and Edit Account. The goal is to allow users to move from one section of an account, site or pool fluidly without having to search for navigation items or drill deep into the application.</p>
     </header>
   </div>
   <div class="section__body">
@@ -53,15 +53,15 @@
       <tbody>
         <tr>
           <td style="width:30%">.tab__list</td>
-          <td>This class name should be applied to an unordered list element. It is main wrapper to a tab list. <% code("html") do %><ul class="tab__list"><!-- Tab List Items --></ul><% end %></td>
+          <td>This class name should be applied to an unordered list element. It is the main wrapper to a tab list. <% code("html") do %><ul class="tab__list"><!-- Tab List Items --></ul><% end %></td>
         </tr>
         <tr>
           <td style="width:30%">.tab__item</td>
-          <td>Set this on the list item. <% code("html") do %><li class="tab__item"><!-- Tab List Anchor --></li><% end %></td>
+          <td>Set this on the list item. It must be nested inside of a tab list. <% code("html") do %><li class="tab__item"><!-- Tab List Anchor --></li><% end %></td>
         </tr>
         <tr>
           <td style="width:30%">.tab__link</td>
-          <td>Set this on the anchor item nested inside of a tab item. <% code("html") do %><a href="#" class="tab__link"><!-- Tab Name --></a><% end %></td>
+          <td>Set this class on the anchor item nested inside of a tab item. <% code("html") do %><a href="#" class="tab__link"><!-- Tab Name --></a><% end %></td>
         </tr>
         <tr>
           <td style="width:30%">.tab__link--active</td>

@@ -2,7 +2,7 @@ introduction:
   version: 1.0.0
   version_updated: May 2016
   title: Design System - Fuse
-  description: Welcome to Fuse's design system guidelines. Here you will find the design standards defined for Red Venetures' product Fuse. The standards will evolve as the project progresses and new components and elements will be added as needed.
+  description: Welcome to the design system guidelines. Here you will find the design standards defined for Red Venetures' product Fuse. The standards will evolve as the product progresses and new components and elements are needed.
   link: https://github.com/MadeByMunstersLLC/Fuse-Styleguide
   link_title: Get the design system
 
@@ -11,17 +11,17 @@ content:
     title: Getting Started
     intro_sections:
       - title: Design components
-        description: Fuse's interface is made of various components. All of which have their place in the applicaiton. Find out more.
+        description: Fuse's interface is made up of various components. All of which have their place in the applicaiton. Find out more.
         link: components/#alerts
         link_text: Explore the components
         img: icons/navigation/settings-icon_active.svg
       - title: Design elements
-        description: Simple, but bold. The goal of Fuse's design elements is to enhance a user's experience rather than distract from it.
+        description: Simple, but bold. The goal of Fuse's design elements are to enhance a user's experience rather than distract from it.
         link: elements/#colors
         link_text: Explore the elements
         img: icons/navigation/move-icon_active.svg
       - title: Design modules
-        description: What do you get when you add pair components with elements? We'll tell you. You get large design modules.
+        description: What do you get when you add and pair components with elements? We'll tell you. You get large design modules.
         link: modules/#navigation
         link_text: Explore the modules
         img: icons/navigation/dashboard-icon_active.svg

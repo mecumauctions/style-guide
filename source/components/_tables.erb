@@ -283,7 +283,7 @@
   <div class="section__body">
     <header role="title" class="body__header">
       <h5 class="body__header__title">Component Usage</h5>
-      <p>Tables are to be used for tabular data in the application. Most of the views are made of a tables to display the account, site or pool content. Addtionally, as a way to peek inside of a site or pool without having to drill into its view, the user can expand the table and see a layer down.</p>
+      <p>Tables are to be used for tabular data in the application. Tables are one of the most widely used components in the application. Addtionally, as a way to peek inside of a site or pool without having to drill inside, the user can expand the table and see a layer down.</p>
     </header>
   </div>
   <div class="section__body">
@@ -303,11 +303,11 @@
         </tr>
         <tr>
           <td style="width:30%">.table-alpha</td>
-          <td>Set this class on the table element. This is the standard table class and should accompany the table class attribute. <% code("html") do %><table class="table table-alpha"><!-- Table Content --></table><% end %></td>
+          <td>Set this class on the table element. This is the primary table class and should accompany the standard table class attribute. <% code("html") do %><table class="table table-alpha"><!-- Table Content --></table><% end %></td>
         </tr>
         <tr>
           <td style="width:30%">.table-bravo</td>
-          <td>Set this class on the table element. This class should only be used for tables within tables. It has a slightly darker features.<% code("html") do %><table class="table table-bravo"><!-- Table Content --></table><% end %></td>
+          <td>Set this class on the table element. This class should only be used for tables within tables. It applies slightly darker features.<% code("html") do %><table class="table table-bravo"><!-- Table Content --></table><% end %></td>
         </tr>
         <tr>
           <td style="width:30%">.table__row</td>
@@ -315,15 +315,15 @@
         </tr>
         <tr>
           <td style="width:30%">.table__hidden</td>
-          <td>Set this class on the table row element that contains the nested table.<% code("html") do %><tr class="table__hidden"><!-- Table Content --></tr><% end %></td>
+          <td>Set this class on the table row element that contains a nested table.<% code("html") do %><tr class="table__hidden"><!-- Table Content --></tr><% end %></td>
         </tr>
         <tr>
           <td style="width:30%">[aria-hidden="true"]</td>
-          <td>Set this attribute on the table row element that contains the nested table.<% code("html") do %><tr class="table__hidden" aria-hidden="true"><!-- Table Content --></tr><% end %></td>
+          <td>Set this attribute on the table row element that contains a nested table that is current inactive.<% code("html") do %><tr class="table__hidden" aria-hidden="true"><!-- Table Content --></tr><% end %></td>
         </tr>
         <tr>
           <td style="width:30%">[aria-hidden="false"]</td>
-          <td>Set this attribute on the table row element that contains the nested table when it is expanded.<% code("html") do %><tr class="table__hidden" aria-hidden="false"><!-- Table Content --></tr><% end %></td>
+          <td>Set this attribute on the table row element that contains the nested table when it is active.<% code("html") do %><tr class="table__hidden" aria-hidden="false"><!-- Table Content --></tr><% end %></td>
         </tr>
         <tr>
           <td style="width:30%">.table__header__icon</td>
