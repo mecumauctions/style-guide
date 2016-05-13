@@ -1,0 +1,54 @@
+<section role="region" aria-labelledby="links" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="links">Links</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base, Hover</h5>
+    </header>
+    <ul class="links">
+    <% data.components.links.each do |link| %>
+      <li class="link float--left margin-right--charlie">
+        <a href="#" class="link--<%= link.type %>">Click On Me</a>
+      </li>
+    <% end %>
+    </ul>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<% code("html") do %>
+  <a href="#" class="link--primary">Link Title Here</a>
+  <a href="#" class="link--secondary">Link Title Here</a>
+  <a href="#" class="link--warning">Link Title Here</a>
+  <a href="#" class="link--disabled">Link Title Here</a>
+<% end %>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>Links should be used to move a user from one page to another. The primary link is suggested in most cases. The exception to the rule is if a user is adding an item. Because we want to maintain a level of consistency, the secondary link (purple color) should be used. This will ensure it is the same color as the primary add button.</p>
+    </header>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create links.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:30%">.link--primary</td>
+          <td>This class name should be applied to an anchor tag. <% code("html") do %><a href="#" class="link--primary">Link Title Here</a><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

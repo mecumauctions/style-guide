@@ -1,0 +1,103 @@
+// Tables Component
+// ========================================
+
+// Variables
+$table-margin:                30px;
+$table-width:                 100%;
+
+
+// Structure
+.table {
+  width: $table-width;
+  margin-bottom: $table-margin;
+  text-align: left;
+}
+
+// Table Styles Map
+@each $key, $value in $tables {
+  @if map-has-key($table-config, $key) {
+
+    .#{$value} {
+
+      @if $value == 'table-bravo' {
+        background-color: setStyle($table-config, $key, background-color);
+      }
+
+      // Table Head
+      thead {
+        background-color: setStyle($table-config, $key, background-color);
+        color: setStyle($table-config, $key, color);
+        text-transform: uppercase;
+
+        .table__header__icon {
+          @include position(relative, 5px null null null);
+        }
+      }
+
+      // Table Head + Table Data Padding
+      th,
+      td {
+        padding: setStyle($table-config, $key, padding);
+      }
+
+      th {
+        @include font-type($primary-sans-serif, normal, 700);
+      }
+
+      tr {
+        @include transition(background-color 0.5s ease);
+        border-top: setStyle($table-config, $key, border);
+
+        &:last-child {
+          border-bottom: setStyle($table-config, $key, border);
+        }
+
+        &:hover {
+          background-color: $white-dark;
+        }
+      }
+
+    }
+
+  } @else {
+    @warn "The key ´#{$key} isn’t defined in the map $tables´"
+  }
+}
+
+// Table Expand Trigger
+.table__expand-icon {
+  @include transition(transform 0.3s ease);
+}
+
+// Table Row Active
+.table__row--active {
+  background-color: $white-dark;
+
+  .table__expand-icon {
+    @include transform(rotate(90deg));
+  }
+}
+
+// Table Hidden
+.table__hidden {
+  display: none;
+
+  thead {
+    background-color: $grey-light;
+    border-top: none;
+  }
+
+  &.table__hidden--active {
+    border: none;
+    display: table-row;
+    width: 100%;
+  }
+
+  .table-bravo {
+    margin: 0;
+
+    tbody tr:last-child {
+      border-bottom: none;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+// Tabs Components
+// ========================================
+
+// Variables
+$tab-list-border:          1px solid $grey-base;
+$tab-list-padding:         $spacer-echo;
+
+$tab-item-margin:          $spacer-charlie;
+
+$tab-link-color:           $grey-base;
+$tab-link-padding:         8px;
+
+$tab-link-border-active:   3px solid $blue-base;
+$tab-link-color-active:    $blue-base;
+
+
+// Structure
+.tab__list {
+  @include clearfix;
+  border-bottom: $tab-list-border;
+  display: block;
+  padding-bottom: $tab-list-padding;
+}
+
+.tab__item {
+  display: inline-block;
+  float: left;
+  margin-right: $tab-item-margin;
+}
+
+.tab__link {
+  @include font-type($primary-sans-serif, normal, 700);
+  @include transition(all 0.3s ease);
+  color: $tab-link-color;
+
+  &.tab__link--active {
+    border-bottom: $tab-link-border-active;
+    color: $tab-link-color-active;
+    padding-bottom: $tab-link-padding;
+  }
+}

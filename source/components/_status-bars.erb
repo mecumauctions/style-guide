@@ -1,0 +1,54 @@
+<section role="region" aria-labelledby="status-bars" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="status-bars">Status Bars</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base</h5>
+    </header>
+      <% data.components.status_bars.each do |status| %>
+        <div class="status-bar--<%= status.type %>">
+          <h5 class="status-bar__title"><%= status.text %></h5>
+        </div>
+      <% end %>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<% code("html") do %>
+  <div class="status-bar--normal">
+    <h5 class="status-bar__title">25%</h5>
+  </div>
+  <div class="status-bar--caution">
+    <h5 class="status-bar__title">65%</h5>
+  </div>
+  <div class="status-bar--warning">
+    <h5 class="status-bar__title">95%</h5>
+  </div>
+<% end %>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>Status bars should be used to indicate the total number of phone numbers in use for an account. This component should give the user an indication of what accounts need attention and what ones are OK.</p>
+    </header>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create buttons.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+  </div>
+</section>

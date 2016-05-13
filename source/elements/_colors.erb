@@ -1,0 +1,25 @@
+<section role="region" aria-labelledby="colors" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="colors">Colors</h4>
+    </div>
+  </header>
+  <% data.elements.colors_schemes.each do |scheme| %>
+    <div class="section__body reset-padding-bottom">
+      <header role="title" class="body__header">
+        <h5 class="body__header__title">Color Palette: <%= scheme.title %></h5>
+      </header>
+      <div class="section__body clearfix reset-padding-bottom">
+        <ul>
+          <% scheme.colors.each do |color| %>
+            <li class="card card--center float--left margin-right--charlie">
+              <span class="color__block--<%= color.color %>"></span>
+              <h6 class="card__title"><%= color.title %></h6>
+              <h6 class="card__description"><%= color.value %></h6>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+</section>

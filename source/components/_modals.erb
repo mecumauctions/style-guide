@@ -1,0 +1,60 @@
+<section role="region" aria-labelledby="modals" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="modals">Modals</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Normal, Active</h5>
+    </header>
+    <!-- Modal example -->
+    <button class="button--primary modal__trigger">Click for Modal</button>
+    <div class="modal">
+      <div class="modal__overlay" aria-hidden="true">
+        <div class="modal__container">
+          <a href="#" role="button" class="modal__close">
+            <%= inline_svg("icons/functional/close-icon.svg", class: "modal__close-icon") %>
+          </a>
+          <div class="modal__body">
+            <header class="modal__header">
+              <h3 class="title">Modal Title</h3>
+            </header>
+            <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+            <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end example -->
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<% code("html") do %>
+  <button class="button--primary modal__trigger">Click for Modal</button>
+  <div class="modal">
+    <div class="modal__overlay" aria-hidden="true">
+      <div class="modal__container">
+        <a href="#" role="button" class="modal__close">
+          <%= inline_svg("icons/functional/close-icon.svg", class: "modal__close-icon") %>
+        </a>
+        <div class="modal__body">
+          <header class="modal__header">
+            <h3 class="title">Modal Title</h3>
+          </header>
+          <p>Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>Modals are used as a way for the user to interact with the view without leaving it. For example, if the user clicks on an add site button from an account page, a modal should be revealed that allows the user to input the data and create a new site. Modal should be reserved to small or single actions. Never use a modal as a step action or multi-part form.</p>
+    </header>
+  </div>
+</section>

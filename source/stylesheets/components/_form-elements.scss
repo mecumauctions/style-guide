@@ -1,0 +1,96 @@
+// Form Elements Component
+// ========================================
+
+
+// Variables
+$form-label-color:               $black-base;
+$form-label-margin:              $spacer-echo;
+$form-label-weight:              700;
+
+$label-offset-margin:            25px;
+
+$form-input-background:          $white-base;
+$form-input-border:              1px solid $grey-base;
+$form-input-border-radius:       2px;
+$form-input-color:               $black-base;
+$form-input-height:              45px;
+$form-input-margin:              $spacer-echo 0 $spacer-charlie;
+$form-input-padding:             10px;
+
+$form-input-background-active:   $white-base;
+$form-input-border-active:       1px solid $grey-dark;
+
+$form-input-background-inactive: $grey-light;
+$form-input-border-inactive:     1px solid $grey-base;
+
+// Structure
+
+// Labels
+label,
+.label {
+  @include s-foxtrot;
+  color: $form-label-color;
+  font-weight: $form-label-weight;
+  display: inline-block;
+  margin-bottom: $form-label-margin;
+  width: 100%;
+}
+
+
+// Inputs
+#{$all-text-inputs},
+.input--text
+input,
+select {
+  @include appearance(none);
+  @include box-shadow(inset 0px 0px 3px 0px, rgba(207,207,214,0.25));
+  @include font-type($primary-sans-serif, normal, 400);
+  @include s-foxtrot;
+  @include transition(border-color, 0.4s, ease);
+  background-color: $form-input-background;
+  border: $form-input-border;
+  border-radius: $form-input-border-radius;
+  color: $form-input-color;
+  height: $form-input-height;
+  margin: $form-input-margin;
+  padding: $form-input-padding;
+  width: 100%;
+
+  &:focus,
+  &:active {
+    @include box-shadow(0px 0px 5px 0px, rgba(172, 172, 179, 0.25));
+  }
+
+  &:focus {
+    background-color: $form-input-background-active;
+    border: $form-input-border-active;
+    outline: none;
+  }
+
+  &:hover {
+    border: $form-input-border-active;
+  }
+
+  &:active {
+    border: $form-input-border-active;
+    background-color: $form-input-background-active;
+  }
+
+  &:disabled {
+    background-color: $form-input-background-inactive;
+    border: $form-input-border-inactive;
+    color: $grey-dark;
+    cursor: not-allowed;
+  }
+}
+
+
+// Search Input
+input[type="search"],
+.input--search {
+  background-image: image-url('icons/functional/search-icon.svg');
+  background-position: 10px;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  padding-left: 30px !important;
+}

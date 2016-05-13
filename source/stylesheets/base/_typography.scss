@@ -35,6 +35,13 @@ h4 { font-size: $font-size-base * 1.85; }
 h5 { font-size: $font-size-base * 1.45; }
 h6 { font-size: $font-size-base;        }
 
+.heading--h1 { @include s-alpha;   }
+.heading--h2 { @include s-bravo;   }
+.heading--h3 { @include s-charlie  }
+.heading--h4 { @include s-delta;   }
+.heading--h5 { @include s-echo;    }
+.heading--h6 { @include s-foxtrot; }
+
 p {
   @include font-type($primary-sans-serif, normal, 400);
   @include s-foxtrot;
@@ -59,6 +66,14 @@ a {
   &:focus {
     outline: none;
   }
+}
+
+.text--light {
+  @include font-type($primary-sans-serif, normal, 100);
+}
+
+.text--uppercase {
+  text-transform: capitalize;
 }
 
 

@@ -74,10 +74,6 @@ $section-body-title-color:      $black-base;
   padding: $page-spacing;
 }
 
-.body__header {
-  margin-bottom: $spacer-charlie;
-}
-
 .body__header__title {
   @include s-delta;
   color: $section-body-title-color;

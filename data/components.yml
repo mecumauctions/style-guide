@@ -5,3 +5,50 @@ alerts:
     msg: Well this is awkward. That action didn't go as planned.
   - type: warning
     msg: Oh snap! That wasn't suppose to happen. Give it another try.
+
+breadcrumbs:
+  - title: Account
+    state: active
+  - title: Site Name Goes Here
+    state: active
+  - title: Pool Name Goes Here
+    state: not-active
+
+buttons:
+  - type: primary
+  - type: secondary
+  - type: warning
+  - type: disabled
+
+form_elements:
+  - type: text
+    label: Standard Input
+    placeholder: Placeholder text goes here
+    disabled: false
+  - type: search
+    label: Search Input
+    placeholder: Search for some object
+    disabled: false
+  - type: text
+    label: Disabled Input
+    placeholder: Can't type here
+    disabled: true
+
+links:
+  - type: primary
+  - type: secondary
+  - type: warning
+  - type: disabled
+
+tabs:
+  - title: Tab Link One
+  - title: Tab Link Two
+  - title: Tab Link Three
+
+status_bars:
+  - type: normal
+    text: 25%
+  - type: caution
+    text: 65%
+  - type: warning
+    text: 95%

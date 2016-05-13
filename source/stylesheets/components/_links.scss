@@ -1,0 +1,29 @@
+// Links Component
+// ========================================
+
+// Variables
+$link-transition:             all 0.3s linear;
+
+$link-txt-decoration-hover:   underline;
+$link-opacity-hover:          0.75;
+
+// Structure
+@each $link, $styles in $links {
+  $color:     nth($styles, 1);
+
+  .link--#{$link} {
+    @include transition($link-transition);
+    color: $color;
+    display: inline-block;
+
+    &:hover {
+      opacity: $link-opacity-hover;
+      text-decoration: $link-txt-decoration-hover;
+    }
+
+    // Disabled Link
+    @if $link == 'disabled' {
+      cursor: not-allowed;
+    }
+  }
+}

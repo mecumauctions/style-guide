@@ -1,0 +1,25 @@
+// Table Variables
+// ========================================
+
+// Table Names
+$tables: (
+  table-alpha: table-alpha,
+  table-bravo: table-bravo
+);
+
+
+// Table Map Styles
+$table-config: (
+  table-alpha: (
+    background-color: $white-dark,
+    border: 1px solid $grey-base,
+    color: $grey-alt-2,
+    padding: 15px 10px
+  ),
+  table-bravo: (
+    background-color: $white-dark,
+    border: 1px solid $grey-base,
+    color: $grey-alt-2,
+    padding: 15px 10px
+  )
+);

@@ -1,0 +1,73 @@
+<section role="region" aria-labelledby="tabs" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="tabs">Tabs</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base, Active</h5>
+    </header>
+    <ul class="tab__list" id="tab__list-example">
+      <% data.components.tabs.each do |tab| %>
+        <li class="tab__item">
+          <a href="#" class="tab__link"><%= tab.title %></a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<% code("html") do %>
+  <ul class="tab__list">
+    <li class="tab__item">
+      <a href="#" class="tab__link tab__link--active">Tab Link One</a>
+    </li>
+    <li class="tab__item">
+      <a href="#" class="tab__link">Tab Link Two</a>
+    </li>
+    <li class="tab__item">
+      <a href="#" class="tab__link">Tab Link Three</a>
+    </li>
+  </ul>
+<% end %>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>Tabs should be used to seperate views within views. The content should be related in some way. For example, the account view should be made of of three tabs: Account Details, Permaleased Numbers and Edit Account. The goal is to allow users to move from one section of an account, site or pool fluidly without having to search for navigation items.</p>
+    </header>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create tabs.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:30%">.tab__list</td>
+          <td>This class name should be applied to an unordered list element. It is main wrapper to a tab list. <% code("html") do %><ul class="tab__list"><!-- Tab List Items --></ul><% end %></td>
+        </tr>
+        <tr>
+          <td style="width:30%">.tab__item</td>
+          <td>Set this on the list item. <% code("html") do %><li class="tab__item"><!-- Tab List Anchor --></li><% end %></td>
+        </tr>
+        <tr>
+          <td style="width:30%">.tab__link</td>
+          <td>Set this on the anchor item nested inside of a tab item. <% code("html") do %><a href="#" class="tab__link"><!-- Tab Name --></a><% end %></td>
+        </tr>
+        <tr>
+          <td style="width:30%">.tab__link--active</td>
+          <td>Set this on the anchor item that is currently active. It applies the active tab link styles. <% code("html") do %><a href="#" class="tab__link tab__link--active"><!-- Tab Name --></a><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

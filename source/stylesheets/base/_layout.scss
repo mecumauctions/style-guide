@@ -21,22 +21,23 @@ body {
 
 // Clears + Resets
 .clear { clear: both; }
+.clearfix { @include clearfix; }
 
 @each $reset in $resets {
   $position:  nth($reset, 1);
   $zero:      nth($reset, 2);
 
   .reset-margin-#{$position} {
-    margin-#{$position}: $zero;
+    margin-#{$position}: $zero !important;
   }
 
   .reset-padding-#{$position} {
-    padding-#{$position}: $zero;
+    padding-#{$position}: $zero !important;
   }
 };
 
-.reset-padding { padding: 0; }
-.reset-margin  { margin:  0; }
+.reset-padding { padding: 0 !important; }
+.reset-margin  { margin:  0 !important; }
 
 
 // Floats
@@ -46,4 +47,19 @@ body {
 
 .float--right {
   @include media($tablet) { float: right; }
+}
+
+
+// Spacers
+@each $spacer in $spacers {
+  $type:   nth($spacer, 1);
+  $value:  nth($spacer, 2);
+
+  .padding-bottom--#{$type} { padding-bottom: $value; }
+  .padding-top--#{$type}    { padding-top:    $value; }
+
+  .margin-bottom--#{$type} { margin-bottom: $value; }
+  .margin-left--#{$type}   { margin-left:   $value; }
+  .margin-right--#{$type}  { margin-right:  $value; }
+  .margin-top--#{$type}    { margin-top:    $value; }
 }

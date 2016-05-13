@@ -1,0 +1,49 @@
+// Page Misc Elements Modules
+// ========================================
+
+// Variables
+$card-height:         200px;
+$card-radius:         2px;
+$card-width:          150px;
+
+$color-description:   $grey-alt-2;
+
+$color-block-border:  1px solid $grey-base;
+$color-block-height:  125px;
+
+// Structure
+.card {
+  @include box-shadow(0px 0px 10px 0px, rgba(207,207,214,0.5));
+  border-radius: $card-radius;
+  height: $card-height;
+  margin-bottom: $spacer-charlie;
+  width: $card-width;
+
+  &.card--center {
+    text-align: center;
+  }
+}
+
+.card__title,
+.card__description {
+  margin-bottom: $spacer-delta;
+}
+
+.card__description {
+  color: $color-description;
+}
+
+// Create Color Blocks
+@each $color in $colors {
+  $type:   nth($color, 1);
+  $value:  nth($color, 2);
+
+  .color__block--#{$type} {
+    background-color: $value;
+    border-bottom: $color-block-border;
+    display: block;
+    height: $color-block-height;
+    margin-bottom: $spacer-delta;
+    width: $card-width;
+  }
+}

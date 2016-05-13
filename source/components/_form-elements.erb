@@ -1,0 +1,88 @@
+<section role="region" aria-labelledby="form-elements" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="form-elements">Form Elements</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base, Hover, Active</h5>
+    </header>
+    <% data.components.form_elements.each do |f| %>
+      <label class="label"><%= f.label %></label>
+      <input
+        type="<%= f.type %>"
+        name="<%= f.type %>"
+        placeholder="<%= f.placeholder %>"
+        <% if f.disabled === true %>
+          disabled="<%= f.disabled %>"
+        <% end %>
+        class="input--<%= f.type %>" />
+    <% end %>
+    <label class="label">Select Input</label>
+    <select class="select">
+      <option>Select Option 1</option>
+      <option>Select Option 2</option>
+      <option>Select Option 3</option>
+      <option>Select Option 4</option>
+      <option>Select Option 5</option>
+    </select>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<% code("html") do %>
+  <label class="label">Standard Input</label>
+  <input type="text" name="text" placeholder="Placeholder text goes here" class="input--text">
+  <label class="label">Search Input</label>
+  <input type="text" name="text" placeholder="Placeholder text goes here" class="input--text">
+  <label class="label">Disabled Input</label>
+  <input type="text" name="text" placeholder="Can't type here" disabled="true" class="input--text">
+  <label class="label">Select Input</label>
+  <select>
+    <option>Select Option 1</option>
+    <option>Select Option 2</option>
+    <option>Select Option 3</option>
+    <option>Select Option 4</option>
+    <option>Select Option 5</option>
+  </select>
+<% end %>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Component Usage</h5>
+      <p>There are few different input types. The first is a standard input. This should be used for form inputs. The type might changed based on the value of the data. The second is a search input. This type should be used when a user is preforming a searching on the view or application. Lastly, the select. This element will be used when a user needs to select one object of many.</p>
+    </header>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">HTML Guidelines</h5>
+      <p>This table gives you a quick overview of the CSS classes that can be applied to create form elements.</p>
+    </header>
+    <table class="table table-alpha">
+      <thead>
+        <th>Class Name</th>
+        <th>Usage</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="width:30%">.label</td>
+          <td>All standard form inputs should have a label to explain what data is expected. <% code("html") do %><label class="label">Label Text Here</label><% end %></td>
+        </tr>
+        <tr>
+          <td style="width:30%">input[type="text"]</td>
+          <td>This is the standard input type. <% code("html") do %><input type="text" name="name" value="" placeholder="Add text here" /><% end %></td>
+        </tr>
+        <tr>
+          <td style="width:30%">input[type="search"]</td>
+          <td>This is the standard search input type. This input should be used for all inputs that query the database and return a result. <% code("html") do %><input type="search" placeholder="Search for an item" /><% end %></td>
+        </tr>
+        <tr>
+          <td style="width:30%">select</td>
+          <td>This is the standard select input type. <% code("html") do %><select ><!-- select options --> </select><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

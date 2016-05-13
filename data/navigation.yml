@@ -3,21 +3,29 @@ site_navigation:
     sections:
       - section_title: Alerts
         section_link: 'components/#alerts'
+      - section_title: Breadcrumbs
+        section_link: 'components/#breadcrumbs'
       - section_title: Buttons
         section_link: 'components/#buttons'
       - section_title: Form Elements
         section_link: 'components/#form-elements'
+      - section_title: Links
+        section_link: 'components/#links'
       - section_title: Modals
-        section_link: 'components/#modal'
+        section_link: 'components/#modals'
+      - section_title: Tables
+        section_link: 'components/#tables'
+      - section_title: Tabs
+        section_link: 'components/#tabs'
+      - section_title: Status Bars
+        section_link: 'components/#status-bars'
   - section_title: Design Elements
     sections:
       - section_title: Colors
         section_link: 'elements/#colors'
-      - section_title: Icons
-        section_link: 'elements/#icons'
       - section_title: Typography
         section_link: 'elements/#typography'
-  - section_title: Layout Elements
+  - section_title: Design Modules
     sections:
       - section_title: Navigation
-        section_link: 'layout/#navigation'
+        section_link: 'modules/#navigation'

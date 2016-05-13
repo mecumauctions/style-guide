@@ -1,0 +1,68 @@
+// Status Bars Components
+// ========================================
+
+// Variables
+$status-bar-height:        40px;
+$status-bar-padding:       $spacer-echo;
+$status-bar-radius:        1px;
+$status-bar-width:         225px;
+
+$status-bar-title-color:   $white-base;
+$status-bar-title-padding: 4px;
+
+
+// Structure
+%status-bar {
+  @include position(relative);
+  border-radius: $status-bar-radius;
+  height: $status-bar-height;
+  overflow: hidden;
+  padding: $status-bar-padding;
+  width: $status-bar-width;
+}
+
+.status-bar__title {
+  @include position(relative);
+  @include s-charlie;
+  color: $status-bar-title-color;
+  margin: 0;
+  padding-top: $status-bar-title-padding;
+  z-index: 2;
+}
+
+@each $status-bar in $status-bars {
+  $type:  nth($status-bar, 1);
+  $color: nth($status-bar, 2);
+
+  .status-bar--#{$type} {
+    @extend %status-bar;
+    background-color: lighten($color, 25%);
+
+    &::after {
+      @include position(absolute, 0 null null 0);
+      background-color: $color;
+      content: "";
+      height: $status-bar-height;
+      width: auto;
+    }
+  }
+}
+
+
+// For Styleguide only
+.status-bar--normal,
+.status-bar--caution {
+  margin-bottom: 30px;
+}
+
+.status-bar--normal::after {
+  width: 25%;
+}
+
+.status-bar--caution::after {
+  width: 60%;
+}
+
+.status-bar--warning::after {
+  width: 95%;
+}

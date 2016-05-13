@@ -13,7 +13,7 @@
           <ul class="navbar__submenu" aria-hidden="true">
             <% item.sections.each do |section| %>
               <li class="navbar__submenu__item">
-                <%= link_to section.section_title, section.section_link, class: 'submenu__item__link' %>
+                <%= link_to section.section_title, request.path.split('/')[0] == 'components' || 'elements' || 'modules' ? "/#{section.section_link}" : section.section_link, class: 'submenu__item__link' %>
               </li>
             <% end %>
           </ul>

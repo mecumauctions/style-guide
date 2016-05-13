@@ -1,0 +1,84 @@
+// Button Component
+// ========================================
+
+// Variables
+$button-border:                none;
+$button-display:               block;
+$button-line-height:           normal;
+$button-padding:               15px 30px;
+$button-radius:                2px;
+$button-text-align:            center;
+$button-text-transform:        uppercase;
+$button-transition:            all 0.3s ease-in-out;
+
+$button-small-padding:         ($button-padding / 2);
+
+$button-input-height:          45px;
+$button-input-padding:         0 20px;
+
+$button-hover-cursor:          pointer;
+$button-hover-opacity:         1;
+
+$button-focus-border:          none;
+$button-focus-outline:         none;
+$button-focus-text-decoration: none;
+
+
+// Main Button
+%button {
+  @include font-type($primary-sans-serif, normal, 700);
+  @include s-foxtrot;
+  @include transition(border-radius, 0.5s, ease-in-out);
+  border: $button-border;
+  border-radius: $button-radius;
+  display: $button-display;
+  height: auto;
+  line-height: $button-line-height;
+  padding: $button-padding;
+  text-align: $button-text-align;
+  text-decoration: none;
+  text-transform: $button-text-transform;
+  -webkit-appearance: none;
+
+  &:hover {
+    cursor: $button-hover-cursor;
+    opacity: $button-hover-opacity;
+  }
+
+  &:focus {
+    border: $button-focus-border;
+    outline: $button-focus-outline;
+    text-decoration: $button-focus-text-decoration;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+// Button Styles
+@each $button, $styles in $buttons {
+  $bg-color:  nth($styles, 1);
+  $color:     nth($styles, 2);
+
+  .button--#{$button} {
+    @extend %button;
+    background: $bg-color;
+    color: $color;
+
+    &:hover {
+      background-color: lighten($bg-color, 10%);
+
+      // Disabled Button
+      @if $button == 'disabled' {
+        background-color: $bg-color;
+        cursor: not-allowed;
+      }
+    }
+
+    &:focus {
+      @include box-shadow(0 0 0, transparent);
+      border: $button-focus-border;
+    }
+  }
+}

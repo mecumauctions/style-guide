@@ -1,0 +1,82 @@
+colors_schemes:
+  - title: Hero Colors
+    colors:
+    - color: purple-base
+      title: Hero Purple
+      value: '#534292'
+    - color: blue-base
+      title: Hero Blue
+      value: '#3A89E6'
+  - title: Alert Colors
+    colors:
+    - color: green-base
+      title: Alert Green
+      value: '#76C187'
+    - color: yellow-base
+      title: Alert Yellow
+      value: '#FFAF50'
+    - color: red-base
+      title: Alert Red
+      value: '#FF5454'
+  - title: Neutral Colors
+    colors:
+    - color: white-base
+      title: Neutral White
+      value: '#FFFFFF'
+    - color: white-dark
+      title: Neutral White Dark
+      value: '#F5F5F7'
+    - color: grey-light
+      title: Neutral Grey Light
+      value: '#E7E7EC'
+    - color: grey-base
+      title: Neutral Grey
+      value: '#CBCBD2'
+    - color: grey-dark
+      title: Neutral Grey Dark
+      value: '#ACACB4'
+    - color: grey-alt
+      title: Neutral Grey Alt
+      value: '#D4D3DD'
+    - color: grey-alt-2
+      title: Neutral Alt 2
+      value: '#8F8F98'
+    - color: black-base
+      title: Neutral Black
+      value: '#3F3F44'
+
+typography:
+  - type: h1
+  - type: h2
+  - type: h3
+  - type: h4
+  - type: h5
+  - type: h6
+
+font_family:
+  - letter: a
+  - letter: b
+  - letter: c
+  - letter: d
+  - letter: e
+  - letter: f
+  - letter: g
+  - letter: h
+  - letter: i
+  - letter: j
+  - letter: k
+  - letter: l
+  - letter: m
+  - letter: n
+  - letter: o
+  - letter: p
+  - letter: q
+  - letter: r
+  - letter: s
+  - letter: t
+  - letter: u
+  - letter: v
+  - letter: w
+  - letter: x
+  - letter: y
+  - letter: z

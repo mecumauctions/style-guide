@@ -33,6 +33,7 @@ $navbar-link-icon-transform-active: 0deg;
   @include box-shadow(inset $page-navigation-spread, $page-navigation-shadow);
   @include linear-gradient(-162deg, $purple-base 28%, $blue-base 100%);
   @include position($page-navigation-position-type, $page-navigation-position);
+  overflow-y: scroll;
   width: $page-navigation-width;
 }
 

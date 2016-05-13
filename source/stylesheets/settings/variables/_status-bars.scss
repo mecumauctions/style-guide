@@ -1,0 +1,9 @@
+// Status Bars Variables
+// ========================================
+
+// Status Bar List
+$status-bars: (
+  (normal,  $green-base  ),
+  (caution, $yellow-base ),
+  (warning, $red-base    )
+);

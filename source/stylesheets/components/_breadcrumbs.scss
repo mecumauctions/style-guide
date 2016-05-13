@@ -1,0 +1,46 @@
+// Button Component
+// ========================================
+
+// Variables
+$breadcrumb-list-margin:         5px;
+
+$breadcrumb-item-display:        inline;
+
+$breadcrumb-item-divider-color:  $grey-dark;
+
+$breadcrumb-link-color:          $grey-dark;
+$breadcrumb-link-color-active:   $blue-base;
+
+
+// Structure
+.breadcrumb__list {
+  margin: $breadcrumb-list-margin;
+}
+
+.breadcrumb__item {
+  @include s-golf;
+  display: $breadcrumb-item-display;
+
+  &:not(:last-child)::after {
+    color: $breadcrumb-item-divider-color;
+    content: "//";
+  }
+}
+
+.breadcrumb__link {
+  @include transition(opacity 0.3s ease);
+  color: $breadcrumb-link-color;
+
+  &:hover {
+    opacity: 0.75;
+
+    &.breadcrumb__link--not-active {
+      cursor: not-allowed;
+    }
+  }
+
+  &.breadcrumb__link--active {
+    color: $breadcrumb-link-color-active;
+  }
+
+}

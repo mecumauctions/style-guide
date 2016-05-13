@@ -1,0 +1,20 @@
+// Select Input Component
+// ========================================
+
+// Variables
+$select-background-size:             15px;
+$select-background-position-mobile:  97%;
+$select-background-position:         99%;
+$select-background-url:              'icons/functional/arrow-down-icon.svg';
+
+
+// Structure
+select{
+  @include font-type($primary-sans-serif, normal, 400);
+  background-image: image-url($select-background-url);
+  background-position: $select-background-position-mobile;
+  background-repeat: no-repeat;
+  background-size: $select-background-size;
+
+  @include media($tablet) { background-position: $select-background-position; }
+}
