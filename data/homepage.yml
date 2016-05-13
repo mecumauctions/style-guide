@@ -12,7 +12,7 @@ content:
     intro_sections:
       - title: Design components
         description: Fuse's interface is made of various components. All of which have their place in the applicaiton. Find out more.
-        link: compents/#alerts
+        link: components/#alerts
         link_text: Explore the components
         img: icons/navigation/settings-icon_active.svg
       - title: Design elements
