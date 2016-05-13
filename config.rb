@@ -29,6 +29,15 @@ set :relative_links, true
 
 # Build-specific configuration
 configure :build do
+  # Build-target specific configs
+  target_env = ENV['TARGET'] || ''
+  case target_env.to_s.downcase
+  when 'prod'
+    config[:root_url] = '/Fuse-Styleguide/'
+  else
+    config[:root_url] = '/'
+  end
+
   activate :minify_css
   activate :minify_javascript
   activate :ngmin
@@ -43,4 +52,5 @@ end
 # Deploy To GH-Pages
 activate :deploy do |deploy|
   deploy.method = :git
+  deploy.build_before = true
 end

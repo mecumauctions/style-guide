@@ -2,30 +2,30 @@ site_navigation:
   - section_title: Design Components
     sections:
       - section_title: Alerts
-        section_link: 'Fuse-Styleguide/components/#alerts'
+        section_link: 'components/#alerts'
       - section_title: Breadcrumbs
-        section_link: 'Fuse-Styleguide/components/#breadcrumbs'
+        section_link: 'components/#breadcrumbs'
       - section_title: Buttons
-        section_link: 'Fuse-Styleguide/components/#buttons'
+        section_link: 'components/#buttons'
       - section_title: Form Elements
-        section_link: 'Fuse-Styleguide/components/#form-elements'
+        section_link: 'components/#form-elements'
       - section_title: Links
-        section_link: 'Fuse-Styleguide/components/#links'
+        section_link: 'components/#links'
       - section_title: Modals
-        section_link: 'Fuse-Styleguide/components/#modals'
+        section_link: 'components/#modals'
       - section_title: Tables
-        section_link: 'Fuse-Styleguide/components/#tables'
+        section_link: 'components/#tables'
       - section_title: Tabs
-        section_link: 'Fuse-Styleguide/components/#tabs'
+        section_link: 'components/#tabs'
       - section_title: Status Bars
-        section_link: 'Fuse-Styleguide/components/#status-bars'
+        section_link: 'components/#status-bars'
   - section_title: Design Elements
     sections:
       - section_title: Colors
-        section_link: 'Fuse-Styleguide/elements/#colors'
+        section_link: 'elements/#colors'
       - section_title: Typography
-        section_link: 'Fuse-Styleguide/elements/#typography'
+        section_link: 'elements/#typography'
   - section_title: Design Modules
     sections:
       - section_title: Navigation
-        section_link: 'Fuse-Styleguide/modules/#navigation'
+        section_link: 'modules/#navigation'
