@@ -1,6 +1,6 @@
 <aside role="sidebar" class="page__navigation">
   <header role="banner" class="page__navigation__header">
-    <% link_to '/Fuse-Styleguide' do %>
+    <% link_to "#{config[:root_url] ? config[:root_url] : '/'}" do %>
       <%= image_tag "logos/logo-white.svg", class: 'logo' %>
     <% end %>
   </header>
@@ -13,7 +13,7 @@
           <ul class="navbar__submenu" aria-hidden="true">
             <% item.sections.each do |section| %>
               <li class="navbar__submenu__item">
-                <%= link_to section.section_title, request.path.split('/')[0] == 'components' || 'elements' || 'modules' ? "#{config[:root_url]}#{section.section_link}" : section.section_link, class: 'submenu__item__link' %>
+                <%= link_to section.section_title, request.path.split('/')[0] == 'components' || 'elements' || 'modules' ? "#{config[:root_url] ? config[:root_url] : '/'}#{section.section_link}" : section.section_link, class: 'submenu__item__link' %>
               </li>
             <% end %>
           </ul>
