@@ -2,13 +2,17 @@
 // ========================================
 
 // Variables
-$site-background:             $white-base;
+$site-background:        $grey-light;
+$site-max-width:         1440px;
 
 
 // Global Styles
 html,
 body {
+  @include position(relative);
   background-color: $site-background;
+  margin: 0 auto;
+  max-width: $site-max-width;
   overflow: hidden;
 
   &.is-fixed {

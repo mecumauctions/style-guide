@@ -2,11 +2,12 @@
 // ========================================
 
 // Variables
+$page-background:               $white-base;
 $page-offset:                   14rem;
 $page-height:                   100vh;
 $page-spacing:                  $spacer-charlie;
 
-$page-section-max-width:        64rem;
+$page-section-max-width:        1440px;
 
 $section-header-background:     $white-dark;
 $section-header-background-alt: $white-base;
@@ -24,6 +25,7 @@ $section-body-title-color:      $black-base;
 
 // Structure
 .page {
+  background: $page-background;
   margin-left: $page-offset;
   height: $page-height;
   overflow-x: scroll;
@@ -70,6 +72,7 @@ $section-body-title-color:      $black-base;
 
 // Page Section Body
 .section__body {
+  @include clearfix;
   margin-top: $section-body-margin;
   padding: $page-spacing;
 }
@@ -79,3 +82,15 @@ $section-body-title-color:      $black-base;
   color: $section-body-title-color;
 }
 
+
+// Page Footer
+.page__footer {
+  background-color: $white-dark;
+  padding: $spacer-charlie;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+}

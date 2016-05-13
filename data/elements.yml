@@ -45,6 +45,51 @@ colors_schemes:
       title: Neutral Black
       value: '#3F3F44'
 
+icon_types:
+  - title: Navigational
+    icons:
+    - title: Dashboard
+      state: inactive
+      img: icons/navigation/dashboard-icon_white.svg
+    - title: Search
+      state: inactive
+      img: icons/navigation/search-icon_white.svg
+    - title: Swap / Move
+      state: inactive
+      img: icons/navigation/move-icon_white.svg
+    - title: Settings
+      state: inactive
+      img: icons/navigation/settings-icon_white.svg
+    - title: Dashboard
+      state: active
+      img: icons/navigation/dashboard-icon_active.svg
+    - title: Search
+      state: active
+      img: icons/navigation/search-icon_active.svg
+    - title: Swap / Move
+      state: active
+      img: icons/navigation/move-icon_active.svg
+    - title: Settings
+      state: active
+      img: icons/navigation/settings-icon_active.svg
+  - title: Functional
+    icons:
+    - title: Arrow Standard
+      state: normal
+      img: icons/functional/arrow-icon.svg
+    - title: Caret Down
+      state: normal
+      img: icons/functional/arrow-down-icon.svg
+    - title: Close
+      state: normal
+      img: icons/functional/close-icon.svg
+    - title: Search
+      state: normal
+      img: icons/functional/search-icon.svg
+    - title: Sort
+      state: normal
+      img: icons/functional/sort-icon.svg
+
 typography:
   - type: h1
   - type: h2

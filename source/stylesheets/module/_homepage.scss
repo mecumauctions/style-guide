@@ -1,0 +1,75 @@
+// Homepage Module
+// ========================================
+
+// Variables
+$homepage-card-border:          2px solid $grey-light;
+$homepage-card-padding:         $spacer-delta;
+$homepage-card-radius:          2px;
+
+$homepage-card-spread-hover:    0 0 10px;
+$homepage-card-shadow-hover:    rgba(172,172,179,0.25);
+
+$homepage-card-icon-dimension:  100px;
+$homepage-card-icon-radius:     30em;
+
+$homepage-card-title-color:     $grey-dark;
+
+
+
+// Structure
+.homepage__header {
+
+  .button--black {
+    display: inline-block;
+  }
+}
+
+.homepage__card {
+  @include clearfix;
+  @include position(relative);
+  @include linear-gradient(-162deg, $purple-base 28%, $blue-base 100%);
+  @include span-columns(4 of 12);
+  border-radius: $homepage-card-radius;
+  overflow: hidden;
+  text-align: center;
+
+  &:hover {
+    @include box-shadow($homepage-card-spread-hover, $homepage-card-shadow-hover);
+  }
+
+  .homepage__card--inner {
+    @include position(relative, 0 0 0 0);
+    @include transition(all 0.3s linear);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip:    padding-box;
+    background-clip:         padding-box;
+    background-color: $white-base;
+    border: $homepage-card-border;
+    padding: $homepage-card-padding;
+    width: 100%;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+}
+
+.homepage__card__image {
+  border-radius: $homepage-card-icon-radius;
+  display: block;
+  height: $homepage-card-icon-dimension;
+  margin: 0 auto $spacer-charlie;
+  padding: $spacer-echo;
+  width: $homepage-card-icon-dimension;
+
+  .homepage__card__icon {
+    width: 100%;
+  }
+}
+
+.homepage__card__title {
+  @include s-charlie;
+  color: $homepage-card-title-color;
+  text-transform: uppercase;
+}

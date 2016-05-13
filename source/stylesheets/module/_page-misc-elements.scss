@@ -47,3 +47,13 @@ $color-block-height:  125px;
     width: $card-width;
   }
 }
+
+// Icon Block
+.icon__block {
+  background-color: $grey-light;
+  display: block;
+  height: $color-block-height;
+  margin-bottom: $spacer-delta;
+  padding: $spacer-bravo;
+  width: $card-width;
+}

@@ -23,6 +23,8 @@ site_navigation:
     sections:
       - section_title: Colors
         section_link: 'elements/#colors'
+      - section_title: Icons
+        section_link: 'elements/#icons'
       - section_title: Typography
         section_link: 'elements/#typography'
   - section_title: Design Modules

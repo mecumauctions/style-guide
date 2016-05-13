@@ -1,0 +1,27 @@
+<section role="region" aria-labelledby="icons" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="icons">Icons</h4>
+    </div>
+  </header>
+  <% data.elements.icon_types.each do |type| %>
+    <div class="section__body reset-padding-bottom">
+      <header role="title" class="body__header">
+        <h5 class="body__header__title"><%= type.title %></h5>
+      </header>
+      <div class="section__body clearfix reset-padding-bottom reset-padding-left">
+        <ul>
+          <% type.icons.each do |icon| %>
+            <li class="card card--center float--left margin-right--charlie">
+              <span class="icon__block">
+                <%= image_tag icon.img, class: 'icon__block__img' %>
+              </span>
+              <h6 class="card__title"><%= icon.title %></h6>
+              <h6 class="card__description text--uppercase">State: <%= icon.state %></h6>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+</section>

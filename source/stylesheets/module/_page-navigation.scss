@@ -4,9 +4,9 @@
 // Variables
 $page-navogation-padding:           $spacer-delta;
 $page-navigation-position:          0 null -10px 0;
-$page-navigation-position-type:     fixed;
-$page-navigation-spread:            0 -6px 11px 0;
-$page-navigation-shadow:            rgba(34,23,78,0.40);
+$page-navigation-position-type:     absolute;
+$page-navigation-spread:            -5px -6px 10px 0px;
+$page-navigation-shadow:            rgba(34,23,78,0.25);
 $page-navigation-width:             14rem;
 
 $page-navigation-header-border:     1px solid #493A85;

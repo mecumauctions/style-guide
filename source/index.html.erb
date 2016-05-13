@@ -1,15 +1,36 @@
 ---
 title: Design Guides | Red Ventures Fuse
 ---
-<header role="banner" class="section__header">
+<header role="banner" class="section__header homepage__header">
   <div class="header__container">
-    <h6 class="text--grey">Version 1.0.0 | Updated: May 2016</h6>
-    <h1 class="header__title" id="styleguide-introdruction">Design System - Fuse</h1>
-    <p>Welcome to Fuse's design system guidelines. Here you will find the design standards defined for Red Veneture's product Fuse. The standards will evolve as the project progresses and new components and elements will be added as needed.</p>
+    <h6 class="text--grey"><%= data.homepage.introduction.version %> | Updated: <%= data.homepage.introduction.version_updated %></h6>
+    <h1 class="header__title" id="styleguide-introdruction"><%= data.homepage.introduction.title %></h1>
+    <p class="margin-bottom--charlie"><%= data.homepage.introduction.description %></p>
+    <a href="<%= data.homepage.introduction.link %>" target="_blank" role="button" class="button--black"><%= data.homepage.introduction.link_title %></a>
   </div>
 </header>
-<section role="region" aria-labelledby="styleguide-introduction" class="page__section">
-  <div class="page__section__body">
-
+<section role="region" aria-labelledby="getting-started" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="getting-started"><%= data.homepage.content.intro.title %></h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <ul>
+    <% data.homepage.content.intro.intro_sections.each do |section| %>
+      <li class="homepage__card">
+        <div class="homepage__card--inner">
+          <div class="homepage__card__image">
+            <%= image_tag section.img, class: 'homepage__card__icon' %>
+          </div>
+          <!-- <img src="<%= section.img %>" class="homepage__card__image" /> -->
+          <h5 class="homepage__card__title"><%= section.title %></h5>
+          <p class="homepage__card__description text--grey"><%= section.description %></p>
+          <a href="<%= section.link %>" class="link--primary"><%= section.link_text %></a>
+        </div>
+      </li>
+    <% end %>
+    </ul>
   </div>
 </section>
+<%= partial 'layouts/shared/footer.erb' %>
