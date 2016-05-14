@@ -8,9 +8,11 @@ var $modalTrigger = $('.modal__trigger'),
 $modalTrigger.on('click', function (event) {
   event.preventDefault();
   $(this).siblings($modal).addClass($modalActive);
+  $modal.attr('aria-hidden', 'false');
 });
 
 $modalCloseTrigger.on('click', function (event) {
   event.preventDefault();
   $(this).parents($modal).removeClass($modalActive);
+  $modal.attr('aria-hidden', 'true');
 });

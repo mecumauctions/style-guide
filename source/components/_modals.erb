@@ -10,13 +10,13 @@
     </header>
     <!-- Modal example -->
     <button class="button--primary modal__trigger">Click for Modal</button>
-    <div class="modal">
-      <div class="modal__overlay" aria-hidden="true">
+    <div class="modal" aria-hidden="true">
+      <div class="modal__overlay">
         <div class="modal__container">
-          <a href="#" role="button" class="modal__close">
-            <%= inline_svg("icons/functional/close-icon.svg", class: "modal__close-icon") %>
-          </a>
           <div class="modal__body">
+            <a href="#" role="button" class="modal__close">
+              <%= inline_svg("icons/functional/close-icon.svg", class: "modal__close-icon") %>
+            </a>
             <header class="modal__header">
               <h3 class="title">Modal Title</h3>
             </header>

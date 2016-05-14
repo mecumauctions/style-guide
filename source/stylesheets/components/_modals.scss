@@ -6,6 +6,8 @@
 $modal-margin:                  $spacer-delta;
 $modal-padding:                 $spacer-delta;
 
+$modal-container-width:         500px;
+
 $modal-overlay-background:      rgba(0, 0, 0, 0.75);
 $modal-overlay-dimensions:      100%;
 $modal-overlay-postion:         fixed;
@@ -29,7 +31,7 @@ $modal-body-z-index:            99999;
 
 $modal-header-border:           1px solid $grey-light;
 
-$modal-trigger-icon-position:   75px 390px null null;
+$modal-trigger-icon-position:   -31px -31px null null;
 $modal-trigger-icon-transition: fill 0.3s ease-in-out;
 $modal-trigger-icon-width:      15px;
 
@@ -65,17 +67,13 @@ $modal-trigger-icon-width:      15px;
   background-color: $modal-body-background;
   border-radius: $modal-border-radius;
   border: none;
-  height: 100vh;
   margin: 0;
   padding: $modal-padding;
-  overflow-y: scroll;
-  width: 100%;
   z-index: $modal-body-z-index;
 
   @include media($tablet) {
     height: $modal-body-height;
     margin: 100px auto 0;
-    overflow-y: hidden;
     width: $modal-body-width;
   }
 }
