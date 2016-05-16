@@ -40,12 +40,11 @@ configure :build do
 
   activate :minify_css
   activate :minify_javascript
-  activate :ngmin
-  activate :minify_html
+  # activate :minify_html
   # activate :asset_hash
   activate :directory_indexes
   activate :gzip
-  activate :imageoptim, pngout: false
+  # activate :imageoptim, pngout: false
   activate :relative_assets
 end
 
