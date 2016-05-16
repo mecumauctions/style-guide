@@ -35,6 +35,12 @@ $section-body-title-color:      $black-base;
   max-width: $page-section-max-width;
 }
 
+.example__container {
+  @include clearfix;
+  @include position(relative);
+  height: 500px;
+}
+
 // Page Section Header
 .section__header {
   background-color: $section-header-background;

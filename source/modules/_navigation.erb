@@ -1,0 +1,77 @@
+<section role="region" aria-labelledby="form-elements" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="form-elements">Navigation</h4>
+    </div>
+  </header>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">States: Base, Hover, Active</h5>
+    </header>
+    <div class="example__container">
+      <aside role="sidebar" class="page__navigation page__navigation--background">
+        <header role="banner" class="page__navigation__header">
+          <% link_to "#" do %>
+            <%= image_tag "logos/logo-white.svg", class: 'logo' %>
+          <% end %>
+        </header>
+        <nav role="navigation" class="page__navigation__navbar">
+          <h6 class="navbar__title">NAVIGATION</h6>
+          <ul class="navbar__links">
+            <% data.modules.navigation.each do |item| %>
+              <li class="navbar__item">
+                <%= link_to item.title, '#', class: "navbar__link--toggle navbar__link--navigation-icon navigation-icon--#{item.icon}" %>
+              </li>
+            <% end %>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<% code("html") do %>
+<aside role="sidebar" class="page__navigation page__navigation--background">
+  <!-- Note: page__navigation--background is only applied because we are reusing styles from _page-navigation.scss which has a transparent background -->
+  <header role="banner" class="page__navigation__header">
+    <a href="#">
+      <img class="logo" src="/images/logos/logo-white.svg" alt="Fuse Log">
+    </a>
+  </header>
+  <nav role="navigation" class="page__navigation__navbar">
+    <h6 class="navbar__title">NAVIGATION</h6>
+    <ul class="navbar__links">
+      <li class="navbar__item">
+        <a class="navbar__link--toggle navbar__link--navigation-icon navigation-icon--dashboard" href="#">
+          Dashboard
+        </a>
+      </li>
+      <li class="navbar__item">
+        <a class="navbar__link--toggle navbar__link--navigation-icon navigation-icon--search" href="#">
+          Lookup Number
+        </a>
+      </li>
+      <li class="navbar__item">
+        <a class="navbar__link--toggle navbar__link--navigation-icon navigation-icon--move" href="#">
+          Move Numbers
+        </a>
+      </li>
+      <li class="navbar__item">
+        <a class="navbar__link--toggle navbar__link--navigation-icon navigation-icon--settings" href="#">
+          User Settings
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>
+<% end %>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Module Usage</h5>
+      <p>The navigation module should be used for the main navigation sidebar. Its main role is to provide the user with links to top level views. It does not provide links to deeply nested views. Additionally, it has three states: Normal, hover and active. The normal state features a white icon and white text. When a user hovers over a link, the background of that link should become darker and a border on the left should display. If the link is clicked an active class should be added to the associated link and removed from all others. The addition of the active class should persist the hover state styles and change the icon from white to colored. Lastly, on page load the default view should have the active class present on its corresponding link.</p>
+    </header>
+  </div>
+</section>

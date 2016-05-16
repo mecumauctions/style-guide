@@ -1,0 +1,9 @@
+navigation:
+  - title: Dashboard
+    icon: dashboard
+  - title: Lookup Number
+    icon: search
+  - title: Move Numbers
+    icon: move
+  - title: User Settings
+    icon: settings

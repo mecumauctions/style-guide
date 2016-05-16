@@ -9,7 +9,7 @@
     <ul class="navbar__links">
       <% data.navigation.site_navigation.each do |item| %>
         <li class="navbar__item">
-          <%= link_to item.section_title, '#', class: 'navbar__link--toggle' %>
+          <%= link_to item.section_title, '#', class: 'navbar__link--toggle navbar__link--toggle-icon' %>
           <ul class="navbar__submenu" aria-hidden="true">
             <% item.sections.each do |section| %>
               <li class="navbar__submenu__item">

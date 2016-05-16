@@ -7,12 +7,19 @@ var $navbarToggle = $('.navbar__link--toggle'),
 $navbarToggle.on('click', function (event) {
 
   var $navbarItemActive = 'navbar__item--active',
-      $submenuActive = 'navbar__submenu--active';
+      $submenuActive = 'navbar__submenu--active',
+      $navigationIcon = $('.navbar__link--navigation-icon');
 
   event.preventDefault();
 
-  $(this).parent($navbarItem).toggleClass($navbarItemActive);
-  $(this).siblings($submenu).toggleClass($submenuActive);
+  $navbarItem.removeClass($navbarItemActive);
+  $(this).parent($navbarItem).addClass($navbarItemActive);
+
+  $submenu.removeClass($submenuActive);
+  $(this).siblings($submenu).addClass($submenuActive);
+
+  $navigationIcon.removeClass('navbar__link--navigation-icon--active');
+  $(this).closest($navigationIcon).addClass('navbar__link--navigation-icon--active');
 
   if($navbarItem.hasClass($navbarItemActive)) {
     $(this).siblings($submenu).attr('aria-hidden', 'false');

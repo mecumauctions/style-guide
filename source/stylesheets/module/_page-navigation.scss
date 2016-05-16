@@ -35,6 +35,10 @@ $navbar-link-icon-transform-active: 0deg;
   border-left: $page-navigation-header-border;
   overflow-y: scroll;
   width: $page-navigation-width;
+
+  &.page__navigation--background {
+    @include linear-gradient(-180deg, $purple-base 40%, $blue-base 100%);
+  }
 }
 
 .page__navigation__header {
@@ -72,7 +76,7 @@ $navbar-link-icon-transform-active: 0deg;
     text-transform: $page-navbar-link-txt-transform;
   }
 
-  .navbar__link--toggle::after {
+  .navbar__link--toggle-icon::after {
     @include position(absolute, 20px 10px null null);
     @include transition(transform 0.3s ease);
     @include transform(rotate($navbar-link-icon-transform));
@@ -108,5 +112,35 @@ $navbar-link-icon-transform-active: 0deg;
 
   &:hover {
     opacity: 0.75;
+  }
+}
+
+
+// Navigation Icons
+$navIcons: (
+  dashboard,
+  search,
+  move,
+  settings
+);
+
+@each $navIcon in $navIcons {
+  $icon: nth($navIcon, 1);
+
+  .navigation-icon--#{$icon}::before {
+    @include transition(background-image 0.3s ease);
+    background-image: image-url("icons/navigation/#{$icon}-icon_white.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    content: "";
+    display: inline-block;
+    height: 22px;
+    margin-right: 15px;
+    width: 22px;
+    vertical-align: sub;
+  }
+
+  .navbar__link--navigation-icon--active.navigation-icon--#{$icon}::before {
+    background-image: image-url("icons/navigation/#{$icon}-icon_active.svg");
   }
 }

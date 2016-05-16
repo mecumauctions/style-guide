@@ -7,6 +7,9 @@ $select-background-position-mobile:  97%;
 $select-background-position:         99%;
 $select-background-url:              'icons/functional/arrow-down-icon.svg';
 
+$select-background-inactive:         $grey-light;
+$select-border-inactive:             1px solid $grey-base;
+
 
 // Structure
 select{
@@ -17,4 +20,11 @@ select{
   background-size: $select-background-size;
 
   @include media($tablet) { background-position: $select-background-position; }
+
+  &:disabled {
+    background-color: $select-background-inactive;
+    border: $select-border-inactive;
+    color: $grey-dark;
+    cursor: not-allowed;
+  }
 }
