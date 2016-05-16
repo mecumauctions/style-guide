@@ -9,7 +9,7 @@
       <h5 class="body__header__title">States: Base, Hover, Active</h5>
     </header>
     <div class="example__container">
-      <aside role="sidebar" class="page__navigation page__navigation--background">
+      <aside role="sidebar" class="page__navigation page__navigation--example page__navigation--background">
         <header role="banner" class="page__navigation__header">
           <% link_to "#" do %>
             <%= image_tag "logos/logo-white.svg", class: 'logo' %>
@@ -33,8 +33,7 @@
       <h5 class="body__header__title">Sample Code</h5>
     </header>
 <% code("html") do %>
-<aside role="sidebar" class="page__navigation page__navigation--background">
-  <!-- Note: page__navigation--background is only applied because we are reusing styles from _page-navigation.scss which has a transparent background -->
+<aside role="sidebar" class="page__navigation">
   <header role="banner" class="page__navigation__header">
     <a href="#">
       <img class="logo" src="/images/logos/logo-white.svg" alt="Fuse Log">
