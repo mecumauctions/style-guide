@@ -35,18 +35,46 @@
       <option>Select Option 4</option>
       <option>Select Option 5</option>
     </select>
+    <ul>
+      <li>
+        <label class="label">
+          <input type="radio" name="name" />
+          Standard Radio Input
+        </label>
+      </li>
+      <li>
+        <label class="label">
+          <input type="radio" name="name" />
+          Standard Radio Input
+        </label>
+      </li>
+      <li>
+        <label class="label">
+          <input type="radio" name="name" />
+          Standard Radio Input
+        </label>
+      </li>
+    </ul>
+
   </div>
   <div class="section__body">
     <header role="title" class="body__header">
       <h5 class="body__header__title">Sample Code</h5>
     </header>
 <% code("html") do %>
+  <!-- Standard Text Input -->
   <label class="label">Standard Input</label>
   <input type="text" name="text" placeholder="Placeholder text goes here" class="input--text">
+
+  <!-- Search Input -->
   <label class="label">Search Input</label>
   <input type="text" name="text" placeholder="Placeholder text goes here" class="input--text">
+
+  <!-- Disabled Input -->
   <label class="label">Disabled Input</label>
   <input type="text" name="text" placeholder="Can't type here" disabled="true" class="input--text">
+
+  <!-- Standard Select -->
   <label class="label">Select Input</label>
   <select>
     <option>Select Option 1</option>
@@ -55,6 +83,8 @@
     <option>Select Option 4</option>
     <option>Select Option 5</option>
   </select>
+
+  <!-- Disabled Select -->
   <label class="label">Disabled Select Input</label>
   <select class="select" disabled>
     <option>Select Option 1</option>
@@ -63,6 +93,12 @@
     <option>Select Option 4</option>
     <option>Select Option 5</option>
   </select>
+
+  <!-- Standard Radio Input -->
+  <label class="label label--radio-input">
+    <input type="radio" name="name" />
+    Standard Radio Input
+  </label>
 <% end %>
   </div>
   <div class="section__body">
@@ -97,6 +133,10 @@
         <tr>
           <td style="width:30%">select</td>
           <td>This is the standard select input type. <% code("html") do %><select ><!-- select options --> </select><% end %></td>
+        </tr>
+        <tr>
+          <td style="width:30%">input[type="radio"]</td>
+          <td>This is the standard radio input type. <% code("html") do %><input type="radio" name="name" /><% end %></td>
         </tr>
       </tbody>
     </table>

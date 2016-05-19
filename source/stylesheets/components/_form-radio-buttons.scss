@@ -1,0 +1,55 @@
+// Form Radio Buttons Component
+// ========================================
+
+
+// Variables
+$radio-input-background:           $white-base;
+$radio-input-border:               1px solid $grey-base;
+$radio-input-cursor:               pointer;
+$radio-input-dimensions:           18px;
+$radio-input-radius:               30em;
+$radio-input-shadow:               rgba(172,172,179,0.35);
+$radio-input-spread:               inset 0px 0px 3px 0px;
+$radio-input-v-align:              bottom;
+
+$radio-input-background-active:    $blue-base;
+$radio-input-position-active:      3px 0 null 0;
+
+
+// Structure
+input[type="radio"] {
+  @include appearance(none);
+  @include position(relative);
+  @include box-shadow($radio-input-spread, $radio-input-shadow);
+  background-color: $radio-input-background;
+  border: $radio-input-border;
+  border-radius: $radio-input-radius;
+  height: $radio-input-dimensions;
+  vertical-align: $radio-input-v-align;
+  width: $radio-input-dimensions;
+
+  &:hover {
+    cursor: $radio-input-cursor;
+  }
+
+  &:focus {
+    border: $radio-input-border;
+    outline: none;
+  }
+}
+
+input[type="radio"]:checked {
+
+  &::after{
+    @include position(absolute, $radio-input-position-active);
+    background-color: $radio-input-background-active;
+    border: $radio-input-border;
+    border-color: darken($blue-base, 10%);
+    border-radius: $radio-input-radius;
+    content: "";
+    height: $radio-input-dimensions / 1.75;
+    margin: 0 auto;
+    width: $radio-input-dimensions / 1.75;
+
+  }
+}
