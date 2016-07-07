@@ -1,24 +1,15 @@
-alerts:
-  - type: success
-    msg: High fives! You have successfully completed an action.
-  - type: danger
-    msg: Well this is awkward. That action didn't go as planned.
-  - type: warning
-    msg: Oh snap! That wasn't suppose to happen. Give it another try.
-
-breadcrumbs:
-  - title: Account
-    state: active
-  - title: Site Name Goes Here
-    state: active
-  - title: Pool Name Goes Here
-    state: not-active
-
 buttons:
   - type: primary
   - type: secondary
-  - type: warning
-  - type: disabled
+  - type: next-page
+  - type: dual
+  - type: close
+  - type: preferred
+  - type: certified
+  - type: like
+  - type: dislike
+  - type: prev-next
+  - type: yes-no
 
 form_elements:
   - type: text

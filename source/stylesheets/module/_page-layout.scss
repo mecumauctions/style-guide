@@ -11,8 +11,8 @@ $page-section-max-width:        1440px;
 
 $section-header-background:     $white-dark;
 $section-header-background-alt: $white-base;
-$section-header-border:         1px solid $grey-alt;
-$section-header-border-alt:     1px solid $grey-alt;
+$section-header-border:         1px solid $grey-base;
+$section-header-border-alt:     1px solid $grey-base;
 $section-header-spread:         0px 3px 6px 0px;
 $section-header-shadwow:        rgba(172,172,179,0.40);
 
@@ -32,7 +32,6 @@ $section-body-title-color:      $black-base;
 }
 
 .page__section {
-  max-width: $page-section-max-width;
 }
 
 .example__container {
@@ -80,7 +79,26 @@ $section-body-title-color:      $black-base;
 .section__body {
   @include clearfix;
   margin-top: $section-body-margin;
-  padding: $page-spacing;
+  margin-right:30px;
+  margin-left:30px;
+  padding: 30px 0;
+  border-bottom:1px solid #efefef;
+  .one__third {
+    width:33.3333333%;
+    display:inline-block;
+    float: left;
+    padding:20px;
+  }
+  &.section__header {
+    background: #e2e2e2;
+    margin: 0px 30px;
+    text-align: center;
+    height: 60px;
+    padding:20px 0px;
+    .one__third {
+      padding:0;
+    }
+  }
 }
 
 .body__header__title {
@@ -91,7 +109,7 @@ $section-body-title-color:      $black-base;
 
 // Page Footer
 .page__footer {
-  border-top: 1px solid $grey-light;
+  border-top: 1px solid $grey-base;
   padding: $spacer-charlie;
   text-align: center;
 

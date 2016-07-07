@@ -2,7 +2,7 @@
 // ========================================
 
 // Variables
-$site-background:        $grey-light;
+$site-background:        $grey-base;
 $site-max-width:         1440px;
 
 
@@ -13,7 +13,6 @@ body {
   @include position(relative);
   background-color: $site-background;
   margin: 0 auto;
-  max-width: $site-max-width;
   overflow: hidden;
 
   &.is-fixed {

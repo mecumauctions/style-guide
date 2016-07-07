@@ -1,49 +1,48 @@
 colors_schemes:
-  - title: Hero Colors
-    colors:
-    - color: purple-base
-      title: Hero Purple
-      value: '#534292'
-    - color: blue-base
-      title: Hero Blue
-      value: '#3A89E6'
-  - title: Alert Colors
+  - title: Button Colors
     colors:
     - color: green-base
-      title: Alert Green
-      value: '#76C187'
-    - color: yellow-base
-      title: Alert Yellow
-      value: '#FFAF50'
+      title: Button Green
+      value: '#7DBC12'
+    - color: blue-base
+      title: Button Blue
+      value: '#373F51'
+    - color: blue-light
+      title: Button Light Blue
+      value: '#72BCE2'
+    - color: orange-base
+      title: Button Orange
+      value: '#F39C12'
     - color: red-base
-      title: Alert Red
-      value: '#FF5454'
-  - title: Neutral Colors
+      title: Button Red
+      value: '#E14E4E'
+  - title: Header Colors
+    colors:
+    - color: purple-base
+      title: Header Purple
+      value: '#2B2D42'
+    - color: purple-light
+      title: Header Light Purple
+      value: '#44465B'
+  - title: Text Colors
+    colors:
+    - color: black-base
+      title: Text Black
+      value: '#000000'
+    - color: grey-dark
+      title: Text Dark Gray
+      value: '#4A4A4A'
+    - color: grey-base
+      title: Text Gray
+      value: '#9B9B9B'
+  - title: Background Colors
     colors:
     - color: white-base
-      title: Neutral White
+      title: Background White
       value: '#FFFFFF'
     - color: white-dark
-      title: Neutral White Dark
-      value: '#F5F5F7'
-    - color: grey-light
-      title: Neutral Grey Light
-      value: '#E7E7EC'
-    - color: grey-base
-      title: Neutral Grey
-      value: '#CBCBD2'
-    - color: grey-dark
-      title: Neutral Grey Dark
-      value: '#ACACB4'
-    - color: grey-alt
-      title: Neutral Grey Alt
-      value: '#D4D3DD'
-    - color: grey-alt-2
-      title: Neutral Alt 2
-      value: '#8F8F98'
-    - color: black-base
-      title: Neutral Black
-      value: '#3F3F44'
+      title: Background Gray
+      value: '#F9F9FA'
 
 icon_types:
   - title: Navigational

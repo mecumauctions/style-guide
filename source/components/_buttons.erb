@@ -1,62 +1,114 @@
-<section role="region" aria-labelledby="buttons" class="page__section">
+<section role="region" aria-labelledby="typography" class="page__section">
   <header role="banner" class="section__header section__header--alt">
     <div class="header__container">
-      <h4 class="header__title--section" id="buttons">Buttons</h4>
+      <h4 class="header__title--section" id="typography">Buttons</h4>
     </div>
   </header>
+  <div class="section__body section__header">
+    <div class="one__third">
+      <h5 class="body__header__title">iOS</h5>
+    </div>
+    <div class="one__third">
+      <h5 class="body__header__title">Android</h5>
+    </div>
+    <div class="one__third">
+      <h5 class="body__header__title">Text Styles</h5>
+    </div>
+  </div>
+  <!-- Primary Button -->
   <div class="section__body">
-    <header role="title" class="body__header">
-      <h5 class="body__header__title">States: Base, Hover</h5>
-    </header>
-    <ul>
-      <% data.components.buttons.each do |button| %>
-        <li class="float--left margin-bottom--alpha margin-right--charlie">
-          <button class="button--<%= button.type %>">Action Title Here</button>
-        </li>
+    <div class="one__third iOS">
+      <button class="button--primary">Primary Button</button>
+    </div>
+    <div class="one__third android">
+      <button class="button--primary">Primary Button</button>
+    </div>
+    <div class="one__third">
+      <% code("css") do %>
+/* Primary Button */
+width: 160px; 
+height: 27.5px; 
+border-radius: 3px; 
+background-color: #7dbc12;
+font-family: Avenir-Roman; (iOS)
+font-family: Roboto-Regular; (Android)
+font-size: 13px; 
+text-align: center; 
+color: #ffffff;
       <% end %>
-    </ul>
+    </div>
   </div>
+
+  <!-- Secondary Button -->
   <div class="section__body">
-    <header role="title" class="body__header">
-      <h5 class="body__header__title">Sample Code</h5>
-    </header>
-<% code("html") do %>
-  <button class="button--primary">Action Title Here</button>
-  <button class="button--secondary">Action Title Here</button>
-  <button class="button--warning">Action Title Here</button>
-  <button class="button--disabled">Action Title Here</button>
-  <a href="#" role="button" class="button--primary">Action Title Here</a>
-  <a href="#" role="button" class="button--secondary">Action Title Here</a>
-  <a href="#" role="button" class="button--warning">Action Title Here</a>
-  <a href="#" role="button" class="button--disabled">Action Title Here</a>
-<% end %>
+    <div class="one__third iOS">
+      <button class="button--secondary button--outline">Secondary Button</button>
+    </div>
+    <div class="one__third android">
+      <button class="button--secondary button--outline">Secondary Button</button>
+    </div>
+    <div class="one__third">
+      <% code("css") do %>
+/* Secondary Button */
+width: 160px; 
+height: 27.5px; 
+border-radius: 3px; 
+border: solid 1px #72bce2;
+font-family: Avenir-Roman; (iOS)
+font-family: Roboto-Regular; (Android)
+font-size: 10.5px; 
+text-align: center; 
+color: #ffffff;
+      <% end %>
+    </div>
   </div>
+
+  <!-- Next Page Button -->
   <div class="section__body">
-    <header role="title" class="body__header">
-      <h5 class="body__header__title">Component Usage</h5>
-      <p>Buttons should be used sparingly throughout the design of the application. They must serve a specific purpose or action. For instance, if the user is going to be creating a new site or pool, it is in our best interest to show them where they can do that in a bold way. However, if a user will not be preforming the action repeatedly or does not need to be warned of their actions, a link is best used. For example, creating a new account. This happens less frequently then creating sites and pools. It shouldn't draw as much attention.</p>
-    </header>
+    <div class="one__third iOS">
+      <button class="button--next-page button--outline">Go To Next Page Button<span></span></button>
+    </div>
+    <div class="one__third android">
+      <button class="button--next-page button--outline">Go To Next Page Button<span></span></button>
+    </div>
+    <div class="one__third">
+      <% code("css") do %>
+/* Next Page Button */
+width: 160px; 
+height: 20px; 
+border-radius: 3px; 
+border: solid 1px #72bce2;
+font-family: Avenir-Roman; (iOS)
+font-family: Roboto-Regular; (Android)
+font-size: 8px; 
+color: #72bce2;
+      <% end %>
+    </div>
   </div>
+
+  <!-- Next Page Button -->
   <div class="section__body">
-    <header role="title" class="body__header">
-      <h5 class="body__header__title">HTML Guidelines</h5>
-      <p>This table gives you a quick overview of the CSS classes that can be applied to create buttons.</p>
-    </header>
-    <table class="table table-alpha">
-      <thead>
-        <th>Class Name</th>
-        <th>Usage</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="width:30%">.button--primary</td>
-          <td>This class name should be applied to either an anchor tag or a button tag. <% code("html") do %><button class="button--primary">Action Title Here</button><% end %></td>
-        </tr>
-        <tr>
-          <td style="width:30%">[role="button"]</td>
-          <td>Set this role on an anchor tag styled to behave like a button. <% code("html") do %><button role="button">Action Title Here</button><% end %></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="one__third iOS">
+      <button class="button--dual search"><span></span>New Search</button>
+      <button class="button--dual filter"><span></span>Filter Results</button>
+    </div>
+    <div class="one__third android">
+      <button class="button--dual search"><span></span>New Search</button>
+      <button class="button--dual filter"><span></span>Filter Results</button>
+    </div>
+    <div class="one__third">
+      <% code("css") do %>
+/* Search Dual Buttons */
+width: 75px; 
+height: 22.5px; 
+border-radius: 3px; 
+background-color: #72bce2;
+font-family: Avenir-Roman; (iOS)
+font-family: Roboto-Regular; (Android)
+font-size: 8px; 
+color: #ffffff;
+      <% end %>
+    </div>
   </div>
+
 </section>

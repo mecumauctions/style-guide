@@ -1,10 +1,10 @@
 introduction:
   version: 1.0.0
-  version_updated: May 2016
-  title: Design System - Fuse
-  description: Welcome to the design system guidelines. Here you will find the design standards defined for Red Ventures' product Fuse. The standards will evolve as the product progresses and new components and elements are needed.
-  link: https://github.com/MadeByMunstersLLC/Fuse-Styleguide
-  link_title: Get the design system
+  version_updated: July 2016
+  title: Mobile Design Guide - The Car Connection
+  description: Welcome to the design system guidelines. Here you will find the design standards defined for The Car Connection's mobile web site. The standards will evolve as the product progresses and new components and elements are needed.
+  link: https://github.com/madebymunsters/TCC-Design-Guide
+  link_title: Get the design guide
 
 content:
   intro:

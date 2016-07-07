@@ -6,7 +6,7 @@ $card-height:         200px;
 $card-radius:         2px;
 $card-width:          150px;
 
-$color-description:   $grey-alt-2;
+$color-description:   $grey-base;
 
 $color-block-border:  1px solid $grey-base;
 $color-block-height:  125px;
@@ -50,7 +50,7 @@ $color-block-height:  125px;
 
 // Icon Block
 .icon__block {
-  background-color: $grey-light;
+  background-color: $grey-base;
   display: block;
   height: $color-block-height;
   margin-bottom: $spacer-delta;

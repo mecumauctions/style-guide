@@ -3,11 +3,19 @@
 
 $buttons: (
   'primary': (
-    $purple-base,
+    $green-base,
     $white-base
   ),
   'secondary': (
     $blue-base,
+    $white-base
+  ),
+  'next-page': (
+    $blue-base,
+    $white-base
+  ),
+  'dual': (
+    $blue-light,
     $white-base
   ),
   'warning': (
@@ -15,7 +23,7 @@ $buttons: (
     $white-base
   ),
   'disabled': (
-    $grey-light,
+    $grey-base,
     $grey-dark
   ),
   'black': (

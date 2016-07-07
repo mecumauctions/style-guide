@@ -4,42 +4,150 @@
       <h4 class="header__title--section" id="typography">Typography</h4>
     </div>
   </header>
-  <div class="section__body clearfix">
-    <header role="title" class="body__header">
-      <h5 class="body__header__title">Standard Font Family: Roboto Sans Serif</h5>
-    </header>
-    <% data.elements.font_family.each do |f| %>
-      <h3 class="float--left margin-right--echo text--light text--uppercase"><%= f.letter %></h3>
-    <% end %>
-    <div class="clear">
-      <% data.elements.font_family.each do |f| %>
-        <h3 class="float--left margin-right--echo text--light"><%= f.letter %></h3>
+  <div class="section__body section__header">
+    <div class="one__third">
+      <h5 class="body__header__title">iOS</h5>
+    </div>
+    <div class="one__third">
+      <h5 class="body__header__title">Android</h5>
+    </div>
+    <div class="one__third">
+      <h5 class="body__header__title">Text Styles</h5>
+    </div>
+  </div>
+  <!-- Header -->
+  <div class="section__body">
+    <div class="one__third iOS">
+      <h1>2016 Kia Optima - Fuel Economy</h1>
+    </div>
+    <div class="one__third android">
+      <h1>2016 Kia Optima - Fuel Economy</h1>
+    </div>
+    <div class="one__third">
+      <% code("css") do %>
+/* Page & Content Header */
+font-family: Avenir-Light; (IOS) 
+font-family: Roboto-Light; (Android)  
+font-size: 13px; 
+line-height: 1.2; 
+color: #000000;
       <% end %>
     </div>
   </div>
+  <!-- Paragraph -->
   <div class="section__body">
-    <header role="title" class="body__header">
-      <h5 class="body__header__title">Standard Headers</h5>
-    </header>
-    <% data.elements.typography.each do |t| %>
-      <<%= t.type %> class="heading--<%= t.type %>">The quick brown fox jumps over the lazy dog.</<%= t.type %>>
-    <% end %>
+    <div class="one__third iOS">
+      <p>The last generation of the Kia Optima did away with the optional V-6 in favor of a turbocharged four-cylinder engine. Now the new-generation 2016 Optima adds a mid-range turbocharged engine that provides both better performance and fuel economy.</p>
+    </div>
+    <div class="one__third android">
+      <p>The last generation of the Kia Optima did away with the optional V-6 in favor of a turbocharged four-cylinder engine. Now the new-generation 2016 Optima adds a mid-range turbocharged engine that provides both better performance and fuel economy.</p>
+    </div>
+    <div class="one__third">
+      <% code("css") do %>
+/* Paragraph */
+font-family: Avenir-Light; (IOS) 
+font-family: Roboto-Light; (Android) 
+font-size: 7.5px; 
+line-height: 1.6; 
+color: #4a4a4a;
+      <% end %>
+    </div>
   </div>
+  <!-- Blockquote -->
   <div class="section__body">
-    <header role="title" class="body__header">
-      <h5 class="body__header__title">Standard Body Copy</h5>
-    </header>
-    <p>The quick brown fox jumps over the lazy dog.</p>
+    <div class="one__third iOS">
+      <blockquote>The 2016 Kia Optima drops the Hybrid variant for now; yet the new LX 1.6T model adds an efficiency-minded alternative to that.</blockquote>
+    </div>
+    <div class="one__third android">
+      <blockquote>The 2016 Kia Optima drops the Hybrid variant for now; yet the new LX 1.6T model adds an efficiency-minded alternative to that.</blockquote>
+    </div>
+    <div class="one__third">
+      <% code("css") do %>
+/* Blockquote */
+font-family: Avenir-LightOblique; (IOS) 
+font-family: Roboto-LightItalic; (Android)
+font-size: 9.5px;
+line-height: 1.5;
+text-align: right;
+color: #4a4a4a;
+      <% end %>
+    </div>
   </div>
+  <!-- Section Header -->
   <div class="section__body">
-    <header role="title" class="body__header">
-      <h5 class="body__header__title">Sample Code</h5>
-    </header>
-<% code("html") do %>
-  <head>
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,700,400italic' rel='stylesheet' type='text/css'>
-  </head>
-<% end %>
+    <div class="one__third iOS">
+      <h2>The Car Connection<br>Consumer Reviews</h2>
+      <div class="section__header__rule"></div>
+    </div>
+    <div class="one__third android">
+      <h2>The Car Connection<br>Consumer Reviews</h2>
+      <div class="section__header__rule"></div>
+    </div>
+    <div class="one__third">
+      <% code("css") do %>
+/* Section Header */
+font-family: Avenir-Heavy; (IOS)
+font-family: Roboto-Bold; (Android)
+font-size: 8px; line-height: 1.4;
+text-align: center;
+color: #4a4a4a;
+      <% end %>
+    </div>
   </div>
+  <!-- Link -->
+  <div class="section__body">
+    <div class="one__third iOS">
+      <a href="#">Link Style</a>
+    </div>
+    <div class="one__third android">
+      <a href="#">Link Style</a>
+    </div>
+    <div class="one__third">
+      <% code("css") do %>
+/* Links */
+font-family: Avenir-Light; (IOS)
+font-family: Roboto-Light; (Android) 
+font-size: 7.5px; 
+color: #72bce2;
+      <% end %>
+    </div>
+  </div>
+  <!-- Link -->
+  <div class="section__body">
+    <div class="one__third iOS">
+      <ul>
+        <li>Unordered List</li>
+        <li>Unordered List</li>
+        <li>Unordered List</li>
+      </ul>
+      <ol>
+        <li>Ordered List</li>
+        <li>Ordered List</li>
+        <li>Ordered List</li>
+      </ol>
+    </div>
+    <div class="one__third android">
+      <ul>
+        <li>Unordered List</li>
+        <li>Unordered List</li>
+        <li>Unordered List</li>
+      </ul>
+      <ol>
+        <li>Ordered List</li>
+        <li>Ordered List</li>
+        <li>Ordered List</li>
+      </ol>
+    </div>
+    <div class="one__third">
+      <% code("css") do %>
+/* Ordered & Unordered Lists */
+font-family: Avenir-Light; (IOS)
+font-family: Roboto-Light; (Android) 
+font-size: 6px; 
+line-height: 1.3;
+color: #4a4a4a;
+      <% end %>
+    </div>
+  </div>
+  
 </section>

@@ -8,14 +8,7 @@
     <header role="title" class="body__header">
       <h5 class="body__header__title">States: Base</h5>
     </header>
-    <% data.components.alerts.each do |alert| %>
-      <figure class="alert alert--<%= alert.type %>">
-      <% link_to '#', class: 'alert__icon-trigger', role: 'button' do %>
-        <%= inline_svg("icons/functional/close-icon.svg", id: "app-icon", class: "alert__icon") %>
-      <% end %>
-        <h5 class="alert__title"><%= alert.msg %></h5>
-      </figure>
-    <% end %>
+    
   </div>
   <div class="section__body">
     <header role="title" class="body__header">

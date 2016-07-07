@@ -9,7 +9,7 @@ $page-navigation-spread:            -5px -6px 10px 0px;
 $page-navigation-shadow:            rgba(34,23,78,0.25);
 $page-navigation-width:             14rem;
 
-$page-navigation-header-border:     1px solid #493A85;
+$page-navigation-header-border:     1px solid $purple-light;
 
 $page-navbar-title-color:           $white-base;
 $page-navbar-title-txt-transform:   uppercase;
@@ -18,8 +18,8 @@ $page-navbar-link-border:           3px solid transparent;
 $page-navbar-link-color:            $white-base;
 $page-navbar-link-txt-transform:    uppercase;
 
-$page-navbar-link-background-hover: rgba(27, 15, 69, 0.15);
-$page-navbar-link-border-hover:     3px solid $blue-base;
+$page-navbar-link-background-hover: $purple-light;
+$page-navbar-link-border-hover:     3px solid $blue-light;
 
 $navbar-link-icon-dimensions:       8px;
 $navbar-link-icon-size:             100%;
@@ -30,9 +30,7 @@ $navbar-link-icon-transform-active: 0deg;
 
 // Structure
 .page__navigation {
-  @include box-shadow(inset $page-navigation-spread, $page-navigation-shadow);
   @include position($page-navigation-position-type, $page-navigation-position);
-  border-left: $page-navigation-header-border;
   overflow-y: scroll;
   width: $page-navigation-width;
 
@@ -46,6 +44,10 @@ $navbar-link-icon-transform-active: 0deg;
   margin-bottom: $spacer-delta;
   padding: $page-navogation-padding;
   text-align: center;
+  .logo {
+    width:100%;
+    margin-top:5px;
+  }
 }
 
 .navbar__title {

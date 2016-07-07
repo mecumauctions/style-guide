@@ -2,7 +2,7 @@
 // ========================================
 
 // Variables
-$homepage-card-border:          2px solid $grey-light;
+$homepage-card-border:          2px solid $grey-base;
 $homepage-card-padding:         $spacer-delta;
 $homepage-card-radius:          2px;
 
@@ -19,7 +19,7 @@ $homepage-card-title-color:     $grey-dark;
 // Structure
 .homepage__header {
 
-  .button--black {
+  .button--primary {
     display: inline-block;
   }
 }
