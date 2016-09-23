@@ -20,9 +20,6 @@ title: Mobile Design System | Mecum Auto Auctions
     <% data.homepage.content.intro.intro_sections.each do |section| %>
       <li class="homepage__card">
         <div class="homepage__card--inner">
-          <div class="homepage__card__image">
-            <%= image_tag section.img, class: 'homepage__card__icon' %>
-          </div>
           <!-- <img src="<%= section.img %>" class="homepage__card__image" /> -->
           <h5 class="homepage__card__title"><%= section.title %></h5>
           <p class="homepage__card__description text--grey"><%= section.description %></p>

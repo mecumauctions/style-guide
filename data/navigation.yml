@@ -5,8 +5,6 @@ site_navigation:
         section_link: 'elements/#colors'
       - section_title: Typography
         section_link: 'elements/#typography'
-      - section_title: Icons
-        section_link: 'elements/#icons'
       - section_title: Flags
         section_link: 'elements/#flags'
   - section_title: Design Components
