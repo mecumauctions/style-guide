@@ -1,0 +1,55 @@
+//**** Font Families
+$univers-font: 'Univers', 'Arial Narrow', arial, sans-serif;
+$univers-cond-font: 'UniversCond', 'Arial Narrow', arial, sans-serif;
+$mecum-font: 'Mecum', 'Impact', sans-serif;
+
+
+//**** Mecum Brand Colors
+$mecum-dk-gray: 	#2C2C2C;
+$mecum-md-gray: 	#5b5b5b;
+$mecum-lt-gray:	 	#D4D2D3;
+$mecum-lter-gray:   #e6e6e6;
+$mecum-red:			#ed1c23;
+$mecum-yellow: 		#fcf200;
+$mecum-hairline:	#9D9D9D;
+$mecum-gold:		#c19754;
+$mecum-moa:			$mecum-red;
+$mecum-maroon:		#721011;
+$mecum-blue:		#0066CC;
+
+
+$brand-collector-cars:  $mecum-red;
+$brand-tractors: 		#64ae3e;
+$brand-motorcycles:		$mecum-maroon;
+$mecum-motorcycles-alt: #bcbdbf;
+$brand-roadart:			#feee0b;
+$brand-mecum:       	#5b5b5b !default;
+$brand-yachts:			$mecum-blue;
+
+$panel-mecum-text:          #fff !default;
+$panel-mecum-border:        darken(adjust-hue($brand-mecum, -10), 5%) !default;
+$panel-mecum-heading-bg:    $brand-mecum !default;
+
+//**** Border Colors
+$bdr-dk-gray:   #cfcfcf;
+
+//**** Link States
+$link-color:            #c11b12;// !default; // Global textual link color.
+$link-hover-color:      darken($link-color, 15%);//!default; // Link hover color set via `darken()` function.
+$link-hover-decoration: underline !default; // Link hover decoration.
+
+$alert-border-radius:	0;
+
+//**** Button States
+$btn-submit:		#d9554e;
+$btn-cancel:  		#aeaeae;
+$btn-danger-bg: 	$mecum-red;
+$btn-danger-border:	$mecum-red;
+
+// Mid-Small breakpoint
+$screen-ms: 480px !default;
+$screen-ms-min: $screen-ms !default;
+$screen-ms-max: ($screen-sm-min - 1) !default;
+
+// Redefined Extra Small max value (Can't override non-default variables in SASS)
+$screen-xs-max-new: ($screen-ms-min - 1) !default;

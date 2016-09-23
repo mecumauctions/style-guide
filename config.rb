@@ -33,7 +33,7 @@ configure :build do
   target_env = ENV['TARGET'] || ''
   case target_env.to_s.downcase
   when 'prod'
-    config[:root_url] = '/Fuse-Styleguide/'
+    config[:root_url] = '/'
   else
     config[:root_url] = '/'
   end

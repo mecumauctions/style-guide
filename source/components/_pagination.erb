@@ -1,0 +1,36 @@
+<section role="region" aria-labelledby="pagination" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="pagination">Pagination</h4>
+    </div>
+  </header>
+  <div class="section__body clearfix">
+    <nav class="pagination-container">
+      <ul class="pagination">
+        <li class="active"><span>1<span class="sr-only">Current Page</span></span></li>
+          <li><a href="/auctions/chicago-2016/lots/10/06/page/2/" title="Page 2">2</a></li>  
+          <li><a href="/auctions/chicago-2016/lots/10/06/page/3/" title="Page 3">3</a></li>   
+          <li class="hidden-xs"><a href="/auctions/chicago-2016/lots/10/06/page/4/" title="Page 4">4</a></li>   
+      <li class="hidden-xs"><a href="/auctions/chicago-2016/lots/10/06/page/2/" title="Next Page" rel="next"><i class="ma ma-angle-right"></i></a></li>
+      <li><a href="/auctions/chicago-2016/lots/10/06/page/5/" title="Last Page"><span class="hidden-ms hidden-xs">Last</span><span class="hidden-sm hidden-md hidden-lg"><i class="ma ma-angle-double-right"></i></span></a></li>    
+      </ul>
+    </nav>
+  </div>
+  <div class="section__body">
+    <header role="title" class="body__header">
+        <h5 class="body__header__title">Sample Code</h5>
+      </header>
+      <% code("html") do %>
+<nav class="pagination-container">
+  <ul class="pagination">
+    <li class="active"><span>1<span class="sr-only">Current Page</span></span></li>
+      <li><a href="/auctions/chicago-2016/lots/10/06/page/2/" title="Page 2">2</a></li>  
+      <li><a href="/auctions/chicago-2016/lots/10/06/page/3/" title="Page 3">3</a></li>   
+      <li class="hidden-xs"><a href="/auctions/chicago-2016/lots/10/06/page/4/" title="Page 4">4</a></li>   
+  <li class="hidden-xs"><a href="/auctions/chicago-2016/lots/10/06/page/2/" title="Next Page" rel="next"><i class="ma ma-angle-right"></i></a></li>
+  <li><a href="/auctions/chicago-2016/lots/10/06/page/5/" title="Last Page"><span class="hidden-ms hidden-xs">Last</span><span class="hidden-sm hidden-md hidden-lg"><i class="ma ma-angle-double-right"></i></span></a></li>    
+  </ul>
+</nav>
+      <% end %>
+  </div>
+</section>

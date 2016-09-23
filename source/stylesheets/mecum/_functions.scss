@@ -1,0 +1,7 @@
+@function asset-url($relative-url){
+	@return url($asset-path + $relative-url);
+}
+
+@function asset-path($relative-url){
+	@return $asset-path + $relative-url;
+}

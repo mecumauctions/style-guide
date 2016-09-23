@@ -1,0 +1,51 @@
+.how-to-sell {
+	#auctionID {
+		width: 250px;
+	}
+
+	.auctionForms {
+		display: none;
+	}
+
+	.form-links {
+		font-weight: bold;
+		font-size: 26px;
+		font-family: $mecum-font;
+		margin: 0 0 15px 0;
+		a {
+			text-transform: uppercase;
+			margin-right: 5px;
+			&:last-child {
+				margin-left: 5px;
+				margin-right: 0;
+			}
+		}
+	}
+
+	.tab-content-consignment {
+		padding: 15px;
+	}
+
+	.best-practice-image {
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.tab-pane {
+		ul, ol {
+			margin: 20px;
+			padding: 0;
+			li {
+				margin: 5px 0;
+				padding: 0;
+				img {
+					margin-left: 5px;
+				}
+			}
+		}
+		.text-center > img {
+			margin-top: 15px;
+		}
+	}
+}

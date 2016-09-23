@@ -6,9 +6,9 @@ $card-height:         200px;
 $card-radius:         2px;
 $card-width:          150px;
 
-$color-description:   $grey-base;
+$color-description:   $mecum-dk-gray;
 
-$color-block-border:  1px solid $grey-base;
+$color-block-border:  1px solid $mecum-lt-gray;
 $color-block-height:  125px;
 
 // Structure
@@ -22,15 +22,22 @@ $color-block-height:  125px;
   &.card--center {
     text-align: center;
   }
+  &.card--wide {
+    width: $card-width*2;
+  }
 }
 
 .card__title,
 .card__description {
   margin-bottom: $spacer-delta;
+  font-size:16px;
+  font-weight: 600;
 }
 
 .card__description {
   color: $color-description;
+  font-size:12px;
+  font-weight: 100;
 }
 
 // Create Color Blocks
@@ -50,10 +57,18 @@ $color-block-height:  125px;
 
 // Icon Block
 .icon__block {
-  background-color: $grey-base;
+  background-color: $mecum-dk-gray;
   display: block;
   height: $color-block-height;
   margin-bottom: $spacer-delta;
   padding: $spacer-bravo;
   width: $card-width;
+}
+.flag__block {
+  background-color: $mecum-lt-gray;
+  display: block;
+  height: $color-block-height;
+  margin-bottom: $spacer-delta;
+  padding: $spacer-bravo;
+  width: $card-width*2;
 }

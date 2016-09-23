@@ -1,0 +1,351 @@
+ul.lot-highlights {
+	padding: 0 0 0 22px;
+	margin-bottom: 15px;
+}
+
+.lot-group {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 5px 0 10px;
+}
+
+.lot-estimate {
+	font-size: 18px;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
+.btn-lot-desc-toggle {
+	text-transform: uppercase;
+}
+
+.lot-desc-more {
+	display: none;
+}
+
+.lot-desc {
+	line-height: 20px;
+}
+
+
+@media (min-width: $screen-md-min) {
+	.btn-lot-desc-toggle {
+		display: none !important;
+	}
+	.lot-desc-more {
+		display: block !important;
+	}
+}
+
+
+.navbar-lot-nav {
+	height: 40px;
+	min-height: 40px;
+	max-height: 40px;
+	background-color: #333;
+	ul.nav {
+		margin: 0;
+		width: 100%;
+		> li {
+			float: left;
+			width: 60%;
+			border-right: 1px solid rgba(255,255,255,.2);
+			padding: 0;
+			&:last-child {
+				border-right: none;
+				i.ma {
+					margin: 0 0 0 10px;
+				}
+			}
+			&:first-child, &:last-child {
+				width: 20%;
+			}
+			a {
+				padding: 0;
+				height: 40px;
+				line-height: 40px;
+				font-size: 16px;
+				text-align: center;
+				text-transform: uppercase;
+				font-family: $univers-cond-font;
+				&:hover, &:focus {
+					background-color: darken(#333, 10%);
+					color: #fff;
+				}
+			}
+			i.ma {
+				margin: 0 10px 0 0;
+			}
+			&.disabled {
+
+			}
+		}
+	}
+}
+
+.lot-breakdown {
+	float: left;
+	margin-top: 5px;
+	.lot-breakdown-list {
+		font-size: 14px;
+		margin: 5px 0;
+		> li {
+			border-right: 1px solid #ccc;
+			margin: 0 5px 5px 0;
+			padding: 0 10px 0 0;
+			&:last-child {
+				border-right: none;
+			}
+			h5 {
+				font-weight: 700;
+				display: block;
+				font-size: 14px;
+				text-transform: none;
+				margin: 0;
+			}
+		}
+	}
+}
+
+.search-group {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	.top-button {
+		border-bottom: none;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+	.left-button {
+		border-right:none;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		position: relative;
+		.ma {
+			margin-right: 10px;
+			display: inline-block;
+			font-size: 12px;
+		}
+	}
+	.right-button {
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		position: relative;
+		.ma {
+			margin-left: 10px;
+			display: inline-block;
+			font-size: 12px;
+		}
+	}
+	a.btn.disabled {
+		color: #000;
+		background-color: #999;
+	}
+}
+
+.lot-detail-nav {
+	text-align: left;
+	.btn-infonet-login {
+		margin: 0 0 10px;
+	}
+	@media (min-width: $screen-sm-min) {
+		text-align: center;
+		.btn-infonet-login {
+			margin: 10px auto 0;
+		}
+	}
+}
+
+.lot-detail-bid-now {
+	margin: 0 0 8px 0;
+	text-align: center;
+	.btn {
+		@include border-radius(0);
+		padding: 8px 10px;
+		width: 100%;
+	}
+	span {
+		margin-left: 5px;
+		display: inline-block;
+		line-height: 37px;
+		vertical-align: middle;
+	}
+}
+
+.auction-results {
+	text-align: left;
+	display: block;
+	position: relative;
+	.lot-price {
+		vertical-align: top;
+		font-weight: 700;
+		font-family: $univers-font;
+		font-size: 22px;
+		line-height: 40px;
+		width: 100%;
+		padding: 0 15px;
+		background-color: #fff;
+		display: block;
+	}
+	i {
+		&:before {
+			position: absolute;
+			z-index: 100;
+			display: block;
+			content: "";
+		}
+	}
+
+	&.high-bid.has-price {
+		i {
+			&:before {
+				display: inline-block;
+				font-weight: 700;
+				font-family: $univers-font;
+				font-size: 22px;
+				line-height: 40px;
+				content: "High Bid";
+				text-transform: uppercase;
+				font-style: normal;
+				top: 0;
+				right: 0;
+				padding: 0 10px;
+				box-sizing: content-box;
+			}
+		}
+	}
+
+	&.bid-goes-on {
+		i {
+			&:before {
+				display: inline-block;
+				background-color: #fff;
+				background-repeat: no-repeat;
+				background-image: asset-url('/images/bgo.png');
+				background-size: 148px 22px;
+				background-position: 10px 10px;
+				width: 148px;
+				height: 33px;
+				top: 0;
+				right: 0;
+				padding: 3px 10px;
+				box-sizing: content-box;
+			}
+		}
+	}
+	&.sold {
+		i {
+			&:before {
+				background-image: asset-url('/images/sold.png');
+				background-size: 48px 48px;
+				width: 48px;
+				height: 48px;
+				top: -20px;
+				right: -9px;
+				@include border-radius(24px);
+				@include box-shadow(1px 1px 3px 1px rgba(0,0,0,.15));
+			}
+		}
+		&.has-price {
+			i {
+				&:before {
+					top: -5px;
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: $screen-ms-min) {
+	.auction-results {
+		&.sold {
+			i {
+				&:before {
+					background-size: 64px 64px;
+					width: 64px;
+					height: 64px;
+					top: -20px;
+					right: -10px;
+					@include border-radius(34px);
+				}
+			}
+			&.has-price {
+				i {
+					&:before {
+						top: -12px;
+					}
+				}
+			}
+		}
+		&.bid-goes-on {
+			i {
+				&:before {
+					display: inline-block;
+					background-color: #fff;
+					background-repeat: no-repeat;
+					background-image: asset-url('/images/bgo.png');
+					background-size: 198px 33px;
+					background-position: 10px 3px;
+					width: 198px;
+					height: 33px;
+					top: 0;
+					right: 0;
+					padding: 3px 10px;
+					box-sizing: content-box;
+				}
+			}
+		}
+	}
+}
+
+
+
+@media (min-width: $screen-ms-min) {
+	.lot-breakdown {
+		.lot-breakdown-list {
+			font-size: 16px;
+			> li {
+				h5 {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	.navbar-lot-nav {
+		ul.nav {
+			> li {
+				a {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-sm-min){
+	.sharebar {
+		float: right;
+		li {
+			width: auto;
+		}
+	}
+
+	.lot-detail-bid-now {
+		margin: 8px 0;
+		text-align: left;
+		.btn {
+			width: auto;
+			padding: 10px 22px;
+		}
+	}
+}
+
+
+@media (min-width: $screen-md-min) {
+	.navbar-lot-nav {
+		display: none;
+	}
+}

@@ -1,0 +1,117 @@
+#main-header {
+	background-color: #000;
+	display: none;
+	.logo-top {
+		float: left;
+		margin: 5px 0;
+		a {
+			vertical-align: middle;
+		}
+		img {
+			max-height: 81px;
+			&.motorcycles-icon,
+			&.roadart-icon {
+				max-height: 69px;
+			}
+			&.tractors-icon {
+				max-height: 79px;
+			}
+		}
+	}
+	.infonet-links {
+		margin-top: 15px;
+		font-family: $univers-cond-font;
+		text-align: right;
+		font-size: 16px;
+		vertical-align: middle;
+		.slash {
+			display: inline-block;
+			margin: 0 2px 0 4px;
+			&:before {
+				content: "/";
+				color: #fff;
+			}
+		}
+		a {
+			color: #fff;
+			text-transform: uppercase;
+			&.btn-mecum {
+				@include border-radius(0);
+				padding: 2px 6px;
+				//font-size: 14px;
+				margin-left: 10px;
+				.ma {
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+	.header-links {
+		margin-top: 5px;
+		text-align: right;
+		font-family: $univers-cond-font;
+		a {
+			color: #777;
+			text-transform: uppercase;
+		}
+		> ul {
+			> li {
+				display: inline-block;
+				> a {
+					padding: 5px;
+					font-size: 19px;
+					&:hover, &:focus {
+						background-color: transparent;
+						text-decoration: underline;
+					}
+				}
+
+				&.open {
+					> a {
+						background-color: transparent;
+					}
+				}
+			}
+			.dropdown-menu {
+				//background-color: #000;
+				min-width: 100%;
+				left: -1px;
+				border: 1px solid transparent;
+				//border-top-color: #000 !important;
+				@include border-radius(0);
+				> li > a {
+					color: #777;
+					font-size: 16px;
+					border-left: 5px solid transparent;
+					&:hover, &:focus {
+						color: $mecum-red;
+						border-left-color: $mecum-red;
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: $screen-sm-min) {
+	#main-header {
+		display: block;
+		> .container {
+			padding: 0;
+		}
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	#main-header {
+		.logo-top {
+			&.motorcycles-icon,
+			&.tractors-icon,
+			&.roadart-icon {
+				display: block;
+			}
+		}
+	}
+}

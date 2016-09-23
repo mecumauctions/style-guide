@@ -1,0 +1,332 @@
+
+.btn-infonet-login {
+	//margin-bottom: 10px;
+}
+
+.infonet-container {
+    //margin-top:80px;
+    padding: 20px;
+    background: $mecum-lter-gray;
+}
+
+
+#infoNet{
+    font-family: arial;
+    background: asset-url('/images/infonet-globe.png') no-repeat;
+    background-position: 95% 0;
+    padding-top: 15px;
+    padding-bottom:50px;
+    h3{
+		font-family: $mecum-font;
+		font-weight: 500;
+        font-size:35px;
+        text-transform:uppercase;
+        font-weight:normal;
+        color:#3a3a3c;
+    }
+
+    p {
+        font-family: arial;
+
+        &.lead{
+            font-size: 14px;
+            font-weight: bold;
+            color: $mecum-md-gray;
+        }
+        &.meta{
+            margin: 0 0 30px 0;
+            font-weight: bold;
+        }
+    }
+    .title-section{
+        margin: 20px 0;
+        padding-bottom: 10px;
+        border-bottom: solid 2px $bdr-dk-gray;
+        font-size: 32px;
+        line-height: 1.3;
+        text-transform: uppercase;
+        color: $mecum-md-gray;
+        font-family: $mecum-font;
+		font-weight: 500;
+        @media screen and (max-width:767px){
+            text-align: center;
+        }
+    }
+    .info-list{
+        margin:0 0 20px;
+        li{
+            margin:0 0 0 20px;
+            //text-indent:10px;
+            //list-style:inside;
+        }
+    }
+    .logo-infonet {
+        max-width: 100%;
+		margin: 0 auto;
+        @media screen and (max-width:767px){
+            display: none;
+            &.visible {
+                display: block;
+            }
+        }
+    }
+    .past-auctions {
+        li {
+            border-bottom: 1px solid #d3d3d3;
+            padding: 10px 0;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        a {
+            color: #575757;
+        }
+        span {
+            color: #999999;
+            margin: 0 5px;
+        }
+    }
+    .infonet-results{
+        margin: 30px 0 0;
+        padding: 20px 0 0;
+        overflow: hidden;
+        border-top: solid 2px #cfcfcf;
+        clear: both;
+    }
+
+    #year-select {
+        width: 25%;
+        float: right;
+        display: inline-block;
+    }
+
+    .past-auctions li {
+        display: none;
+        &.selected {
+            display: block;
+        }
+    }
+}
+
+.dropdown-menu  {
+    .infonet-login {
+        min-width: 260px;
+        margin: 15px;
+		font-family: $univers-font;
+    }
+}
+
+.infonet {
+    .dropdown {
+        .caret {
+            position: relative;
+            top: -2px;
+        }
+    }
+}
+
+.infonet-login {
+	.login-status {
+		display: none;
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+    .form_data{
+        width: 100%;
+        margin: 0 0 20px;
+        padding: 10px 12px;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        box-shadow:inset 0px 0px 3px rgba(10,10,10,.4);
+        background: $mecum-lter-gray;
+        color: #333;
+    }
+    label {
+        text-align: left;
+        text-transform: none;
+        color: #333;
+    }
+    .btn {
+        margin: 0 0 10px;
+		font-weight: bold;
+		font-family: $univers-cond-font;
+		text-transform: uppercase;
+    }
+    a {
+        display: block;
+        margin: 5px 0 0;
+        font-size: 12px;
+        //text-align: center;
+        color: $btn-submit !important;
+        text-transform: none;
+    }
+}
+
+
+.infonet-login-container {
+	h4 {
+		margin: 25px 0 15px;
+		font-size: 20px;
+		font-family: $univers-cond-font;
+	}
+}
+.infonet-login-full {
+	background-color: #fff;
+	border: 1px solid $mecum-md-gray;
+	box-shadow: 1px 1px 5px 1px rgba(0,0,0,.1);
+	padding: 25px 25px 0;
+	label {
+        text-align: left;
+        text-transform: none;
+        color: #333;
+		font-size: 16px;
+    }
+	.form-control {
+        margin: 0 0 20px;
+        padding: 6px 8px;
+        height: auto;
+		font-size: 22px;
+        outline: none;
+        border: none;
+		@include border-radius(0);
+        box-shadow: inset 0px 0px 3px rgba(0,0,0,.1);
+		border: 1px solid $mecum-lt-gray;
+        color: #333;
+	}
+	.btn {
+		text-transform: uppercase;
+		@include border-radius(0);
+		font-weight: 700;
+		font-size: 18px;
+		font-family: $univers-cond-font;
+	}
+	.alert {
+		@include border-radius(0);
+		font-weight: 700;
+		border-width: 2px;
+		padding: 10px 15px;
+	}
+	h4 {
+		text-align: center;
+		font-size: 16px;
+	}
+	footer {
+		padding: 0 0 25px;
+		margin-top: 35px;
+		border-top: 1px solid $mecum-lt-gray;
+		//margin: 25px -25px 0;
+		//background-color: $mecum-lt-gray;
+
+	}
+}
+
+.form-infonet{
+    fieldset{
+        padding-bottom: 20px;
+        border-bottom: solid 2px $bdr-dk-gray;
+    }
+    li {
+        margin: 0 0 10px;
+        list-style: none;
+        @include make-md-column(4,40px);
+        padding-left: 0;
+    }
+    label{
+        display: block;
+        margin-bottom: 2px;
+        font-size: 14px;
+    }
+    input[type="text"], input[type="number"], select, textarea {
+        width: 100%;
+        max-width: 100%;
+        padding: 5px 7px;
+        border:solid 1px $bdr-dk-gray;
+        border-radius: 2px;
+        background: $panel-mecum-text;
+    }
+    select{
+        height: 32px;
+    }
+    .col-md-4 {
+        margin-bottom: 15px;
+    }
+    .formarea-btm {
+        padding: 20px 0 0;
+        overflow: hidden;
+        clear: both;
+
+        p {
+            margin: 0 0 25px;
+        }
+        .btn{
+            margin: 0 20px 20px 0;
+
+            &:last-of-type{
+                margin:0 0 20px;
+            }
+        }
+    }
+
+    .infonet-options {
+        float: left;
+        margin: 20px 0 0;
+        padding: 20px 0 10px;
+        text-align: left;
+        width: 100%;
+        input {
+            width: 25px;
+        }
+    }
+}
+
+.mm {
+    text-align: center;
+    color: #575757;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: bold;
+
+    &:hover {
+        color: #000;
+        text-decoration: none;
+
+        .mm-photo {
+            img {
+                opacity:0.8;
+                -webkit-transform: scale(1.05, 1.05);
+                -o-transform: scale(1.05, 1.05);
+                transform: scale(1.05, 1.05);
+                box-shadow: 0 5px 35px rgba(0,0,0,.5);
+            }
+        }
+    }
+
+    .mm-photo {
+		margin-bottom: 12px;
+        img {
+            max-width: 100%;
+            box-shadow: 0 0 25px rgba(0,0,0,.4);
+            opacity: 1;
+            -webkit-transition: opacity;
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 250ms;
+            -moz-transition: opacity;
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 250ms;
+            -webkit-transition:all 250ms;
+            -o-transition:all 250ms;
+            transition:all 250ms;
+        }
+    }
+}
+
+.request-block {
+    margin-top: 25px;
+    min-height: 300px;
+    form {
+        margin-top: 20px;
+        border-top: solid 2px #cfcfcf;
+    }
+}

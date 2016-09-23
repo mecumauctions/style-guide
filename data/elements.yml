@@ -1,48 +1,51 @@
 colors_schemes:
   - title: Button Colors
     colors:
-    - color: green-base
-      title: Button Green
-      value: '#7DBC12'
-    - color: blue-base
-      title: Button Blue
-      value: '#373F51'
-    - color: blue-light
-      title: Button Light Blue
-      value: '#72BCE2'
-    - color: orange-base
-      title: Button Orange
-      value: '#F39C12'
-    - color: red-base
-      title: Button Red
-      value: '#E14E4E'
+    - color: mecum-red
+      title: Collector Cars Button
+      value: '#ED1C23'
+    - color: mecum-maroon
+      title: Motorcycles Button
+      value: '#721011'
+    - color: mecum-green
+      title: Tractors Button
+      value: '#64AE3E'
+    - color: mecum-yellow
+      title: Road Art Button
+      value: '#FCF200'
+    - color: mecum-gold
+      title: Gold Bidders Button
+      value: '#C19754'
   - title: Header Colors
     colors:
-    - color: purple-base
-      title: Header Purple
-      value: '#2B2D42'
-    - color: purple-light
-      title: Header Light Purple
-      value: '#44465B'
+    - color: mecum-black
+      title: Mecum Header
+      value: '#000000'
+    - color: mecum-base-gray
+      title: Mecum Subheader
+      value: '#CCCCCC'
   - title: Text Colors
     colors:
-    - color: black-base
+    - color: mecum-black
       title: Text Black
       value: '#000000'
-    - color: grey-dark
+    - color: mecum-dk-gray
       title: Text Dark Gray
-      value: '#4A4A4A'
-    - color: grey-base
+      value: '#2C2C2C'
+    - color: mecum-md-gray
       title: Text Gray
-      value: '#9B9B9B'
+      value: '#5B5B5B'
+    - color: mecum-link-red
+      title: Link Red
+      value: '#C11B12'
   - title: Background Colors
     colors:
-    - color: white-base
+    - color: mecum-white
       title: Background White
       value: '#FFFFFF'
-    - color: white-dark
+    - color: mecum-bg-color
       title: Background Gray
-      value: '#F9F9FA'
+      value: '#575757'
 
 icon_types:
   - title: Navigational

@@ -1,0 +1,355 @@
+.mecum-container {
+	@include container-fixed;
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
+	}
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
+	}
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
+	}
+	padding: 0 15px;
+	background-color: #fff;
+}
+
+@media print {
+	@page {
+		size: portrait;
+	}
+	html {
+		display: block;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		-webkit-print-color-adjust: exact;
+		zoom: .9;
+	}
+	.hidden-print {
+			display: none !important;
+	}
+	.visible-print-force {
+		display: block !important;
+	}
+	.visible-print-block {
+		display: block !important;
+	}
+	.clearfix {
+		margin-bottom: 20px;
+		clear: both;
+	}
+	#main-nav,
+	#mobile-menu {
+		display: none;
+	}
+	.print-logo {
+		width: 220px;
+		float: right;
+		background: #fff !important;
+		border: 10px solid #fff;
+	}
+	.mecum-container {
+		padding: 0;
+		width: 100% !important;
+	}
+	.page-wrapper {
+		padding-top: 0;
+	}
+
+	.print-wide {
+		width: 100%;
+		left: 0;
+	}
+
+	a[href]:after {
+		content: "";
+	}
+
+	.master-slider {
+		display: none;
+	}
+	.ms-thumb-frame {
+		opacity: 1;
+		width: auto !important;
+		height: auto !important;
+	}
+	.ms-thumb-list {
+		//display: none;
+	}
+	.ms-thumbs-cont {
+		width: auto !important;
+		height: auto !important;
+	}
+	.ms-view {
+		width: auto !important;
+		height: auto !important;
+		left: 0 !important;
+	}
+	.ms-view .ms-slide-container {
+		transform-style: preserve-3d;
+		transform: translateX(0px) translateZ(0px) !important;
+	}
+	.ms-slide {
+		width: auto !important;
+		height: auto !important;
+		left: 0 !important;
+		opacity: 1 !important;
+		position: relative !important;
+	}
+	.ms-slide .ms-slide-bgcont, .ms-slide .ms-slide-bgvideocont {
+		position: relative !important;
+	}
+
+	.print-images {
+		margin: 0 15px;
+		img {
+			float: right;
+			width: 23%;
+			margin: 0 0 1.5% 2%;
+
+			&:first-child {
+				width: 75%;
+				float: left;
+				margin: 0 0 0 0;
+			}
+		}
+	}
+
+	.auction-concluded {
+		float: none !important;
+		display: block;
+		color: #ed1c23 !important;
+	}
+
+	.lots-featured, .lots {
+		margin-bottom: 10px;
+		.lot {
+			margin-bottom: 15px;
+			padding-right: 15px;
+			width: 33.3%;
+			float: left;
+			&:nth-child(2n){
+				&:after {
+					content: '';
+					clear: none;
+				}
+			}
+			&:nth-child(3n){
+				&:after {
+					content: '.';
+					clear: both;
+					color: transparent !important;
+				}
+			}
+
+			.lot-number {
+				font-size: 14px;
+				margin-top: 3px;
+			}
+			.lot-title {
+				font-size: 16px;
+				line-height: 14px;
+			}
+			.lot-series {
+				font-size: 12px;
+				line-height: 14px;
+			}
+		}
+		// .lot-image-container {
+		//   float: left;
+		//   width: 20%;
+		//   margin-right: 15px;
+		// }
+		.lot .lot-image-container .flag-group {
+			left: auto;
+			right: 8px;
+			bottom: -20px;
+			top: auto;
+			.flag {
+				//margin-right: 0;
+			}
+		}
+		.flag-group .flag:last-child {
+			margin-right: 0 !important;
+		}
+	}
+
+	.lots .lot .lot-bid-goes-on .lot-price:before,
+	.lots-featured .lot .lot-bid-goes-on .lot-price:before,
+	.lots-results .lot .lot-bid-goes-on .lot-price:before {
+		background-color: #fff !important;
+		background-repeat: no-repeat !important;
+	}
+
+
+	#highlights {
+		margin: 15px 0;
+		padding: 20px 0;
+		border-top: 1px solid #ccc;
+	}
+	.lot-highlights {
+		overflow: hidden;
+		margin-bottom: 0 !important;
+		li {
+			width: 50%;
+			float: left;
+			padding: 0 5% 0 0;
+			font-size: 12px;
+		}
+	}
+
+	.highlight_cols {
+		width: 46%;
+		float: left;
+		font-size: 12px;
+		margin: 10px 2%;
+		div {
+			padding: 0 5% 0 0;
+		}
+		font-size: 12px;
+	}
+	#description {
+		margin: 15px 0;
+		padding: 20px 0;
+		border-top: 1px solid #ccc;
+	}
+
+	.lot-desc {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.event-list {
+		padding: 16px 0 0;
+	}
+
+	.footer {
+		text-align: center;
+		img {
+			max-height: 50px;
+			display: inline-block;
+		}
+	}
+
+	.fine-print {
+		font-size: 9px;
+	}
+
+	.footer-content {
+		padding: 0 30px;
+	}
+
+	.build-number {
+		display: none;
+	}
+
+	.event-list-row {
+		margin-bottom: 0px;
+	}
+
+	.event-list {
+		border-left-width: 7px;
+		border-top-width: 0;
+		padding: 5px 15px;
+		text-align: left;
+		h3.event-title {
+			font-size: 22px;
+			line-height: 22px;
+			margin: 0;
+		}
+		h4.event-dates {
+			font-size: 22px;
+			line-height: 22px;
+			margin: 0;
+		}
+		h5.event-numbers {
+			font-size: 18px;
+			line-height: 24px;
+			margin: 0;
+		}
+		.col-sm-3 {
+			 width: 50%;
+		 }
+		 .col-sm-2 {
+			 width: 25%;
+		 }
+	}
+
+	.admission-parking {
+		width: 48%;
+		float: right;
+
+		h1, h2 {
+			font-size: 26px;
+			margin-top: 0;
+		}
+	}
+
+	#schedule {
+		width: 48%;
+		float: left;
+	}
+
+	.forms-fees {
+		.section-title {
+			float: left;
+		}
+		.section-subtitle {
+			float: right;
+		}
+		.table-responsive {
+			clear: both;
+			th, td {
+				padding: 4px;
+			}
+		}
+	}
+
+	h1.page-title {
+		text-align: left;
+		font-size: 32px;
+	}
+	h1.auction-title, h1.group-title {
+		text-align: left;
+		font-size: 38px;
+		margin-bottom: 0;
+		.auction-date {
+			font-size: 38px;
+			display: inline-block;
+		}
+		.slashes {
+			display: inline-block;
+			margin: 0 6px;
+		}
+	}
+	h2.auction-subtitle, h2.group-auction-info {
+		text-align: left;
+		.slashes {
+			display: inline-block;
+			clear: none;
+			&:before {
+				display: block;
+			}
+		}
+	}
+	h1.lot-title {
+		font-size: 32px;
+		margin-top: 10px;
+	}
+	h2.lot-series {
+		font-size: 24px;
+	}
+	h3.lot-auction-info {
+		font-size: 22px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #9d9d9d;
+		.slashes {
+			display: inline-block;
+			margin: 0 3px;
+		}
+	}
+	h3.section-title {
+		font-size: 26px;
+	}
+}

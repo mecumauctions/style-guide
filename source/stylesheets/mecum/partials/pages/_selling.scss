@@ -1,0 +1,85 @@
+//! Used in /how-to-sell/ pages
+.selling {
+	section {
+		margin: 25px 0 10px 0;
+	}
+	.heading {
+		margin: 5px 0 15px;
+		font-family: $univers-cond-font;
+		text-transform: uppercase;
+	}
+	.sub-heading {
+		margin: 0 0 5px 0;
+	}
+	.tab-label {
+	}
+	.content {
+		padding-bottom:5px;
+	}
+	.fine-print {
+		font-size: 10px;
+		padding-bottom: 10px;
+	}
+	.form-links {
+		margin: 10px 0 5px 0;
+	}
+	.alert-text {
+		color: red;
+	}
+	.req{
+		color: red;
+		font-weight: bold;
+	}
+	.double-line {
+		margin-top: 0;
+		margin-bottom: 5px;
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		height: 3px;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		li {
+			padding: 5px;
+			list-style: none;
+		}
+	}
+	ol {
+		li {
+			list-style: decimal outside none;
+		}
+	}
+	.yellow-box {
+		padding: 5px;
+		background-color: yellow;
+	}
+	//! Styling for fill out form OR download
+	.or {
+		color: #3a3a3c;
+		padding: 5px;
+	}
+
+	//! Get the modal to align vertically, otherwise slams up into the header
+	.modal {
+		text-align: center;
+		padding: 0!important;
+	}
+	.modal:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		margin-right: -4px;
+	}
+	.modal-dialog {
+		display: inline-block;
+		text-align: left;
+		vertical-align: middle;
+	}
+	.modal-sm {
+		width: 400px;
+	}
+
+
+}

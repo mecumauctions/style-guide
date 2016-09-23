@@ -1,0 +1,214 @@
+$flag-color-main: #eb1c23;
+$flag-color-star: #f6921e;
+$flag-color-feature: #1b75ba;
+$flag-color-no-reserve: #facf10;
+$flag-color-prebid: #12ad4e;
+$flag-color-boat: #601ab0;
+
+.flag {
+	position: relative;
+	padding: 0 8px;
+	display: inline-block;
+	font-family: $univers-cond-font;
+	font-weight: 700;
+	background-color: transparent;
+	color: #fff !important;
+	font-size: 12px;
+	height: 18px;
+	line-height: 18px;
+	margin-right: 15px;
+	text-transform: uppercase;
+	&:after {
+		content: " ";
+		position: absolute;
+		right: -9px;
+		top: 0;
+		border-top: 9px solid transparent;
+		border-right: 9px solid transparent;
+		border-bottom: 9px solid transparent;
+	}
+	&.flag-star {
+		background-color: $flag-color-star !important;
+		&:after {
+			border-top-color: $flag-color-star;
+			border-bottom-color: $flag-color-star;
+		}
+		&:before {
+			border-right-color: $flag-color-star;
+		}
+	}
+	&.flag-feature {
+		background-color: $flag-color-feature !important;
+		&:after {
+			border-top-color: $flag-color-feature;
+			border-bottom-color: $flag-color-feature;
+		}
+		&:before {
+			border-right-color: $flag-color-feature;
+		}
+	}
+	&.flag-main {
+		background-color: $flag-color-main !important;
+		&:after {
+			border-top-color: $flag-color-main;
+			border-bottom-color: $flag-color-main;
+		}
+		&:before {
+			border-right-color: $flag-color-main;
+		}
+	}
+	&.flag-no-reserve {
+		color: #000 !important;
+		background-color: $flag-color-no-reserve !important;
+		&:after {
+			border-top-color: $flag-color-no-reserve;
+			border-bottom-color: $flag-color-no-reserve;
+		}
+		&:before {
+			border-right-color: $flag-color-no-reserve;
+		}
+	}
+	&.flag-prebid {
+		background-color: $flag-color-prebid !important;
+		&:after {
+			border-top-color: $flag-color-prebid;
+			border-bottom-color: $flag-color-prebid;
+		}
+		&:before {
+			border-right-color: $flag-color-prebid;
+		}
+	}
+	&.flag-boat {
+		background-color: $flag-color-boat !important;
+		&:after {
+			border-top-color: $flag-color-boat;
+			border-bottom-color: $flag-color-boat;
+		}
+		&:before {
+			border-right-color: $flag-color-boat;
+		}
+	}
+
+	&.flag-xs {
+		font-size: 8px;
+		height: 12px;
+		line-height: 12px;
+		padding: 0 3px;
+		&:after {
+			right: -6px;
+			border-width: 6px 6px 6px 0;
+		}
+		&:before {
+			left: -12px;
+			border-width: 6px;
+		}
+	}
+	&.flag-sm {
+		font-size: 10px;
+		height: 14px;
+		line-height: 14px;
+		padding: 0 5px;
+		&:after {
+			right: -7px;
+			border-width: 7px 7px 7px 0;
+		}
+		&:before {
+			left: -14px;
+			border-width: 7px;
+		}
+	}
+	&.flag-lg {
+		font-size: 18px;
+		height: 24px;
+		line-height: 24px;
+		&:after {
+			right: -12px;
+			border-width: 12px 12px 12px 0;
+		}
+		&:before {
+			left: -24px;
+			border-width: 12px;
+		}
+	}
+	&.flag-xl {
+		font-size: 20px;
+		height: 30px;
+		line-height: 30px;
+		padding: 0 10px;
+		&:after {
+			right: -15px;
+			border-width: 15px 15px 15px 0;
+		}
+		&:before {
+			left: -30px;
+			border-width: 15px;
+		}
+	}
+}
+
+@media print {
+
+	.flag {
+		&:after {
+			border-width: 9px 9px 9px 0;
+		}
+		&.flag-lg {
+			&:after {
+				border-width: 13px 13px 13px 0;
+			}
+		}
+	}
+}
+
+.flag-group {
+	display: inline-block;
+	.flag {
+		padding: 0 6px;
+		margin-right: 13px;
+		&:before {
+			content: " ";
+			position: absolute;
+			left: -18px;
+			top: 0;
+			border-width: 9px;
+			border-style: solid;
+			border-left-color: transparent;
+			border-top-color: transparent;
+			border-bottom-color: transparent;
+		}
+	}
+	.flag:first-child {
+		&:before {
+			display: none;
+		}
+	}
+	.flag:last-child {
+		margin-right: 15px;
+	}
+	&.flag-group-xs {
+		.flag {
+			margin-right: 10px;
+			@extend .flag.flag-xs;
+		}
+	}
+	&.flag-group-sm {
+		.flag {
+			margin-right: 11px;
+			@extend .flag.flag-sm;
+		}
+	}
+	&.flag-group-lg {
+		.flag {
+			margin-right: 17px;
+		    -webkit-font-smoothing: antialiased;
+			@extend .flag.flag-lg;
+		}
+	}
+	&.flag-group-xl {
+		.flag {
+			margin-right: 20px;
+		    -webkit-font-smoothing: antialiased;
+			@extend .flag.flag-xl;
+		}
+	}
+}

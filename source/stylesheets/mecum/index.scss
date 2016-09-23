@@ -1,0 +1,105 @@
+$asset-path: '/* @echo ASSETPATH */' !default;
+@import "functions";
+
+$icon-font-path: asset-path('/fonts/');
+@import "bootstrap/bootstrap";
+@import "variables";
+
+@import "mixins";
+@import "partials/bootstrap-grid-ms";
+
+@import "partials/base";
+@import "partials/font-face";
+@import "partials/icons";
+@import "partials/buttons";
+@import "partials/helpers";
+@import "partials/layout";
+@import "partials/headings";
+@import "partials/brands";
+@import "partials/header";
+@import "partials/footer";
+@import	"partials/forms";
+@import	"partials/tables";
+@import	"partials/alerts";
+@import "partials/ads";
+@import "partials/nav";
+@import "partials/offcanvas";
+@import "partials/sidebar";
+@import "partials/panels";
+@import "partials/lists";
+@import "partials/asides";
+@import "partials/media";
+@import "partials/infonet";
+@import "partials/finance";
+@import "partials/hairlines";
+@import "partials/flags";
+@import "partials/sections";
+@import "partials/tabs";
+@import "partials/events";
+@import	"partials/lot-detail";
+@import "partials/callouts";
+@import "partials/viewlots";
+@import "partials/master-slider";
+@import "partials/videogallery";
+@import "partials/magnific-popup";
+@import	"partials/pagination";
+@import	"partials/collection";
+@import "partials/photos";
+@import "partials/textlist";
+@import "partials/social";
+@import "partials/mecum-monthly";
+@import "partials/register";
+@import	"partials/auctions";
+@import	"partials/photo-gallery";
+@import	"partials/news";
+@import	"partials/timeline";
+@import	"partials/misc";
+@import "partials/tv-times";
+@import "partials/how-to-bid";
+@import "partials/how-to-sell";
+@import "partials/landing-pages";
+@import	"partials/pages/links";
+@import "partials/pages/selling";
+@import "partials/errors";
+@import "partials/print";
+@import "partials/dee-landing";
+
+
+.ltgray {
+	background-color: #e6e6e6;
+}
+.darkgray {
+	background-color: #333;
+	//padding: 15px;
+}
+
+.transparent {
+	background-color: transparent;
+}
+
+
+.dkgray {
+	color: #999;
+}
+.cccgray {
+	color: #ccc;
+}
+
+.btn-group-justified .btn { border-right-width:0px }
+.btn-group-justified .btn:last-of-type { border-right-width:1px }
+
+
+.navimage {
+	max-height: 34px;
+	margin: 8px 8px 8px 0px;
+}
+
+@media (max-width: $screen-sm) {
+	.navimage {
+		margin-left: 15px;
+	}
+}
+
+.border {
+	border: 1px #9d9d9d solid;
+}

@@ -1,0 +1,22 @@
+
+.media-list {
+	margin: 5px;
+	.media {
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 15px;
+		.thumbnail {
+			margin: 0;
+		}
+		a {
+			font-weight: 700;
+		    color: #333;
+			text-transform: uppercase;
+			font-family: $univers-cond-font;
+		}
+	}
+	> [class*='col-'] {
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+}

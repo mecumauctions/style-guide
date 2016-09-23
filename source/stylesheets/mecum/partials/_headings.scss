@@ -1,0 +1,207 @@
+
+
+h1 {
+	font-family: $univers-font;
+	font-weight: 900;
+}
+
+h2 {
+	font-family: $univers-cond-font;
+	font-weight: 700;
+}
+
+h3 {
+	font-family: $univers-cond-font;
+	font-weight: 500;
+}
+
+h4, h5, h6 {
+	font-family: $univers-cond-font;
+}
+
+.page-header, .page-title {
+	font-size: 28px;
+	font-family: $univers-cond-font;
+	text-transform: uppercase;
+	color: #575757;
+	border-bottom: 1px solid #9d9d9d;
+	padding-bottom: 5px;
+	margin: 15px 0 10px 0;
+	.pull-right, .pull-left {
+		.btn {
+			font-family: $univers-cond-font;
+		}
+	}
+}
+
+.auction-title-row {
+	margin-top: 15px;
+}
+h1.auction-title, h1.group-title {
+	font-size: 34px;
+	text-transform: uppercase;
+	margin: 15px 0 10px;
+	padding: 0 0 5px 0;
+	font-family: $univers-cond-font;
+
+	.slashes, .auction-date {
+		font-weight: 300;
+		color: #333;
+		text-shadow: none;
+	}
+	.auction-date {
+		display: block;
+		font-size: 25px;
+	}
+	.slashes {
+		display: none;
+	}
+}
+
+h1.auction-title {
+	font-size: 42px;
+	text-align: center;
+}
+
+h2.auction-title {
+	font-size: 32px;
+	text-transform: uppercase;
+	margin: 15px 0 10px;
+	padding: 0 0 5px 0;
+	font-family: $univers-cond-font;
+	border-bottom: 1px solid #9d9d9d;
+}
+
+h2.auction-subtitle, h2.group-auction-info {
+	font-size: 22px;
+	margin: 0 0 10px 0;
+	padding: 10px 0 0;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-top: 1px solid #9d9d9d;
+}
+
+h2.auction-subtitle {
+	text-transform: none;
+	text-align: center;
+	.slashes {
+		display: block;
+		clear: both;
+		&:before {
+			display: none;
+		}
+	}
+}
+
+
+h1.lot-title {
+	font-size: 26px;
+	text-transform: uppercase;
+	margin: 5px 0;
+	padding: 0;
+	font-family: $univers-cond-font;
+}
+
+h2.lot-series {
+	font-size: 20px;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+	.flag-group {
+		vertical-align: text-top;
+	}
+}
+
+h3.lot-auction-info {
+	font-size: 18px;
+	font-family: $univers-cond-font;
+	text-transform: uppercase;
+	margin: 10px 0 0;
+}
+
+
+.auction-concluded {
+	color: $mecum-red;
+	font-family: $univers-cond-font;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 90%;
+}
+
+h3.section-title {
+	font-size: 22px;
+	color: #333;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 3px 0;
+	&.padded {
+		margin: 20px 0 5px;
+	}
+}
+
+h4.section-subtitle {
+	font-size: 20px;
+	color: #333;
+	font-weight: 700;
+	font-family: $univers-cond-font;
+	text-transform: uppercase;
+}
+
+@media (min-width: $screen-sm-min) {
+	h1.page-title {
+		text-align: left;
+		font-size: 32px;
+	}
+	h1.auction-title, h1.group-title {
+		text-align: left;
+		font-size: 38px;
+		margin-bottom: 0;
+		.auction-date {
+			font-size: 38px;
+			display: inline-block;
+		}
+		.slashes {
+			display: inline-block;
+			margin: 0 6px;
+		}
+	}
+	h2.auction-subtitle, h2.group-auction-info {
+		text-align: left;
+		.slashes {
+			display: inline-block;
+			clear: none;
+			&:before {
+				display: block;
+			}
+		}
+	}
+	h1.lot-title {
+		font-size: 32px;
+		margin-top: 10px;
+	}
+	h2.lot-series {
+		font-size: 24px;
+	}
+	h3.lot-auction-info {
+		font-size: 22px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #9d9d9d;
+		.slashes {
+			display: inline-block;
+			margin: 0 3px;
+		}
+	}
+	h3.section-title {
+		font-size: 26px;
+	}
+
+	/*h2.group-auction-info {
+		font-size: 22px;
+		padding: 5px 0;
+		margin: 0;
+		border-top: 1px solid #9d9d9d;
+		.slashes {
+			display: inline-block;
+			margin: 0 3px;
+		}
+	}*/
+}

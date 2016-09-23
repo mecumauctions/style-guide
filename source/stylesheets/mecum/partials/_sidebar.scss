@@ -1,0 +1,209 @@
+//sidebar
+.viewlots ul, .memorabilia ul, .collections {
+	@extend .list-unstyled;
+	.btn {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+.memorabilia li {
+	margin-bottom: 3px;
+}
+
+#searchArea {
+	display: none; //initial setting for the toggle
+	margin-bottom: 0px;
+	margin-top: 3px;
+	.form-group {
+		margin-bottom: 7px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.startYear {
+		padding-right: 5px;
+	}
+	.endYear {
+		padding-left: 5px;
+	}
+}
+@media (max-width: $screen-sm) {
+	#expandSearch {
+		//display: none; //hide on ms/xs until responsive search page is done
+	}
+}
+
+//collection and catalog buttons
+.panel-mecum-cat button {
+	white-space: normal;
+	margin-bottom: 10px;
+	line-height: 110%;
+}
+.panel-mecum-cat div:last-of-type {
+	margin-bottom: -5px;
+}
+.panel-mecum-cat .btn-block img {
+	padding-bottom: 5px;
+}
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+    .catalog>div:nth-child(3n+1) {
+      clear: both;
+    }
+}
+@media (max-width: $screen-sm - 1) {
+    .catalog>div:nth-child(2n+1){
+      clear: both;
+    }
+}
+.catalog .ma-arrow-circle-right {
+	padding-left: 5px;
+}
+
+.panel-mecum.ads-alone {
+	margin-top: 15px;
+}
+
+
+.collections {
+	.panel-body {
+		padding: 0;
+		a {
+			margin: 0;
+			height: auto !important;
+			padding-right: 25px;
+			position: relative;
+			text-align: left;
+			word-wrap: normal;
+			white-space: normal;
+			z-index: 1;
+			&:first-child {
+				border-top-left-radius: 0 !important;
+				border-top-right-radius: 0 !important;
+			}
+			&:last-child {
+				border-bottom: 0;
+			}
+			i.ma {
+				position: absolute;
+				right: 8px;
+				top: 50%;
+				margin-top: -9px;
+			}
+		}
+	}
+}
+
+.panel-mecum {
+	.btn-group-vertical {
+		width: 100%;
+		a {
+			border-right: none;
+			border-left: none;
+			height: 32px;
+		}
+		.btngray {
+			color: #ccc;
+			float: right;
+			line-height: 130%;
+			margin-left: 10px;
+		}
+		&.double-line {
+			margin-top: 1px;
+		}
+		&.double-line-bottom {
+			margin-bottom: 1px;
+		}
+	}
+}
+
+
+.viewlots {
+	.panel-body {
+		padding-bottom: 5px;
+	}
+	.btn-container {
+		margin-top: 1px;
+		padding-right: 0px;
+		padding-left: 0px;
+		@media (min-width: $screen-xs) AND (max-width: $screen-md - 1) {
+			margin-top: -15px;
+		}
+		&:first-child {
+			margin-top: -15px;
+		}
+		@media (min-width: $screen-xs) AND (max-width: $screen-md - 1) {
+			&.col1 {
+				padding-right: 1px;
+				.btn-group-vertical a {
+					border-right: 1px #ccc solid;
+				}
+			}
+			&.col2 {
+				padding-left: 1px;
+				.btn-group-vertical a {
+					border-left: 1px #ccc solid;
+				}
+			}
+		}
+		.btn-group-vertical {
+			a:first-child {
+				border-top-left-radius: 0 !important;
+				border-top-right-radius: 0 !important;
+			}
+			a:last-child {
+				border-bottom-left-radius: 0 !important;
+				border-bottom-right-radius: 0 !important;
+			}
+		}
+
+		.sidebar-search {
+			border-top: 1px #ccc solid;
+			margin-top: 1px;
+			padding: 10px 10px 5px;
+			.btn {
+				text-align: center;
+				font-size: 14px;
+				text-transform: uppercase;
+				font-family: $univers-cond-font;
+				font-weight: 400;
+				border-radius: 3px;
+			}
+			#auction-search-arrow {
+				float:right;
+				margin-top:2px;
+			}
+		}
+	}
+	.btn {
+		text-align: left;
+	}
+	.group-header {
+		padding: 5px 0 5px 15px;
+		text-transform: uppercase;
+		margin: 0;
+		background-color: #eee;
+	}
+	.run-day {
+		float: left;
+	}
+	.run-date {
+		float: right;
+	}
+}
+.roadart-info {
+	clear:both;
+	float:left;
+	border-top: 1px #ccc solid;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	width: 100%;
+	font-size: 14px;
+	.roadart-key {
+		width: 50px;
+		float: left;
+		font-weight: bold;
+	}
+	.roadart-descr {
+		margin-left: 60px;
+	}
+}

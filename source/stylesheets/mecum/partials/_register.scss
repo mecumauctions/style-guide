@@ -1,0 +1,389 @@
+.bidder-reg {
+	padding: 0;
+	margin: 0 0 25px 0;
+	&.bidder-reg-gold {
+		h2 {
+			color: #333;
+			background-color: $mecum-gold;
+		}
+		/*.pricing {
+			form {
+				padding: 5px 10%;
+			}
+		}*/
+		.btn {
+			color: #333;
+			background-color: $mecum-gold;
+			border-color: $mecum-gold;
+			&:hover, &:focus {
+				background-color: darken($mecum-gold, 8%);
+				border-color: darken($mecum-gold, 8%);
+			}
+			&.btn-renewal {
+				color: $mecum-gold;
+				background-color: #333;
+				border-color: $mecum-gold;
+				&:hover, &:focus {
+					background-color: darken(#333, 8%);
+					border-color: darken($mecum-gold, 8%);
+				}
+			}
+		}
+	}
+	&.bidder-reg-roadart-internet {
+		h2 {
+			color: #fff;
+			background-color: $mecum-moa;
+			span {
+				margin: 0 0 0 3px;
+			}
+		}
+		.pricing {
+			form {
+				padding: 10px 10%;
+			}
+		}
+		.btn {
+			color: #fff;
+			background-color: $mecum-moa;
+			border-color: $mecum-moa;
+			&:hover, &:focus {
+				background-color: darken($mecum-moa, 8%);
+				border-color: darken($mecum-moa, 8%);
+			}
+		}
+	}
+	h2 {
+		text-transform: uppercase;
+		padding: 12px 8px;
+		text-align: center;
+		margin: 0;
+		font-size: 30px;
+	}
+
+	.btn {
+		font-size: 28px;
+		line-height: 38px;
+		font-family: $mecum-font;
+		text-transform: uppercase;
+		padding: 2px 8px;
+		font-weight: bold;
+		font-kerning: auto;
+		letter-spacing: 1px;
+	}
+
+	label {
+		width: 100%;
+		margin: 0;
+		font-size: 18px;
+		text-align: left;
+		span {
+			color: #666;
+			display: block;
+			font-weight: normal;
+			text-align: center;
+			font-size: 14px;
+			margin-bottom: 5px;
+		}
+	}
+
+	.form-control {
+		font-size: 18px;
+		padding: 6px 12px;
+		height: 42px;
+		line-height: 42px;
+	}
+
+
+	form {
+		padding: 0 10%;
+	}
+
+	.pricing {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 28px;
+		padding: 25px 15px;
+		background-color: #333;
+		color: #fff;
+		@include box-shadow(inset 0 22px 22px -22px rgba(0,0,0,.8), inset 0 -22px 22px -22px rgba(0,0,0,.8));
+		form{
+			select {
+				margin-bottom: 10px;
+				padding: 4px;
+			}
+			.btn, select {
+				@include box-shadow(2px 2px 5px 1px rgba(0,0,0,.2));
+			}
+		}
+		hr {
+			color: #fff;
+			margin: 18px 10% 12px;
+		}
+		label {
+			span {
+				color: #aaa;
+			}
+		}
+		span.price {
+			font-weight: 500;
+			font-size: 54px;
+			line-height: 95%;
+			letter-spacing: -2px;
+			&.strike-through {
+				margin-right: 25px;
+				position: relative;
+				&:before {
+					position: absolute;
+					content: "";
+					left: 15%;
+					top: 50%;
+					right: 0;
+					width: 80%;
+					border-top: 6px solid;
+					border-color: $mecum-red;
+					@include transform(rotate(-35deg));
+				}
+			}
+		}
+		span.desc {
+			font-weight: bold;
+			line-height: 24px;
+			font-size: 20px;
+			display: inline-block;
+		}
+	}
+	.details {
+		background-color: #e9e9e9;
+		border: 2px solid #333;
+		border-top: 0;
+		padding: 15px 10px;
+		position: relative;
+		display: none;
+		h3 {
+			margin: 0;
+			font-size: 14px;
+			color: #999;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+	footer {
+		position: relative;
+		padding: 0 0 15px 0;
+		p {
+			display: none;
+			text-align: center;
+			line-height: 30px;
+			margin: 0;
+			font-size: 24px;
+			text-transform: uppercase;
+			strong {
+				display: block;
+			}
+		}
+		.btn {
+			margin: 10px 0 0;
+		}
+		form {
+			margin-top: 35px;
+			text-transform: uppercase;
+			display: none;
+		}
+	}
+	ul {
+		list-style: none;
+		margin: 15px 0 0;
+		padding: 0 5px;
+		font-size: 17px;
+		text-align: center;
+		li {
+			margin-bottom: 15px;
+			position: relative;
+			line-height: 18px;
+		}
+	}
+
+	.toggle-details {
+		font-size: 18px;
+		margin-top: 25px;
+		color: #fff;
+		display: block;
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+		i {
+			display: inline-block;
+			margin-left: 5px;
+			&:before {
+				content: $ma-caret-down;
+			}
+		}
+		&.collapsed {
+			i:before {
+				content: $ma-caret-right;
+			}
+		}
+	}
+}
+
+
+.bidder-reg-fine-print {
+	margin-bottom: 25px;
+	.fine-print {
+		margin: 0 0 5px 0;
+		font-size: 12px;
+		padding: 0 5px;
+	}
+}
+
+
+@media (max-width: 359px) {
+	.bidder-reg {
+		.pricing span.price {
+			font-size: 48px;
+		}
+		form {
+			padding: 0 1%;
+		}
+		h2 {
+			font-size: 26px;
+		}
+		&.bidder-reg-roadart-internet {
+			.pricing {
+				form {
+					padding: 10px 1% 0;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 360px) and (max-width: 400px) {
+	.bidder-reg {
+		form {
+			padding: 0 5%;
+		}
+		&.bidder-reg-roadart-internet {
+			.pricing {
+				form {
+					padding: 10px 5% 0;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 401px) and (430px) {
+	.bidder-reg {
+		form {
+			padding: 0 8%;
+		}
+		&.bidder-reg-roadart-internet {
+			.pricing {
+				form {
+					padding: 0 8%;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-ms-min) and (max-width: 550px) {
+	.bidder-reg {
+		padding: 0 5%;
+	}
+}
+
+@media (min-width: 551px) and (max-width: $screen-ms-max) {
+	.bidder-reg {
+		padding: 0 15%;
+	}
+}
+
+@media (min-width: $screen-sm) {
+	.bidder-reg {
+		padding: 0 15px;
+		margin: 0 0 5px 0;
+		&.bidder-reg-roadart-internet {
+			.pricing {
+				form {
+					padding: 38px 5%;
+				}
+			}
+		}
+		.pricing {
+			padding: 10px;
+			span.price {
+				font-size: 46px;
+			}
+		}
+		.details {
+			display: block !important;
+			height: 650px;
+			padding: 15px 10px 100px 10px;
+		}
+		ul {
+			padding: 0 25px;
+		}
+		footer {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			padding: 0 0 15px;
+			p {
+				display: block;
+				font-size: 20px;
+			}
+			form {
+				margin-top: 15px;
+				display: block;
+			}
+		}
+		form {
+			margin-top: 5px;
+			padding: 0 5%;
+		}
+	}
+
+	.bidder-reg-fine-print {
+		.fine-print {
+			padding: 0 20px;
+		}
+	}
+}
+
+
+@media (min-width: $screen-md) {
+	.bidder-reg {
+		padding: 0 35px;
+		/*&.bidder-reg-gold {
+			.pricing {
+				form {
+					padding-left: 15%;
+					padding-right: 15%;
+				}
+			}
+		}*/
+		h2 {
+			font-size: 36px;
+		}
+		.details {
+			height: 610px;
+		}
+		.pricing {
+			span.price {
+				font-size: 54px;
+			}
+		}
+		form {
+			padding: 0 15%;
+		}
+	}
+	.bidder-reg-fine-print {
+		.fine-print {
+			padding: 0 40px;
+		}
+	}
+}

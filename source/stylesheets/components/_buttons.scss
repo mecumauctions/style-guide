@@ -84,3 +84,17 @@ $button-focus-text-decoration: none;
     }
   }
 }
+
+.ma-caret-right {
+  float:right;
+  margin-right: 2px;
+}
+
+#main-header .infonet-links.search-button-top {
+  margin-top:0!important;
+  margin-bottom: 10px;
+  text-align: left;
+}
+#main-header .infonet-links.search-button-top a.btn-mecum {
+  margin-left:0!important;
+}

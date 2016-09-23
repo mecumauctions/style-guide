@@ -53,7 +53,7 @@ $table-width:                 100%;
         }
 
         &:hover {
-          background-color: $white-dark;
+          background-color: $mecum-lter-gray;
         }
       }
 
@@ -71,7 +71,7 @@ $table-width:                 100%;
 
 // Table Row Active
 .table__row--active {
-  background-color: $white-dark;
+  background-color: $mecum-lter-gray;
 
   .table__expand-icon {
     @include transform(rotate(90deg));
@@ -87,7 +87,7 @@ $table-width:                 100%;
   display: none;
 
   thead {
-    background-color: $grey-base;
+    background-color: $mecum-md-gray;
     border-top: none;
   }
 

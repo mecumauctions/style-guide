@@ -7,8 +7,8 @@ $select-background-position-mobile:  97%;
 $select-background-position:         99%;
 $select-background-url:              'icons/functional/arrow-down-icon.svg';
 
-$select-background-inactive:         $grey-base;
-$select-border-inactive:             1px solid $grey-base;
+$select-background-inactive:         $mecum-md-gray;
+$select-border-inactive:             1px solid $mecum-md-gray;
 
 
 // Structure
@@ -24,7 +24,7 @@ select{
   &:disabled {
     background-color: $select-background-inactive;
     border: $select-border-inactive;
-    color: $grey-dark;
+    color: $mecum-dk-gray;
     cursor: not-allowed;
   }
 }

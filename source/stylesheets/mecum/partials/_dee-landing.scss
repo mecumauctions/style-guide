@@ -1,0 +1,790 @@
+.dee-landing {
+	section {
+		margin: 0;
+		.dee-container {
+			@extend .container;
+			background-color: transparent;
+		}
+		.dee-container-fluid {
+			@extend .container-fluid;
+			background-color: transparent;
+		}
+	}
+	h1 {
+		font-size: 60px;
+		text-transform: uppercase;
+		font-family: $mecum-font;
+		-webkit-font-smoothing: antialiased;
+		line-height: 95%;
+	}
+	h2 {
+		font-size: 65px;
+		text-transform: uppercase;
+		margin-top: 20px;
+		font-family: $mecum-font;
+		font-weight: 700;
+	}
+	h3 {
+		font-size: 40px;
+		text-transform: uppercase;
+		font-family: $mecum-font;
+		font-weight: 700;
+	}
+	.btn {
+		font-size: 28px;
+		text-transform: uppercase;
+		font-family: $univers-cond-font;
+		font-weight: 700;
+		padding: 10px 20px;
+		width: 100%;
+		margin: 10px 0;
+		@include border-radius-no-clip(0);
+		.ma {
+			display: inline-block;
+			font-size: 20px;
+			padding-left: 5px;
+		}
+	}
+
+	.back-to-top {
+		margin: 20px 0 0px;
+		border: 2px solid $mecum-red;
+		padding: 5px 10px;
+		font-size: 20px;
+		font-family: $mecum-font;
+		text-transform: uppercase;
+		font-weight: bold;
+		display: inline-block;
+		&:hover, &:focus {
+			text-decoration: none;
+			background-color: $mecum-red;
+			color: #fff;
+		}
+	}
+
+
+	picture {
+		display: block;
+		img {
+			max-width: 100%;
+		}
+	}
+
+
+
+	.dee-bg {
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center bottom;
+		overflow: hidden;
+		position: relative;
+
+		p {
+			font-size: 24px;
+		}
+
+		picture {
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.dee-padded {
+		padding: 15px 0;
+	}
+
+	// Sections
+	#overview {
+		background-image: asset-url('/images/dee-landing/main-bg-mobile.jpg');
+		background-size: auto;
+		background-attachment: fixed;
+		background-color: #000;
+		background-position: 0 20px;
+		h1 {
+			width: 100%;
+			max-width: 420px;
+			margin: 70px 0 225px 0;
+			a {
+				display: block;
+				color: #bbb;
+				&:hover, &:focus {
+					color: #fff;
+					text-decoration: none !important;
+				}
+			}
+		}
+	}
+
+	#discover {
+		background: #fff;
+		@include gradient-horizontal(#fff, #dedede);
+		background-attachment: scroll;
+		margin: 0;
+	}
+
+	#discover-stats {
+		background: #fff;
+		@include gradient-horizontal(#fff, #dedede);
+		.statistics {
+			padding: 10px 0;
+		}
+
+		.statistic {
+			text-align: center;
+			.statistic-container {
+				margin: 0 auto;
+				display: block;
+				width: 400px;
+				> span {
+					display: block;
+					text-align: left;
+					line-height: 90%;
+					&.stat {
+						font-size: 90px;
+						font-family: $mecum-font;
+						font-weight: bold;
+						sup {
+							top: -.35em;
+						}
+					}
+				}
+			}
+
+			#stat-worlds-largest-svg {
+				width: 100%;
+			}
+			#stat-broadcast-on-nbc-svg {
+				width: 100%;
+			}
+		}
+	}
+
+	#discover-gallery {
+		width: 100%;
+		height: 492px;
+		background: #000;
+		overflow: hidden;
+		position: relative;
+		.gallery-image {
+			width: 2875px;
+			height: 492px;
+			background-image: asset-url('/images/dee-landing/discover-collage.jpg');
+			background-size: 2875px 492px;
+			background-repeat: no-repeat;
+			position: absolute;
+			top: 0;
+			&.one {
+				left: 0;
+			}
+			&.two {
+				left: -2875px;
+			}
+		}
+	}
+
+	#explore {
+		position: relative;
+		border: 5px #fff solid;
+		border-width: 5px 0;
+		padding: 10px 0;
+		&:before {
+			background: radial-gradient(black 15%, transparent 16%) 0 0,
+				radial-gradient(black 15%, transparent 16%) 8px 8px,
+				radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+				radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+			background-color:#282828;
+			background-size: 16px 16px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			content: "";
+		}
+		h2 {
+			color: #fff;
+		}
+		h3 {
+			color: #fff;
+		}
+	}
+
+	#explore-mobile {
+		background-image: asset-url('/images/dee-landing/explore-bg-tablet.jpg');
+		background-attachment: scroll;
+		height: 500px;
+		background-size: cover;
+
+		border-bottom: 5px #fff solid;
+	}
+
+	#experience {
+		position: relative;
+		border-bottom: 5px #fff solid;
+
+		background: #abbaab; /* fallback for old browsers */
+		@include gradient-horizontal(#fff, #dedede);
+		.event-container {
+			margin: 0 0 50px 0;
+			@include box-shadow(2px 2px 5px 3px rgba(0,0,0,.15));
+			a {
+				&:hover,
+				&:focus {
+					background: none;
+					text-decoration: none;
+				}
+			}
+			.event-title {
+				background: #fff;
+				font-size: 55px;
+				line-height: 80%;
+				text-transform: uppercase;
+				color: #ee1c25;
+				margin: 0;
+				padding: 25px 0 10px;
+				font-family: $mecum-font;
+				-webkit-font-smoothing: antialiased;
+				display: block;
+				text-align: center;
+			}
+			.event-dates {
+				font-size:  28px;
+				line-height: 95%;
+				color: #000;
+				text-align: center;
+				font-weight: 500;
+				background: #fff;
+				padding: 0 0 20px;
+				text-transform: uppercase;
+				display: block;
+				> span {
+					margin: 0;
+					text-transform: uppercase;
+					font-family: $mecum-font;
+					font-size: inherit;
+					line-height: inherit;
+					font-weight: inherit;
+					display: block;
+					&:first-child {
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+		.buttons {
+			margin: 30px 0;
+			width: 100%;
+			.btn-branded {
+				margin: 0;
+				width: 100%;
+			}
+			.text-muted {
+				margin: 10px 0;
+				display: block;
+				font-size: 16px;
+				text-align: center;
+			}
+		}
+	}
+
+	#infonet {
+		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAFElEQVQIW2NkYGD4z8DAwMjIAAUADikBA/ggJToAAAAASUVORK5CYII=), asset-url('/images/dee-landing/infonet-bg-desktop.jpg');
+		background-repeat: repeat, no-repeat;
+		background-position: auto, top center;
+		background-size: auto, cover;
+		background-attachment: auto, fixed;
+		position: relative;
+		> .dee-container {
+			background-color: rgba(255,255,255,.9);
+		    background-image: asset-url('/images/infonet-globe.png');
+			background-repeat: no-repeat;
+		    background-position: -15px bottom;
+			margin: 30px 15px;
+		}
+
+		.info-tile {
+			padding: 15px 0;
+			i {
+				background-color: $mecum-red;
+				height: 60px;
+				width: 60px;
+				@include border-radius(30px);
+				line-height: 55px;
+				font-size: 32px;
+			}
+			h4 {
+			}
+			span {
+				text-align: center;
+				display: block;
+			}
+		}
+
+		h2 {
+			margin: 20px 0 5px;
+			font-size: 14vw;
+		}
+		h3 {
+			font-size: 28px;
+		}
+		h4.teaser {
+			margin: 20px 0 5px;
+			font-size: 24px;
+			text-align: center;
+			strong.branded {
+				text-decoration: underline;
+			}
+		}
+		span.teaser-join {
+			text-align: center;
+			font-size: 28px;
+			margin-bottom: 20px;
+			display: block;
+			font-family: $mecum-font;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		.form-control {
+			@include border-radius(0);
+			font-size: 18px;
+			height: 44px;
+		}
+		.btn {
+			width: 100%;
+			margin-top: 15px;
+		}
+		.mobile-form {
+			border-bottom: 1px solid $mecum-lt-gray;
+			padding: 15px 0;
+		}
+		.desktop-form, .mobile-form {
+			h4 {
+				text-transform: uppercase;
+				font-family: $univers-cond-font;
+				font-weight: 700;
+				margin-bottom: 15px;
+				font-size: 22px;
+			}
+		}
+		.interests {
+			font-size: 16px;
+			font-family: $univers-cond-font;
+			margin: 0 35px 25px;
+			h5 {
+				text-align: center;
+			}
+			.radio {
+				padding: 3px;
+				font-size: 18px;
+				margin-bottom: 12px;
+				label {
+					padding-left: 25px;
+				}
+				input[type="radio"] {
+					margin-left: -22px;
+					cursor: pointer;
+				}
+
+			}
+			.interests-checkboxes {
+				margin: 0 0 0 25px;
+				display: none;
+			}
+		}
+	}
+
+	#map {
+		height: 600px;
+	}
+
+
+	// Scroll arrow.
+	.scroll-arrow {
+		z-index: 2000;
+		position: fixed;
+		bottom: 0;
+		left: 50%;
+		margin-left: -36px;
+		width: 75px;
+		height: 82px;
+		background-color: rgba($mecum-red, .75);
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 10px;
+		.mouse-line {
+			display: block;
+			position: absolute;
+			left: 50%;
+			top: 18px;
+			width: 2px;
+			height: 8px;
+			margin-left: -1px;
+			background-color: #fff;
+			-webkit-animation: scrolling-animation 1s;
+			-moz-animation: scrolling-animation 1s;
+			-o-animation: scrolling-animation 1s;
+			-ms-animation: scrolling-animation 1s;
+			animation: scrolling-animation 1s;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+		}
+		.scroll-text {
+			padding: 5px 0;
+			display: block;
+		}
+	}
+
+	.lot-slider-container {
+		margin: 15px 0;
+		#lot-slider {
+			padding: 0;
+			@include box-shadow(2px 2px 7px 3px rgba(0,0,0,.5));
+		}
+	}
+}
+
+
+@media (min-width: $screen-ms) {
+	.dee-landing {
+		.page-container {
+			text-align: center;
+			padding-right: 0;
+			padding-left: 0;
+		}
+		h1 {
+			font-size: 70px;
+		}
+		h2 {
+			margin-top: 40px;
+			font-size: 75px;
+		}
+		h3 {
+			font-size: 50px;
+		}
+		.btn {
+			padding: 10px 40px;
+			width: auto;
+			margin: 30px 0;
+		}
+		#experience {
+			.event-container {
+				margin: 0 0 50px 0;
+				@include box-shadow(2px 2px 5px 3px rgba(0,0,0,.15));
+				a {
+					&:hover,
+					&:focus {
+						background: none;
+						text-decoration: none;
+					}
+				}
+				.event-title {
+					background: #fff;
+					font-size: 55px;
+					line-height: 80%;
+					text-transform: uppercase;
+					color: #ee1c25;
+					margin: 0;
+					padding: 25px 0 10px;
+					font-family: $mecum-font;
+					-webkit-font-smoothing: antialiased;
+					display: block;
+					text-align: center;
+				}
+				.event-dates {
+					font-size:  28px;
+				}
+			}
+			.buttons {
+				width: 70%;
+				.btn-branded {
+					width: auto;
+				}
+				.text-muted {
+					text-align: left;
+					margin-left: 110px;
+				}
+			}
+		}
+		#overview {
+			background-image: asset-url('/images/dee-landing/main-bg-mobile@2x.jpg');
+			background-attachment: fixed;
+			background-size: auto;
+			background-position: 0 -270px;
+		}
+	}
+}
+
+
+@media (max-width: $screen-xs-max-new) and (-webkit-min-device-pixel-ratio: 2) {
+	.dee-landing {
+		#overview {
+			background-image: asset-url('/images/dee-landing/main-bg-mobile@2x.jpg');
+			background-size: 480px 500px;
+		}
+	}
+}
+
+
+@media (min-width: $screen-sm) {
+	.dee-landing {
+		.page-container {
+			width: 100%;
+		}
+		h1 {
+			font-size: 100px;
+		}
+		h2 {
+			font-size: 75px;
+		}
+		h3 {
+			font-size: 50px;
+		}
+		.btn {
+			font-size: 26px;
+			.ma {
+				font-size: 23px;
+			}
+		}
+
+		#overview {
+			background-image: asset-url('/images/dee-landing/main-bg-desktop.jpg');
+			background-color: #000;
+			background-position: center -200px;
+			background-size: auto;
+			background-attachment: fixed;
+		}
+		#discover {
+			background-position: 20px 50px;
+			background-image: asset-url('/images/dee-landing/discover-bg-desktop.jpg');
+			background-color: #000;
+			background-attachment: fixed;
+			&:before {
+				background-image: -webkit-linear-gradient(90deg, #fff 85%, rgba(255,255,255,.8) 89%, rgba(255,255,255,0) 100%);
+				background-image: -o-linear-gradient(90deg, #fff 85%, rgba(255,255,255,.8) 89%, rgba(255,255,255,0) 100%);
+				background-image: linear-gradient(90deg, #fff 85%, rgba(255,255,255,.8) 89%, rgba(255,255,255,0) 100%);
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 45%;
+				content: "";
+			}
+		}
+		#discover-stats {
+			background-image: none;
+		}
+		#explore {
+			background-image: asset-url('/images/dee-landing/explore-bg-tablet.jpg');
+			background-position: right bottom;
+			background-size: 820px 521px;
+			background-attachment: scroll;
+    		&:before {
+				right: 50%;
+				border-right: 5px #fff solid;
+			}
+		}
+		#explore-mobile {
+			background: none;
+			display: none;
+		}
+		#experience {
+			padding: 40px 0;
+			.event-container {
+				margin-top: 50px;
+			}
+			.buttons {
+				width: 300px;
+				margin: 30px 0 10px;
+				.btn-branded {
+					width: 100%;
+				}
+				.text-muted {
+					text-align: center;
+					margin-left: 0;
+				}
+			}
+		}
+		#infonet {
+			> .dee-container {
+				margin: 50px auto;
+			}
+			.info-tile {
+				padding: 15px;
+				i {
+					background-color: $mecum-red;
+					height: 80px;
+					width: 80px;
+					@include border-radius(40px);
+					line-height: 75px;
+					font-size: 44px;
+				}
+				span {
+					text-align: center;
+					display: block;
+				}
+			}
+			h2 {
+				margin: 20px 0 5px;
+				font-size: 80px;
+			}
+			h3 {
+				font-size: 36px;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-md){
+	.dee-landing {
+		.btn {
+			font-size: 40px;
+			.ma {
+				font-size: 30px;
+			}
+		}
+		h1 {
+			font-size: 110px;
+		}
+		h2 {
+			font-size: 110px;
+		}
+		h3 {
+			font-size: 60px;
+		}
+		#discover {
+			//background-position: 100px 50px;
+		}
+		#discover-stats {
+			.statistics {
+				padding: 40px 0;
+			}
+		}
+		#experience {
+			.event-container {
+				.event-title {
+					font-size: 100px;
+				}
+				.event-dates {
+					font-size: 40px;
+				}
+			}
+			.buttons {
+				width: 400px;
+			}
+		}
+		#explore {
+			background-image: asset-url('/images/dee-landing/explore-bg-desktop.jpg');
+			background-size: 1232px 660px;
+		}
+	}
+}
+
+@media (min-width: $screen-lg){
+	.dee-landing {
+		h1 {
+			font-size: 110px;
+		}
+		h2 {
+			font-size: 130px;
+		}
+		h3 {
+			font-size: 60px;
+		}
+		#discover {
+			background-position: 550px 50px;
+		}
+	}
+}
+
+@media (min-width: 1800px){
+	.dee-landing {
+		#discover {
+			background-position: 800px 50px;
+		}
+	}
+}
+
+@media (min-width: 2400px){
+	.dee-landing {
+		#discover {
+			background-position: 1140px 50px;
+		}
+		#explore {
+    		background-size: 1322px 660px;
+		}
+	}
+}
+
+
+
+@-moz-keyframes scrolling-animation {
+	0% {
+		-moz-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+	50% {
+		-moz-transform: translate(0px, -3px);
+		transform: translate(0px, -3px);
+	}
+	100% {
+		-moz-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+}
+@-webkit-keyframes scrolling-animation {
+	0% {
+		-webkit-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+	50% {
+		-webkit-transform: translate(0px, -3px);
+		transform: translate(0px, -3px);
+	}
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+}
+@-o-keyframes scrolling-animation {
+	0% {
+		-o-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+	50% {
+		-o-transform: translate(0px, -3px);
+		transform: translate(0px, -3px);
+	}
+	100% {
+		-o-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+}
+@keyframes scrolling-animation {
+	0% {
+		-webkit-transform: translate(0px, 0px);
+		-moz-transform: translate(0px, 0px);
+		-o-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+	50% {
+		-webkit-transform: translate(0px, -3px);
+		-moz-transform: translate(0px, -3px);
+		-o-transform: translate(0px, -3px);
+		-ms-transform: translate(0px, -3px);
+		transform: translate(0px, -3px);
+	}
+	100% {
+		-webkit-transform: translate(0px, 0px);
+		-moz-transform: translate(0px, 0px);
+		-o-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+	}
+}

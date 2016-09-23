@@ -3,31 +3,11 @@
 
 $buttons: (
   'primary': (
-    $green-base,
-    $white-base
+    $mecum-red,
+    $mecum-white
   ),
   'secondary': (
-    $blue-base,
-    $white-base
-  ),
-  'next-page': (
-    $blue-base,
-    $white-base
-  ),
-  'dual': (
-    $blue-light,
-    $white-base
-  ),
-  'warning': (
-    $red-base,
-    $white-base
-  ),
-  'disabled': (
-    $grey-base,
-    $grey-dark
-  ),
-  'black': (
-    $black-base,
-    $white-base
+    $mecum-gold,
+    $mecum-white
   )
 );

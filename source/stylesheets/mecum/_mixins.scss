@@ -1,0 +1,175 @@
+@mixin font-smoothing($value: on){
+	@if $value == on {
+		-moz-osx-font-smoothing: grayscale;
+		 -webkit-font-smoothing: antialiased;
+	}
+	@else {
+		-moz-osx-font-smoothing: auto;
+		 -webkit-font-smoothing: subpixel-antialiased;
+	}
+}
+
+@mixin border-radius($radii){
+	-webkit-border-radius: $radii;
+	   -moz-border-radius: $radii;
+	        border-radius: $radii;
+	-webkit-background-clip: padding;
+	   -moz-background-clip: padding;
+	        background-clip: padding-box;
+}
+
+@mixin border-radius-no-clip($radii){
+	-webkit-border-radius: $radii;
+	   -moz-border-radius: $radii;
+	        border-radius: $radii;
+}
+
+
+@mixin box-shadow($value...){
+	-webkit-box-shadow: $value;
+	   -moz-box-shadow: $value;
+	     -o-box-shadow: $value;
+	        box-shadow: $value;
+}
+
+@mixin box-sizing($value){
+	-webkit-box-sizing: $value;
+	   -moz-box-sizing: $value;
+	        box-sizing: $value;
+}
+
+@mixin label-variant($color) {
+	background-color: $color;
+	&[href] {
+		&:hover,
+		&:focus {
+			background-color: darken($color, 10%);
+		}
+	}
+}
+
+@mixin transform($args...){
+	-webkit-transform: $args;
+	   -moz-transform: $args;
+	    -ms-transform: $args;
+	     -o-transform: $args;
+	        transform: $args;
+}
+
+@mixin auth-social-button($bg, $bg-i){
+	background-color: $bg;
+
+	i {
+		background-color: $bg-i;
+	}
+
+	&:hover {
+		background-color: lighten($bg, 80%);
+		i {
+			background-color: darken($bg-i, 5%);
+		}
+	}
+}
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before{
+        display: block;
+        content: " ";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+
+    > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+@mixin share-variant($color){
+	background-color: $color;
+	&:hover, &:focus {
+		background-color: darken($color, 8%);
+	}
+}
+
+@mixin event-variant($color, $text-color: #fff, $border-color: #fff, $border-opacity: .35){
+	.event-image-container {
+		.txt-brand {
+			color: $color;
+		}
+	}
+	ul {
+		li {
+			a {
+				background-color: $color;
+				color: $text-color;
+				border-color: $border-color;
+				&:hover {
+					background-color: darken($color, 5%);
+				}
+			}
+		}
+	}
+	.event-header {
+		.event-title.txt-brand {
+			color: $color;
+		}
+	}
+
+	@media (max-width: $screen-ms-max) {
+		ul {
+			li {
+				a {
+					border-color: rgba($border-color, $border-opacity);
+				}
+			}
+		}
+	}
+}
+
+@mixin nav-variant ($color, $position, $hover-position, $width: 45px, $alt-border-color: ''){
+	> a {
+		> .logo {
+			background-position: $position;
+			width: $width;
+		}
+	}
+	> a:hover, &.open > a, &.active > a {
+		@if $alt-border-color == '' {
+			border-left-color: $color;
+		}
+		@else {
+			border-left-color: $alt-border-color;
+		}
+		> .logo {
+			background-position: $hover-position;
+		}
+	}
+	.dropdown-menu {
+		> li > a {
+			&:hover, &:focus {
+				color: $color;
+				border-left-color: $color;
+			}
+		}
+	}
+}
+
+@mixin vertical-align($position: relative){
+	position: $position;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin preserve-3d(){
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}

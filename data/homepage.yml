@@ -1,22 +1,22 @@
 introduction:
   version: 1.0.0
-  version_updated: July 2016
-  title: Mobile Design Guide - The Car Connection
-  description: Welcome to the design system guidelines. Here you will find the design standards defined for The Car Connection's mobile web site. The standards will evolve as the product progresses and new components and elements are needed.
-  link: https://github.com/madebymunsters/TCC-Design-Guide
-  link_title: Get the design guide
+  version_updated: September 2016
+  title: Design Guide - Mecum Auto Auctions
+  description: Welcome to the design system guidelines. Here you will find the design standards defined for Mecum Auto Auctions' web site. The standards will evolve as the product progresses and new components and elements are needed.
+  link: 
+  link_title: View the design guide
 
 content:
   intro:
     title: Getting Started
     intro_sections:
       - title: Design components
-        description: Fuse's interface is made up of various components. All of which have their place in the applicaiton. Find out more.
+        description: Mecum's interface is made up of various components. All of which have their place in the application. Find out more.
         link: components/#alerts
         link_text: Explore the components
         img: icons/navigation/settings-icon_active.svg
       - title: Design elements
-        description: Simple, but bold. The goal of Fuse's design elements are to enhance a user's experience rather than distract from it.
+        description: Simple, but bold. The goal of Mecum's design elements are to enhance a user's experience rather than distract from it.
         link: elements/#colors
         link_text: Explore the elements
         img: icons/navigation/move-icon_active.svg

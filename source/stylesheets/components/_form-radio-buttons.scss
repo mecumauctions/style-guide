@@ -3,8 +3,8 @@
 
 
 // Variables
-$radio-input-background:           $white-base;
-$radio-input-border:               1px solid $grey-base;
+$radio-input-background:           $mecum-white;
+$radio-input-border:               1px solid $mecum-md-gray;
 $radio-input-cursor:               pointer;
 $radio-input-dimensions:           18px;
 $radio-input-radius:               30em;
@@ -12,7 +12,7 @@ $radio-input-shadow:               rgba(172,172,179,0.35);
 $radio-input-spread:               inset 0px 0px 3px 0px;
 $radio-input-v-align:              bottom;
 
-$radio-input-background-active:    $blue-base;
+$radio-input-background-active:    $mecum-blue;
 $radio-input-position-active:      3px 0 null 0;
 
 
@@ -44,7 +44,7 @@ input[type="radio"]:checked {
     @include position(absolute, $radio-input-position-active);
     background-color: $radio-input-background-active;
     border: $radio-input-border;
-    border-color: darken($blue-base, 10%);
+    border-color: darken($mecum-blue, 10%);
     border-radius: $radio-input-radius;
     content: "";
     height: $radio-input-dimensions / 1.75;

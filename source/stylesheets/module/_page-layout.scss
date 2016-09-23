@@ -2,17 +2,17 @@
 // ========================================
 
 // Variables
-$page-background:               $white-base;
-$page-offset:                   14rem;
+$page-background:               $mecum-white;
+$page-offset:                   20rem;
 $page-height:                   100vh;
 $page-spacing:                  $spacer-charlie;
 
 $page-section-max-width:        1440px;
 
-$section-header-background:     $white-dark;
-$section-header-background-alt: $white-base;
-$section-header-border:         1px solid $grey-base;
-$section-header-border-alt:     1px solid $grey-base;
+$section-header-background:     $mecum-white;
+$section-header-background-alt: $mecum-white;
+$section-header-border:         1px solid $mecum-white;
+$section-header-border-alt:     1px solid $mecum-dk-gray;
 $section-header-spread:         0px 3px 6px 0px;
 $section-header-shadwow:        rgba(172,172,179,0.40);
 
@@ -20,7 +20,7 @@ $section-header-containe-width: 600px;
 
 $section-body-margin:           $spacer-echo;
 
-$section-body-title-color:      $black-base;
+$section-body-title-color:      $mecum-dk-gray;
 
 
 // Structure
@@ -44,7 +44,7 @@ $section-body-title-color:      $black-base;
 .section__header {
   background-color: $section-header-background;
   border-bottom: $section-header-border;
-  padding: $spacer-alpha $page-spacing $page-spacing;
+  padding: $page-spacing $page-spacing $page-spacing;
 
   &.section__header--shadow {
     @include position(relative);
@@ -65,13 +65,15 @@ $section-body-title-color:      $black-base;
 }
 
 .header__title {
-  @include font-type($primary-sans-serif, normal, 100);
+  @include font-type($primary-sans-serif, normal, 600);
+  text-transform: uppercase;
 }
 
 .header__title--section {
   @include font-type($primary-sans-serif, normal, 400);
   margin-bottom: 0;
-  color: $purple-base;
+  color: $mecum-red;
+  font-size:24px;
 }
 
 
@@ -109,7 +111,7 @@ $section-body-title-color:      $black-base;
 
 // Page Footer
 .page__footer {
-  border-top: 1px solid $grey-base;
+  border-top: 1px solid $mecum-lter-gray;
   padding: $spacer-charlie;
   text-align: center;
 

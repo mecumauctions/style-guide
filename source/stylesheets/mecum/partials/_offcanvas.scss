@@ -1,0 +1,98 @@
+// Reset inverted navmenu basics
+$navmenu-inverse-color: $mecum-lt-gray;
+$navmenu-inverse-bg: #333;
+$navmenu-inverse-border: transparent;
+$navmenu-inverse-link-hover-bg: lighten(#333, 5%);
+
+// Inverted navmenu links
+$navmenu-inverse-link-color: $mecum-lt-gray;
+
+@import "../jasny-bootstrap/scss/_variables";
+@import "../jasny-bootstrap/scss/_navmenu";
+@import "../jasny-bootstrap/scss/_offcanvas";
+
+.offcanvas {
+	@include offcanvas();
+	overflow-y: auto;
+}
+
+.navmenu-inverse {
+	font-family: $univers-cond-font;
+	h4 {
+		color: #fff;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+		margin: 0;
+		padding: 12px 15px 10px 20px;
+		text-transform: uppercase;
+	}
+	.nav {
+		> li {
+			a {
+				font-size: 18px;
+				text-transform: uppercase;
+				i {
+					display: inline-block;
+					width: 30px;
+					text-align: center;
+					margin-right: 10px;
+				}
+				&.dropdown-toggle {
+						position: relative;
+						&:after {
+							content: $ma-caret-right;
+							position: absolute;
+							top: 12px;
+							right: 15px;
+							font-family: 'mecum-icons';
+							font-size: 14px;
+						}
+				}
+			}
+			&.open {
+				> a {
+					&.dropdown-toggle {
+						&:after {
+							content: $ma-caret-down;
+						}
+					}
+				}
+			}
+			&.active {
+				> a {
+					color: $mecum-red;
+				}
+			}
+			&.search {
+				padding: 8px 15px;
+				.search-input {
+					width: 100%;
+					background-color: #fff;
+					border: 1px solid #ccc;
+					position: relative;
+					font-size: 16px;
+					> i {
+						position: absolute;
+						top: 50%;
+						left: 8px;
+						margin-top: -9px;
+					}
+					input {
+						border: 0;
+						padding: 8px 15px 8px 30px;
+						width: 100%;
+						&:focus {
+							outline: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	.dropdown-backdrop{
+		position: relative;
+	}
+}
+
+body.canvas-slid {
+	overflow-y: hidden;
+}

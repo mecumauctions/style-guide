@@ -1,0 +1,66 @@
+body.kiosk {
+	width: 100%;
+	height: 100%;
+}
+
+.container-fluid.kiosk {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.form-inline.kiosk {
+	margin-top: 25px;
+	margin-bottom: auto;
+}
+
+.form-control.kiosk {
+	width: 300px;
+}
+
+.form-inline.kiosk .form-control {
+	font-size: 18px;
+}
+
+
+.kiosk-lot-number {
+	color: $mecum-red;
+}
+
+.kiosk-lot-price {
+	@extend .mfont3;
+	font-size: 50px;
+}
+
+.kiosk-highlights-list {
+	margin-left: -22px;
+	color: #000;
+	font-size: 16px;
+}
+
+.kiosk-lot-desc {
+	font-size: 16px;
+	color: #000;
+	line-height: 26px;
+}
+
+.kiosk-twoColumns{
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+}
+
+.map-circle {
+	color: #CC0000;
+	font-size: 50px;
+}
+
+.map-number {
+    color: #1b4f81;;
+}
+
+.kiosk-warning {
+	color: $brand-warning;
+}

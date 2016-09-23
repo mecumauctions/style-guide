@@ -1,0 +1,33 @@
+.branded {
+	color: $mecum-red;
+}
+.branded-bg {
+	background-color: $mecum-red;
+	color: #fff;
+}
+
+.division-tractors {
+	.branded {
+		color: $brand-tractors;
+	}
+	.branded-bg {
+		background-color: $brand-tractors;
+	}
+}
+.division-motorcycles {
+	.branded {
+		color: $brand-motorcycles;
+	}
+	.branded-bg {
+		background-color: $brand-motorcycles;
+	}
+}
+.division-roadart {
+	.branded {
+		color: darken($brand-roadart, 8%);
+	}
+	.branded-bg {
+		background-color: $brand-roadart;
+		color: #333;
+	}
+}

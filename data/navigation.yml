@@ -5,6 +5,10 @@ site_navigation:
         section_link: 'elements/#colors'
       - section_title: Typography
         section_link: 'elements/#typography'
+      - section_title: Icons
+        section_link: 'elements/#icons'
+      - section_title: Flags
+        section_link: 'elements/#flags'
   - section_title: Design Components
     sections:
       - section_title: Buttons
@@ -15,9 +19,13 @@ site_navigation:
         section_link: 'components/#tables'
       - section_title: Tabs
         section_link: 'components/#tabs'
+      - section_title: Pagination
+        section_link: 'components/#pagination'
   - section_title: Design Modules
     sections:
       - section_title: Navigation
         section_link: 'modules/#navigation'
       - section_title: Footer
         section_link: 'modules/#footer'
+      - section_title: Panels
+        section_link: 'modules/#panels'

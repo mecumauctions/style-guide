@@ -5,69 +5,44 @@
     </div>
   </header>
   <div class="section__body">
-    <header role="title" class="body__header">
-      <h5 class="body__header__title">States: Base, Active</h5>
-    </header>
-    <ul class="tab__list" id="tab__list-example">
-      <% data.components.tabs.each do |tab| %>
-        <li class="tab__item">
-          <a href="#" class="tab__link"><%= tab.title %></a>
+    <div class="results-tab">
+      <ul class="nav nav-tabs nav-pills-ms" role="tablist">
+        <li role="presentation" class="active">
+          <a href="#past-year" aria-controls="home" role="tab" data-toggle="tab">Past Year</a>
         </li>
-      <% end %>
-    </ul>
+        <li role="presentation">
+          <a href="#year-2015" aria-controls="#year-2015" role="tab" data-toggle="tab">2015<span class="hidden-sm"> Top Ten</span></a>
+        </li>
+        <li role="presentation">
+          <a href="#year-2014" aria-controls="#year-2014" role="tab" data-toggle="tab">2014<span class="hidden-sm"> Top Ten</span></a>
+        </li>
+        <li role="presentation">
+          <a href="#year-2013" aria-controls="#year-2013" role="tab" data-toggle="tab">2013<span class="hidden-sm"> Top Ten</span></a>
+        </li>
+        <li role="presentation">
+          <a href="#year-2012" aria-controls="#year-2012" role="tab" data-toggle="tab">2012<span class="hidden-sm"> Top Ten</span></a>
+        </li>
+        <li role="presentation">
+          <a href="#year-2011" aria-controls="#year-2011" role="tab" data-toggle="tab">2011<span class="hidden-sm"> Top Ten</span></a>
+        </li>  
+      </ul>
+    </div>
   </div>
   <div class="section__body">
     <header role="title" class="body__header">
-      <h5 class="body__header__title">Sample Code</h5>
-    </header>
-<% code("html") do %>
-  <ul class="tab__list">
-    <li class="tab__item">
-      <a href="#" class="tab__link tab__link--active">Tab Link One</a>
-    </li>
-    <li class="tab__item">
-      <a href="#" class="tab__link">Tab Link Two</a>
-    </li>
-    <li class="tab__item">
-      <a href="#" class="tab__link">Tab Link Three</a>
-    </li>
+        <h5 class="body__header__title">Sample Code</h5>
+      </header>
+      <% code("html") do %>
+<div class="results-tab">
+  <ul class="nav nav-tabs nav-pills-ms" role="tablist">
+    <li role="presentation" class="active"><a href="#past-year" aria-controls="home" role="tab" data-toggle="tab">Past Year</a></li>
+    <li role="presentation"><a href="#year-2015" aria-controls="#year-2015" role="tab" data-toggle="tab">2015<span class="hidden-sm"> Top Ten</span></a></li>
+    <li role="presentation"><a href="#year-2014" aria-controls="#year-2014" role="tab" data-toggle="tab">2014<span class="hidden-sm"> Top Ten</span></a></li>
+    <li role="presentation"><a href="#year-2013" aria-controls="#year-2013" role="tab" data-toggle="tab">2013<span class="hidden-sm"> Top Ten</span></a></li>
+    <li role="presentation"><a href="#year-2012" aria-controls="#year-2012" role="tab" data-toggle="tab">2012<span class="hidden-sm"> Top Ten</span></a></li>
+    <li role="presentation"><a href="#year-2011" aria-controls="#year-2011" role="tab" data-toggle="tab">2011<span class="hidden-sm"> Top Ten</span></a></li>  
   </ul>
-<% end %>
-  </div>
-  <div class="section__body">
-    <header role="title" class="body__header">
-      <h5 class="body__header__title">Component Usage</h5>
-      <p>Tabs should be used to separate views within views. The content should be related in some way. For example, the account view should be made up of three tabs: Account Details, Permaleased Numbers and Edit Account. The goal is to allow users to move from one section of an account, site or pool fluidly without having to search for navigation items or drill deep into the application.</p>
-    </header>
-  </div>
-  <div class="section__body">
-    <header role="title" class="body__header">
-      <h5 class="body__header__title">HTML Guidelines</h5>
-      <p>This table gives you a quick overview of the CSS classes that can be applied to create tabs.</p>
-    </header>
-    <table class="table table-alpha">
-      <thead>
-        <th>Class Name</th>
-        <th>Usage</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td style="width:30%">.tab__list</td>
-          <td>This class name should be applied to an unordered list element. It is the main wrapper to a tab list. <% code("html") do %><ul class="tab__list"><!-- Tab List Items --></ul><% end %></td>
-        </tr>
-        <tr>
-          <td style="width:30%">.tab__item</td>
-          <td>Set this on the list item. It must be nested inside of a tab list. <% code("html") do %><li class="tab__item"><!-- Tab List Anchor --></li><% end %></td>
-        </tr>
-        <tr>
-          <td style="width:30%">.tab__link</td>
-          <td>Set this class on the anchor item nested inside of a tab item. <% code("html") do %><a href="#" class="tab__link"><!-- Tab Name --></a><% end %></td>
-        </tr>
-        <tr>
-          <td style="width:30%">.tab__link--active</td>
-          <td>Set this on the anchor item that is currently active. It applies the active tab link styles. <% code("html") do %><a href="#" class="tab__link tab__link--active"><!-- Tab Name --></a><% end %></td>
-        </tr>
-      </tbody>
-    </table>
+</div>
+      <% end %>
   </div>
 </section>

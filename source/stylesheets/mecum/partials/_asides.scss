@@ -1,0 +1,244 @@
+.aside{
+    @include border-radius(5px);
+	margin: 15px 0;
+    text-align: left;
+	&:first-child {
+		margin-top: 0;
+	}
+	&.infonet {
+		margin-top: 0;
+	}
+
+	&.aside-register-to-bid {
+		.aside-cont {
+			background-color: #ebebeb;
+		}
+		form {
+			padding: 10px;
+		}
+		label {
+			display: block;
+			margin-bottom: 8px;
+			span {
+				color: #555;
+				font-size: 12px;
+			}
+		}
+		button {
+			font-family: $univers-cond-font;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+	&.aside-contact {
+		.aside-cont {
+			padding: 10px;
+		}
+		h4 {
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #444;
+		}
+		ul {
+			list-style: none;
+			span {
+				font-weight: bold;
+				display: inline-block;
+				margin-right: 5px;
+				color: #444;
+			}
+			li {
+				margin-bottom: 3px;
+			}
+			div.address {
+				margin: 5px 15% 0;
+			}
+		}
+		p {
+			margin: 0 0 5px;
+			color: #999;
+			font-size: 13px;
+		}
+		.office-hours-sat {
+			margin-left: 92px;
+			display: block;
+			font-weight: normal;
+		}
+		.aside-cont {
+			padding: 10px;
+		}
+		.form-group {
+			margin-bottom: 10px;
+			label {
+				margin-bottom: 2px;
+				font-size: 13px;
+				width: 100%;
+				display: block;
+			}
+			.form-control {
+				@include border-radius(0);
+			}
+		}
+		button {
+			font-family: $univers-cond-font;
+			text-transform: uppercase;
+		}
+	}
+    .logo-infonet-mobile {
+        margin: 0 auto 30px;
+        max-width: 100%;
+        display: none;
+        @media screen and (max-width:767px){
+            display: block;
+        }
+    }
+    .aside-header{
+        padding: 10px 15px;
+        border-radius:5px 5px 0 0;
+        background: $brand-mecum;
+        color: $panel-mecum-text;
+		margin: 0;
+        .title{
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: $mecum-font;
+			font-weight: 500;
+            font-size: 25px;
+        }
+    }
+    .aside-footer {
+        border-top: 1px #ccc solid;
+        padding: 10px 15px 15px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .aside-cont{
+        border:solid 1px $brand-mecum;
+        border-top: none;
+        border-radius: 0 0 5px 5px;
+        background: $panel-mecum-text;
+    }
+
+    .aside-section{
+        padding:20px 10px;
+    }
+
+    .menu {
+		padding-left: 0;
+		margin: 0;
+    }
+
+    .menu li {
+        list-style: none;
+        a {
+            padding: 7px 12px;
+            border-top: solid 1px #cfcfcf;
+            font-size: 14px;
+            color: #333;
+            text-decoration: none;
+            display: block;
+
+            &:hover,
+            &.active {
+                box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+                background: #e9e9e9;
+                color: #000;
+                text-decoration: none;
+            }
+            .dkgray {
+                margin-right: 5px;
+            }
+            .btngray {
+                color: #ccc;
+                float: right;
+                margin-left: 10px;
+                line-height: 1.428571429;
+            }
+        }
+		&.group-header {
+			padding: 5px 0 5px 15px;
+		    text-transform: uppercase;
+		    margin: 0;
+		    background-color: #eee;
+		}
+		&:last-child {
+			a {
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+		}
+    }
+
+    @media screen and (max-width:767px){
+        // display:none;
+        margin-top: 15px;
+    }
+
+}
+
+.ltgray .aside-register-to-bid {
+	.aside-cont {
+		background-color: #fff;
+	}
+}
+
+.menu-form {
+    background: #cfcfcf;
+    padding: 10px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,.2);
+    border-bottom: 1px solid #adadad;
+    .row {
+        margin-bottom: 8px !important;
+    }
+    label{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: $screen-sm) {
+	.aside {
+		&.aside-contact {
+			.g-recaptcha {
+				transform:scale(0.66);
+				-webkit-transform:scale(0.66);
+				transform-origin:0 0;
+				-webkit-transform-origin:0 0;
+			}
+			.form-group {
+				&.recaptcha {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: $screen-md) {
+	.aside {
+		&.aside-contact {
+			.g-recaptcha {
+				transform:scale(0.63);
+				-webkit-transform:scale(0.63);
+				transform-origin:0 0;
+				-webkit-transform-origin:0 0;
+			}
+		}
+	}
+}
+
+
+@media (min-width: $screen-lg) {
+	.aside {
+		&.aside-contact {
+			.g-recaptcha {
+				transform:scale(0.80);
+				-webkit-transform:scale(0.80);
+				transform-origin:0 0;
+				-webkit-transform-origin:0 0;
+			}
+		}
+	}
+}

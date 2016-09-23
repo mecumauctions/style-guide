@@ -1,0 +1,59 @@
+body {
+	padding-bottom: 0px;
+	background-color: #1a1a1a;
+	font-family: $univers-font;
+	font-size: 14px;
+	font-weight: normal;
+	@media (max-width: $screen-ms-max) {
+		font-size: 16px;
+		line-height: 1.25;
+	}
+	@media (max-width: $screen-md) {
+		padding-bottom: 55px;
+	}
+}
+
+.page-wrapper {
+	background-color: #575757;
+}
+
+.page-container {
+	@extend .container;
+	background-color: #fff;
+	@include transition(all .3s linear);
+	&.padded-bottom {
+		padding-bottom: 15px;
+	}
+}
+
+.padded-row {
+	padding: 15px 0;
+}
+
+.ltgray {
+	background-color: #e6e6e6;
+	@extend .padded-row;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.darkgray {
+	background-color: #333;
+	//padding: 15px;
+}
+
+.dkgray {
+	color: #999;
+}
+.cccgray {
+	color: #ccc;
+}
+
+
+@media (max-width: $screen-ms-max) {
+	.page-wrapper {
+		//padding-top: 50px;
+	}
+}

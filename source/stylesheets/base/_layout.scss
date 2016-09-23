@@ -2,15 +2,13 @@
 // ========================================
 
 // Variables
-$site-background:        $grey-base;
+$site-background:        $mecum-black;
 $site-max-width:         1440px;
 
 
 // Global Styles
 html,
 body {
-  @include linear-gradient(-180deg, $purple-base 40%, $blue-base 100%);
-  @include position(relative);
   background-color: $site-background;
   margin: 0 auto;
   overflow: hidden;

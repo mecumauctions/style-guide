@@ -11,15 +11,15 @@ $tables: (
 // Table Map Styles
 $table-config: (
   table-alpha: (
-    background-color: $white-dark,
-    border: 1px solid $grey-base,
-    color: $grey-base,
+    background-color: $mecum-white,
+    border: 1px solid $mecum-lt-gray,
+    color: $mecum-dk-gray,
     padding: 15px 10px
   ),
   table-bravo: (
-    background-color: $white-dark,
-    border: 1px solid $grey-base,
-    color: $grey-base,
+    background-color: $mecum-white,
+    border: 1px solid $mecum-lt-gray,
+    color: $mecum-dk-gray,
     padding: 15px 10px
   )
 );

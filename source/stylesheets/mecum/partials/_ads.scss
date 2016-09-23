@@ -1,0 +1,157 @@
+.bottom-ads {
+	margin-bottom: 30px;
+}
+@media (max-width: $screen-sm) {
+	.bottom-ads > div {
+		margin-bottom: 15px;
+	}
+	.bottom-ads {
+		margin-bottom: 0;
+	}
+}
+.bottom-ads .fullwidth {
+	border: 1px solid #777777;
+}
+.bottom-ads .fullwidth:hover {
+	border: 1px solid #FEF200;
+	cursor: pointer;
+}
+
+.ad-row {
+	margin: 0;
+	position: relative;
+	.ad-row-container {
+		padding: 0 25px;
+		width: 100%;
+	}
+	&:after {
+		content: "";
+		display: none;
+		height: 10px;
+		border: 1px solid #fff;
+		border-width: 1px 0;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -45px;
+	}
+	&.row {
+		margin: 0 -15px;
+	}
+	.ad {
+		margin-top: 15px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	.ad-fluid {
+		padding-bottom: 19.05%; // 80/420
+	}
+}
+
+.ad-tower-container {
+	.ad-fluid {
+		padding-bottom: 19.57%; // 90/460
+	}
+	&:first-child {
+		margin-top: 15px;
+	}
+	&:last-child {
+		//margin-bottom: 15px;
+	}
+}
+
+.ad-full-width {
+	margin: 15px 0;
+	.ad-fluid {
+		padding-bottom: 19.05%; // 80/420
+	}
+}
+
+.ad-fluid {
+	position: relative;
+	display: block;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		border: 0;
+	}
+}
+
+@media (min-width: $screen-ms) and (max-width:$screen-ms-max) {
+	.ad-row {
+		.ad {
+			margin-top: 0;
+		}
+	}
+}
+
+@media (min-width: $screen-ms) {
+	.ad-row {
+		.ad-fluid {
+			padding-bottom: 11.94%; // 80/670
+		}
+	}
+	.ad-full-width {
+		.ad-fluid {
+			padding-bottom: 11.94%; // 80/670
+		}
+	}
+	.ad-tower-container {
+		.ad-fluid {
+			padding-bottom: 12.5%; // 90/720
+		}
+	}
+}
+
+// Target sm, md, lg devices
+@media (min-width: $screen-sm) {
+	.ad-row {
+		margin-bottom: 65px;
+		&:after {
+			display: block;
+		}
+		&:last-child {
+			margin-bottom: 25px;
+			&:after {
+				display: none;
+			}
+		}
+		.ad-fluid {
+			padding-bottom: 0;
+			height: 80px;
+		}
+	}
+	.ad-full-width {
+		padding: 0 45px;
+		height: 80px;
+	}
+	/*.ad-tower-container {
+		.ad-fluid {
+			padding-bottom: 200%; // 600/300
+		}
+	}*/
+}
+
+@media (min-width: $screen-md) {
+	.ad-tower-container {
+		.ad-fluid {
+			padding-bottom: 200%; // 600/300
+		}
+	}
+}
+
+@media (min-width: $screen-lg) {
+	.ad-row {
+		.ad-row-container {
+			padding: 0 45px;
+		}
+	}
+}

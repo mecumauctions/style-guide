@@ -2,24 +2,24 @@
 // ========================================
 
 // Variables
-$page-navogation-padding:           $spacer-delta;
+$page-navigation-padding:           $spacer-delta;
 $page-navigation-position:          0 null -10px 0;
 $page-navigation-position-type:     absolute;
 $page-navigation-spread:            -5px -6px 10px 0px;
 $page-navigation-shadow:            rgba(34,23,78,0.25);
-$page-navigation-width:             14rem;
+$page-navigation-width:             20rem;
 
-$page-navigation-header-border:     1px solid $purple-light;
+$page-navigation-header-border:     1px solid $mecum-dk-gray;
 
-$page-navbar-title-color:           $white-base;
+$page-navbar-title-color:           $mecum-white;
 $page-navbar-title-txt-transform:   uppercase;
 
 $page-navbar-link-border:           3px solid transparent;
-$page-navbar-link-color:            $white-base;
+$page-navbar-link-color:            $mecum-white;
 $page-navbar-link-txt-transform:    uppercase;
 
-$page-navbar-link-background-hover: $purple-light;
-$page-navbar-link-border-hover:     3px solid $blue-light;
+$page-navbar-link-background-hover: $mecum-dk-gray;
+$page-navbar-link-border-hover:     3px solid $mecum-red;
 
 $navbar-link-icon-dimensions:       8px;
 $navbar-link-icon-size:             100%;
@@ -35,14 +35,14 @@ $navbar-link-icon-transform-active: 0deg;
   width: $page-navigation-width;
 
   &.page__navigation--background {
-    @include linear-gradient(-180deg, $purple-base 40%, $blue-base 100%);
+    @include linear-gradient(-180deg, $mecum-blue 40%, $mecum-blue 100%);
   }
 }
 
 .page__navigation__header {
   border-bottom: $page-navigation-header-border;
   margin-bottom: $spacer-delta;
-  padding: $page-navogation-padding;
+  padding: $page-navigation-padding;
   text-align: center;
   .logo {
     width:100%;
@@ -53,7 +53,7 @@ $navbar-link-icon-transform-active: 0deg;
 .navbar__title {
   @include s-hotel;
   color: $page-navbar-title-color;
-  padding: $page-navogation-padding $page-navogation-padding 0;
+  padding: $page-navigation-padding $page-navigation-padding 0;
   text-transform: $page-navbar-title-txt-transform;
   text-indent: 3px;
 }
@@ -74,7 +74,7 @@ $navbar-link-icon-transform-active: 0deg;
     @include font-type($primary-sans-serif, normal, 700);
     color: $page-navbar-link-color;
     display: block;
-    padding: $page-navogation-padding;
+    padding: $page-navigation-padding;
     text-transform: $page-navbar-link-txt-transform;
   }
 
@@ -108,12 +108,15 @@ $navbar-link-icon-transform-active: 0deg;
 
 .submenu__item__link {
   @include transform(opacity 0.3s ease);
-  color: $white-base;
+  color: $mecum-white;
   display: block;
   padding: $spacer-echo $spacer-charlie;
+  font-weight: 500;
 
   &:hover {
     opacity: 0.75;
+    color:$mecum-red;
+    text-decoration: none;
   }
 }
 

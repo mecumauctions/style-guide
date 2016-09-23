@@ -2,10 +2,11 @@
 // ========================================
 
   // Font Family
-  $primary-sans-serif: "Roboto", "Helvetica", sans-serif;
+  $primary-sans-serif: "UniversCond", "Arial Narrow", "Helvetica", sans-serif;
+  $secondary-sans-serif: "Univers","Arial Narrow",arial,sans-serif;
 
   // Font Sizes
-  $font-size-base: 15px;
+  $font-size-base: 14px;
 
   $s-alpha:   28px;
   $s-bravo:   24px;
@@ -36,10 +37,10 @@
 
   // Text Colors Map
   $type-colors: (
-    'blue':      ( $blue-base   ),
-    'green':     ( $green-base  ),
-    'grey':      ( $grey-dark   ),
-    'grey-base': ( $grey-base   ),
-    'red':       ( $red-base    ),
-    'white':     ( $white-base  )
+    'blue':      ( $mecum-blue   ),
+    'grey':      ( $mecum-dk-gray   ),
+    'mecum-dk-gray': ( $mecum-md-gray   ),
+    'red':       ( $mecum-red   ),
+    'white':     ( $mecum-white  ),
+    'black':     ( $mecum-black  )
   );

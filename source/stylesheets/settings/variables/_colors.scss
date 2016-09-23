@@ -1,47 +1,56 @@
 // Colors Variables
 // ========================================
 
-  // Black
-  $black-base:    #000000;
+  // BLACK
+  $mecum-black:     #000;
 
-  // Blue
-  $blue-base:     #373F51;
-  $blue-light:    #72BCE2;
+  // GRAY
+  $mecum-dk-gray:   #2C2C2C;
+  $mecum-md-gray:   #5b5b5b;
+  $mecum-lt-gray:   #D4D2D3;
+  $mecum-lter-gray: #e6e6e6;
+  $mecum-base-gray: #CCC;
+  $mecum-bg-color:  #575757;
+  
+  // RED
+  $mecum-red:       #ed1c23;
+  $mecum-link-red:  #C11b12;
+  $mecum-maroon:    #721011;
+  
+  // YELLOW
+  $mecum-yellow:    #fcf200;
+  $mecum-hairline:  #9D9D9D;
+  
+  // GOLD
+  $mecum-gold:      #c19754;
+  
+  // BLUE
+  $mecum-blue:      #0066CC;
 
-  // Green
-  $green-base:    #7DBC12;
-
-  // Orange
-  $orange-base:   #F39C12;
-
-  // Grey
-  $grey-dark:     #4A4A4A;
-  $grey-base:     #9B9B9B;
-
-  // Purple
-  $purple-base:   #2B2D42;
-  $purple-light:  #44465B;
-
-  // Red
-  $red-base:      #E14E4E;
+  // GREEN
+  $mecum-green:     #64ae3e;
 
   // White
-  $white-base:    #FFFFFF;
-  $white-dark:    #F9F9FA;
+  $mecum-white:     #FFFFFF;
 
 
   //MAIN PALETTE LIST
   $colors: (
-    black-base:   $black-base,
-    blue-base:    $blue-base,
-    blue-light:   $blue-light,
-    green-base:   $green-base,
-    orange-base:  $orange-base,
-    grey-base:    $grey-base,
-    grey-dark:    $grey-dark,
-    purple-base:  $purple-base,
-    purple-light: $purple-light,
-    red-base:     $red-base,
-    white-base:   $white-base,
-    white-dark:   $white-dark
+    mecum-black: $mecum-black,
+    mecum-dk-gray: $mecum-dk-gray,
+    mecum-md-gray: $mecum-md-gray,
+    mecum-lt-gray: $mecum-lt-gray,
+    mecum-lter-gray: $mecum-lter-gray,
+    mecum-base-gray: $mecum-base-gray,
+    mecum-bg-color: $mecum-bg-color,
+    mecum-red: $mecum-red,
+    mecum-link-red: $mecum-link-red,
+    mecum-maroon: $mecum-maroon,
+    mecum-yellow: $mecum-yellow,
+    mecum-hairline: $mecum-hairline,
+    mecum-gold: $mecum-gold,
+    mecum-blue: $mecum-blue,
+    mecum-green: $mecum-green,
+    mecum-white: $mecum-white
   );
+

@@ -1,0 +1,125 @@
+
+$brand-facebook: #3b5998;
+$brand-google-plus: #dd4b39;
+$brand-twitter: #55acee;
+$brand-linkedin: #007bb5;
+$brand-pinterest: #cb2027;
+$brand-reddit: #ff5700;
+$brand-youtube: #bb0000;
+$brand-instagram: #125688;
+
+.sharebar {
+	margin: 8px 0;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	@extend .hidden-print;
+	li {
+		width: 20%;
+		display: block;
+		float: left;
+		vertical-align: top;
+		padding-right: 2px;
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+	a {
+		display: block;
+		width: 100%;
+		padding: 8px 10px;
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+		position: relative;
+		background-color: #666;
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+		&.has-count {
+			padding-top: 3px;
+			.count {
+				font-weight: bold;
+				font-size: 12px;
+				line-height: 3px;
+				display: block;
+				padding-bottom: 2px;
+				vertical-align: top;
+			}
+		}
+		&.share-facebook {
+			@include share-variant($brand-facebook);
+		}
+		&.share-google-plus {
+			@include share-variant($brand-google-plus);
+		}
+		&.share-twitter {
+			@include share-variant($brand-twitter);
+		}
+		&.share-linkedin {
+			@include share-variant($brand-linkedin);
+		}
+		&.share-pinterest {
+			@include share-variant($brand-pinterest);
+		}
+		&.share-reddit {
+			@include share-variant($brand-reddit);
+		}
+		&.share-print {
+			@include share-variant(#666666);
+		}
+		&.share-email {
+			@include share-variant(#999);
+		}
+	}
+}
+
+
+.footer-social {
+	a {
+		position: relative;
+		i {
+			position: relative;
+			z-index: 2;
+		}
+		&:after {
+			background-color: #fff;
+			z-index: 0;
+			@include border-radius(3px);
+			position: absolute;
+			overflow: hidden;
+			text-indent: 999px;
+			width: 18px;
+			height: 19px;
+			display: none;
+			top: 4px;
+			left: 1px;
+			content: "";
+		}
+		&:hover, &:focus {
+			text-decoration: none;
+			&:after {
+				display: block;
+			}
+			i {
+    			text-shadow: 0 0 20px rgba(255,255,255,.75);
+			}
+
+			&.social-facebook {
+				color: $brand-facebook;
+			}
+			&.social-twitter {
+				color: $brand-twitter;
+			}
+			&.social-youtube {
+				color: $brand-youtube;
+			}
+			&.social-pinterest {
+				color: $brand-pinterest;
+			}
+			&.social-instagram {
+				color: $brand-instagram;
+			}
+		}
+	}
+}

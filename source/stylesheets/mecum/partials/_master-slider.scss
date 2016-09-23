@@ -1,0 +1,32 @@
+/**
+ *  Master Slider
+ * 	Core css file
+ */
+
+@import "master-slider/variables";
+@import "master-slider/core";
+@import "master-slider/lightbox";
+@import "master-slider/skin";
+
+.master-slider.ms-skin-default {
+	/*.ms-slide-vcbtn-mobile {
+		display: none !important;
+	}
+	.ms-slide-vpbtn {
+		display: none !important;
+	}*/
+	.row {
+		margin: 0;
+		* {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		.pagination-summary {
+			margin-top: 20px;
+		}
+		.pagination-container {
+			margin-top: 15px;
+		}
+	}
+}

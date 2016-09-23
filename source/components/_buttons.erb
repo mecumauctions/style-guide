@@ -1,114 +1,141 @@
-<section role="region" aria-labelledby="typography" class="page__section">
+<section role="region" aria-labelledby="buttons" class="page__section">
   <header role="banner" class="section__header section__header--alt">
     <div class="header__container">
-      <h4 class="header__title--section" id="typography">Buttons</h4>
+      <h4 class="header__title--section" id="buttons">Buttons</h4>
     </div>
   </header>
-  <div class="section__body section__header">
-    <div class="one__third">
-      <h5 class="body__header__title">iOS</h5>
-    </div>
-    <div class="one__third">
-      <h5 class="body__header__title">Android</h5>
-    </div>
-    <div class="one__third">
-      <h5 class="body__header__title">Text Styles</h5>
-    </div>
-  </div>
-  <!-- Primary Button -->
+
   <div class="section__body">
-    <div class="one__third iOS">
-      <button class="button--primary">Primary Button</button>
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Home Page Buttons</h5>
+    </header>
+    <div class="event event-collector-cars">
+      <ul>
+        <li><a href="/collector-cars/how-to-sell/?auctionID=CH1016">Consign Now</a></li>
+        <li><a href="/collector-cars/register-to-bid/?auctionID=CH1016">Register To Bid</a></li>
+        <li><a href="/auctions/chicago-2016/lots/featured/">View lots</a></li>
+        <li><a href="/auctions/chicago-2016/">Auction Details</a></li>
+      </ul>
     </div>
-    <div class="one__third android">
-      <button class="button--primary">Primary Button</button>
+
+    <div class="event event-motorcycles">
+      <ul>
+        <li><a href="/collector-cars/how-to-sell/?auctionID=CH1016">Consign Now</a></li>
+        <li><a href="/collector-cars/register-to-bid/?auctionID=CH1016">Register To Bid</a></li>
+        <li><a href="/auctions/chicago-2016/lots/featured/">View lots</a></li>
+        <li><a href="/auctions/chicago-2016/">Auction Details</a></li>
+      </ul>
     </div>
-    <div class="one__third">
-      <% code("css") do %>
-/* Primary Button */
-width: 160px; 
-height: 27.5px; 
-border-radius: 3px; 
-background-color: #7dbc12;
-font-family: Avenir-Roman; (iOS)
-font-family: Roboto-Regular; (Android)
-font-size: 13px; 
-text-align: center; 
-color: #ffffff;
-      <% end %>
+
+    <div class="event event-tractors">
+      <ul>
+        <li><a href="/collector-cars/how-to-sell/?auctionID=CH1016">Consign Now</a></li>
+        <li><a href="/collector-cars/register-to-bid/?auctionID=CH1016">Register To Bid</a></li>
+        <li><a href="/auctions/chicago-2016/lots/featured/">View lots</a></li>
+        <li><a href="/auctions/chicago-2016/">Auction Details</a></li>
+      </ul>
     </div>
+
+    <div class="event event-roadart">
+      <ul>
+        <li><a href="/collector-cars/how-to-sell/?auctionID=CH1016">Consign Now</a></li>
+        <li><a href="/collector-cars/register-to-bid/?auctionID=CH1016">Register To Bid</a></li>
+        <li><a href="/auctions/chicago-2016/lots/featured/">View lots</a></li>
+        <li><a href="/auctions/chicago-2016/">Auction Details</a></li>
+      </ul>
+    </div>
+
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<% code("html") do %>
+<!-- Collector Cars -->
+<div class="event event-collector-cars">
+<!-- Motorcycles -->
+<div class="event event-motorcycles">
+<!-- Tractors -->
+<div class="event event-tractors">
+<!-- Road Art -->
+<div class="event event-roadart">
+<% end %>
+
   </div>
 
-  <!-- Secondary Button -->
   <div class="section__body">
-    <div class="one__third iOS">
-      <button class="button--secondary button--outline">Secondary Button</button>
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Miscellaneous Search</h5>
+    </header>
+    <div class="col-md-3">
+      <a type="button" class="btn btn-branded btn-lg btn-block" id="expandSearch"><i class="ma ma-caret-right" id="auction-search-arrow"></i> Auction Search</a>
     </div>
-    <div class="one__third android">
-      <button class="button--secondary button--outline">Secondary Button</button>
+    <div class="clearfix"></div>
+    <div class="col-md-3">
+      <a class="btn btn-block btn-callout btn-branded" href="/auctions/chicago-2016/lots/" title="View All Lots">
+        <i class="ma ma-question-circle"></i> Looking for All Lots?
+      </a>
     </div>
-    <div class="one__third">
-      <% code("css") do %>
-/* Secondary Button */
-width: 160px; 
-height: 27.5px; 
-border-radius: 3px; 
-border: solid 1px #72bce2;
-font-family: Avenir-Roman; (iOS)
-font-family: Roboto-Regular; (Android)
-font-size: 10.5px; 
-text-align: center; 
-color: #ffffff;
-      <% end %>
+    <div class="clearfix"></div>
+    <div class="col-md-3">
+      <div id="main-header" style="background:#fff;">
+        <div class="infonet-links search-button-top">
+          <a class="btn btn-mecum" href="/search/reset/1/"><i class="ma ma-search"></i> SEARCH</a>
+        </div>
+      </div>
     </div>
+    <div class="clearfix"></div>
+    <div class="col-md-3">
+      <div class="aside aside-register-to-bid">
+        <button type="submit" class="btn btn-block btn-branded">Register To Bid</button>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<% code("html") do %>
+<!-- Auction Search Button -->
+<a type="button" class="btn btn-branded btn-lg btn-block" id="expandSearch"><i class="ma ma-caret-right" id="auction-search-arrow"></i> Auction Search</a>
+<!-- Looking for Lots Button -->
+<a class="btn btn-block btn-callout btn-branded" href="#" title="View All Lots"><i class="ma ma-question-circle"></i> Looking for All Lots?</a>
+<!-- Top Level Search Button -->
+<a class="btn btn-mecum" href="/search/reset/1/"><i class="ma ma-search"></i> SEARCH</a>
+<!-- Register to Bid Sidebar Button -->
+<button type="submit" class="btn btn-block btn-branded">Register To Bid</button>
+<% end %>
   </div>
 
-  <!-- Next Page Button -->
   <div class="section__body">
-    <div class="one__third iOS">
-      <button class="button--next-page button--outline">Go To Next Page Button<span></span></button>
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Next / Previous</h5>
+    </header>
+    <div class="col-xs-12 col-sm-4 col-md-3 hidden-print lot-detail-nav">  
+      <div class="search-group hidden-sm hidden-ms hidden-xs">
+        <div class="btn-group btn-group-justified" role="group">
+          <a type="button" href="/auctions/chicago-2016/lots/10/08/page/2/#257660" class="btn btn-default top-button">Return to Lot List</a>
+        </div>
+        <div class="btn-group btn-group-justified" role="group">
+          <a type="button" href="/lots/CH1016-272318/1957-ford-victoria-hardtop/" class="btn btn-default left-button "><i class="ma ma-chevron-left cccgray"></i><span class="mgl10">Previous</span></a>
+          <a type="button" href="/lots/CH1016-257661/1965-plymouth-belvedere-i/" class="btn btn-default right-button "><span class="mgr10">Next</span><i class="ma ma-chevron-right cccgray"></i></a>
+        </div>
+      </div>
     </div>
-    <div class="one__third android">
-      <button class="button--next-page button--outline">Go To Next Page Button<span></span></button>
+    <div class="clearfix"></div>
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sample Code</h5>
+    </header>
+<% code("html") do %>
+<div class="col-xs-12 col-sm-4 col-md-3 hidden-print lot-detail-nav">  
+  <div class="search-group hidden-sm hidden-ms hidden-xs">
+    <div class="btn-group btn-group-justified" role="group">
+      <a type="button" href="/auctions/chicago-2016/lots/10/08/page/2/#257660" class="btn btn-default top-button">Return to Lot List</a>
     </div>
-    <div class="one__third">
-      <% code("css") do %>
-/* Next Page Button */
-width: 160px; 
-height: 20px; 
-border-radius: 3px; 
-border: solid 1px #72bce2;
-font-family: Avenir-Roman; (iOS)
-font-family: Roboto-Regular; (Android)
-font-size: 8px; 
-color: #72bce2;
-      <% end %>
+    <div class="btn-group btn-group-justified" role="group">
+      <a type="button" href="/lots/CH1016-272318/1957-ford-victoria-hardtop/" class="btn btn-default left-button "><i class="ma ma-chevron-left cccgray"></i><span class="mgl10">Previous</span></a>
+      <a type="button" href="/lots/CH1016-257661/1965-plymouth-belvedere-i/" class="btn btn-default right-button "><span class="mgr10">Next</span><i class="ma ma-chevron-right cccgray"></i></a>
     </div>
   </div>
-
-  <!-- Next Page Button -->
-  <div class="section__body">
-    <div class="one__third iOS">
-      <button class="button--dual search"><span></span>New Search</button>
-      <button class="button--dual filter"><span></span>Filter Results</button>
-    </div>
-    <div class="one__third android">
-      <button class="button--dual search"><span></span>New Search</button>
-      <button class="button--dual filter"><span></span>Filter Results</button>
-    </div>
-    <div class="one__third">
-      <% code("css") do %>
-/* Search Dual Buttons */
-width: 75px; 
-height: 22.5px; 
-border-radius: 3px; 
-background-color: #72bce2;
-font-family: Avenir-Roman; (iOS)
-font-family: Roboto-Regular; (Android)
-font-size: 8px; 
-color: #ffffff;
-      <% end %>
-    </div>
+</div>
+<% end %>
   </div>
 
 </section>

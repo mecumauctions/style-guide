@@ -12,7 +12,7 @@
 
 
 // Box Shadow
-@mixin box-shadow($dim: 0 0 0 0, $color: $black-base){
+@mixin box-shadow($dim: 0 0 0 0, $color: $mecum-dk-gray){
   -webkit-box-shadow: $dim $color;
   -moz-box-shadow:    $dim $color;
   -o-box-shadow:      $dim $color;

@@ -1,0 +1,50 @@
+/**************************************************************************
+Original Author: CFG
+Date: 10.22.2015
+Purpose: Styles for form controls
+*******************************************************************************
+Revision History:
+
+CFG: 10.22.2015 - Added markup to support form items
+***************************************************************************/
+
+label.required:after {
+    content: "*";
+    padding-left:1%;
+    color: $mecum-red;
+}
+
+ul.form-results {
+	list-style-type: none;
+}
+
+.text-green {
+	color: #5cb85c;
+}
+
+.text-red {
+	color: $mecum-red;
+}
+
+/* Responsive
+-------------------------------------------------------------- */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+	
+		
+}
+	
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+
+
+
+	}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+	}

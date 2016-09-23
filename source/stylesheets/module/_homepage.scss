@@ -2,7 +2,7 @@
 // ========================================
 
 // Variables
-$homepage-card-border:          2px solid $grey-base;
+$homepage-card-border:          2px solid $mecum-dk-gray;
 $homepage-card-padding:         $spacer-delta;
 $homepage-card-radius:          2px;
 
@@ -12,7 +12,7 @@ $homepage-card-shadow-hover:    rgba(172,172,179,0.25);
 $homepage-card-icon-dimension:  100px;
 $homepage-card-icon-radius:     30em;
 
-$homepage-card-title-color:     $grey-dark;
+$homepage-card-title-color:     $mecum-dk-gray;
 
 
 
@@ -27,7 +27,7 @@ $homepage-card-title-color:     $grey-dark;
 .homepage__card {
   @include clearfix;
   @include position(relative);
-  @include linear-gradient(-162deg, $purple-base 28%, $blue-base 100%);
+  @include linear-gradient(-162deg, $mecum-blue 28%, $mecum-blue 100%);
   @include span-columns(4 of 12);
   border-radius: $homepage-card-radius;
   overflow: hidden;
@@ -43,7 +43,7 @@ $homepage-card-title-color:     $grey-dark;
     -webkit-background-clip: padding-box;
     -moz-background-clip:    padding-box;
     background-clip:         padding-box;
-    background-color: $white-base;
+    background-color: $mecum-white;
     border: $homepage-card-border;
     padding: $homepage-card-padding;
     width: 100%;

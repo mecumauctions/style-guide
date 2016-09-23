@@ -15,7 +15,7 @@ $modal-overlay-top-position:    0;
 $modal-overlay-left-position:   0;
 $modal-overlay-z-index:         9999;
 
-$modal-body-background:         $white-base;
+$modal-body-background:         $mecum-white;
 $modal-body-box-spread:         0 0 15px;
 $modal-body-box-color:          rgba(0, 0, 0, 0.75);
 $modal-border-radius:           0;
@@ -29,7 +29,7 @@ $modal-body-width:              450px;
 $modal-body-z-index:            99999;
 
 
-$modal-header-border:           1px solid $grey-base;
+$modal-header-border:           1px solid $mecum-md-gray;
 
 $modal-trigger-icon-position:   -31px -31px null null;
 $modal-trigger-icon-transition: fill 0.3s ease-in-out;
@@ -79,7 +79,7 @@ $modal-trigger-icon-width:      15px;
 }
 
 .modal__header {
-  border-bottom: 1px solid $grey-base;
+  border-bottom: 1px solid $mecum-md-gray;
   margin-bottom: $modal-margin;
 
   .title {
@@ -105,6 +105,6 @@ $modal-trigger-icon-width:      15px;
   height: $modal-trigger-icon-width;
 
   #app-icon {
-    fill: $white-base;
+    fill: $mecum-white;
   }
 }

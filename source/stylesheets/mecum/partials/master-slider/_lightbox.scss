@@ -1,0 +1,42 @@
+/*.ms-lightbox-template {
+	max-width: 750px;
+	padding: 5px 5px 0.1px 5px;
+	margin: 0 auto;
+	background: #000;
+}*/
+
+.ms-lightbox-btn {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.ms-lightbox {
+	//text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+	//width: 75px;
+	//height: 52px;
+	background-color: rgba(0,0,0,.5);
+	font-size: 14px;
+	padding: 6px 10px;
+	@include border-radius(5px);
+	vertical-align: middle;
+	color: rgba(255,255,255,.5);
+	font-family: $univers-cond-font;
+	text-transform: uppercase;
+	cursor: zoom-in;
+	&:hover {
+		text-decoration: none;
+		color: rgba(255,255,255,.9);
+		background-color: rgba(0,0,0,.8);
+	}
+	.ma {
+		//font-size: 22px;
+		margin-right: 5px;
+	}
+	//background: url('#{$ms-image-path}lightbox-btn.png') no-repeat center;
+	//opacity: 0.60;
+	//filter: alpha(opacity=60); /* For IE8 and earlier */
+
+}

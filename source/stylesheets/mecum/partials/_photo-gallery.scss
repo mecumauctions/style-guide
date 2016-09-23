@@ -1,0 +1,24 @@
+// Styles for photo gallery using flickr found at /photos/
+.photo-gallery {
+	img {
+		margin: 0 0 5px 0;
+	}
+	h4 {
+		margin: 0;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	p {
+		margin-top: 2px;
+		font-size: 11px;
+		color: #777;
+	}
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+}
+
+
+	/*.SetCase { margin-top: 5px; margin-bottom: 5px; width: 91px; height: 95px; padding: 7px 0 0 7px; background: url(https://l.yimg.com/g/images/set_case.gif) no-repeat; }
+	.SetCase .setThumb { border: 1px solid black; }*/

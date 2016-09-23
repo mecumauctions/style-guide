@@ -1,0 +1,210 @@
+.lots, .lots-featured, .lots-results {
+	margin-top: 20px;
+	margin-left: -6px;
+	margin-right: -6px;
+	> [class*='col-'] {
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+	.lot {
+		margin-bottom: 25px;
+
+		.lot-number {
+			font-family: $univers-cond-font;
+			font-size: 16px;
+			text-transform: uppercase;
+			color: #666;
+		}
+		.lot-title {
+			font-family: $univers-cond-font;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 16px;
+			color: #333;
+		}
+		.lot-series {
+			font-family: $univers-cond-font;
+			font-size: 14px;
+			line-height: 16px;
+			color: #999;
+		}
+		.lot-sale-info {
+			font-family: $univers-cond-font;
+			font-weight: 100;
+			font-size: 20px;
+			font-weight: 700;
+			margin-top: 8px;
+		}
+		.lot-bid-now {
+			padding: 15px;
+			text-align: center;
+			.btn {
+				width: 60%;
+			}
+			span {
+				display: block;
+				line-height: 32px;
+			}
+		}
+		.lot-image-container {
+			position: relative;
+			.lot-image {
+				width: 100%;
+			}
+			.flag-group {
+				left: 0;
+				top: -11px;
+				position: absolute;
+			}
+			.badge {
+				font-size: 20px;
+				background-color: $mecum-red;
+				font-family: $mecum-font;
+				font-weight: 400;
+				left: 15px;
+				top: 0;
+				display: block;
+				position: absolute;
+				padding: 2px 10px;
+				@include border-radius(0);
+			}
+		}
+		.lot-price {
+			right: 0;
+			top: -11px;
+			position: absolute;
+			color: #000;
+			background-color: #fff;
+			width: 100%;
+			padding: 2px 6px;
+			font-size: 16px;
+			line-height: 20px;
+			font-family: $univers-font;
+			font-weight: 700;
+			&:empty {
+				padding: 0;
+			}
+		}
+		.lot-bid-goes-on {
+			.lot-price {
+				text-align: left;
+				&:before {
+					display: block;
+					position: absolute;
+					content: "";
+					background-color: #fff;
+					background-image: asset-url('/images/bgo.png') !important;
+					background-size: 132px 22px !important;
+					background-repeat: no-repeat;
+					background-position: 6px 2px;
+					width: 144px;
+					height: 24px;
+					top: 0;
+					right: 4px;
+				}
+				&:empty {
+					&:before {
+						right: 0;
+					}
+				}
+			}
+		}
+		.lot-sold {
+			.lot-price {
+				//background-color: $mecum-yellow;
+				&:before {
+					display: block;
+					position: absolute;
+					content: "";
+					background-repeat: no-repeat;
+					background-image: asset-url('/images/sold_68px.png') !important;
+					background-size: 42px 42px !important;
+					width: 42px;
+					height: 42px;
+					top: -9px;
+					right: -4px;
+					z-index: 2;
+					@include border-radius(21px);
+					@include box-shadow(1px 1px 4px 1px rgba(0,0,0,.25));
+				}
+			}
+		}
+
+		.lot-high-bid {
+			.lot-price {
+				&:empty {
+					&:before {
+						display: none;
+					}
+				}
+				&:before {
+					display: inline-block;
+					position: absolute;
+					content: "High Bid";
+					top: 0;
+					right: 0;
+					padding: 3px 5px 1px;
+					z-index: 2;
+					font-family: $univers-cond-font;
+					line-height: 20px;
+					text-transform: uppercase;
+					background-color: #fff;
+				}
+			}
+		}
+
+		&.lot-motorcycle { .lot-image-container { .badge { background-color: $brand-motorcycles; }}}
+		&.lot-tractor { .lot-image-container { .badge { background-color: $brand-tractors; }}}
+		&.lot-roadart { .lot-image-container { .badge { background-color: $brand-roadart; color: #000; }}}
+	}
+}
+
+.lots-featured, .lots-results {
+	.lot {
+		.lot-number {
+			font-size: 16px;
+			color: #666;
+		}
+		.lot-title {
+			font-size: 20px;
+			line-height: 18px;
+		}
+		.lot-series {
+			font-size: 15px;
+			line-height: 18px;
+		}
+	}
+}
+
+.lots-results {
+	.lot {
+		.lot-title {
+			font-weight: 700;
+		}
+	}
+}
+
+.no-lots {
+	padding: 15px;
+	background-color: #ccc;
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max){
+	.lots, .lots-results {
+		.lot {
+			.lot-bid-goes-on {
+				.lot-price {
+					&:before {
+						background-size: 100px 18px;
+						width: 100px;
+						height: 18px;
+						top: 3px;
+					}
+				}
+			}
+			.lot-sale-info {
+				font-size: 18px;
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+// Global helper classes
+
+@media (max-width: $screen-md) {
+	.center-md {
+		text-align: left;
+	}
+}
+
+.slashes {
+	&:before {
+		content: "//";
+	}
+}
+
+.uc {
+	text-transform: uppercase;
+}

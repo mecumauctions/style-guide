@@ -21,7 +21,7 @@ h4,
 h5,
 h6 {
   @include font-type($primary-sans-serif, normal, 700);
-  color: $black-base;
+  color: $mecum-dk-gray;
   line-height: 1.0;
   margin-bottom: $spacer-delta;
   text-rendering: optimizeLegibility;
@@ -35,7 +35,7 @@ h4 { font-size: $font-size-base * 1.85; }
 h5 { font-size: $font-size-base * 1.45; }
 h6 { font-size: $font-size-base;        }
 
-.heading--h1 { @include s-alpha;   }
+.heading--h1 { @include s-alpha; text-transform: uppercase;   }
 .heading--h2 { @include s-bravo;   }
 .heading--h3 { @include s-charlie  }
 .heading--h4 { @include s-delta;   }
@@ -43,9 +43,9 @@ h6 { font-size: $font-size-base;        }
 .heading--h6 { @include s-foxtrot; }
 
 p {
-  @include font-type($primary-sans-serif, normal, 400);
+  @include font-type($secondary-sans-serif, normal, 400);
   @include s-foxtrot;
-  color: $black-base;
+  color: $mecum-black;
   line-height: $base-line-height;
   margin-bottom: 10px;
 }
@@ -59,7 +59,7 @@ dd{
 
 a {
   @include font-type(inherit, normal, 400);
-  color: $blue-base;
+  color: $mecum-blue;
   text-decoration: none;
 
   &:active,
@@ -69,7 +69,10 @@ a {
 }
 
 .text--light {
-  @include font-type($primary-sans-serif, normal, 100);
+  @include font-type($primary-sans-serif, normal, 600);
+  font-size:36px;
+  line-height: 1.2;
+  margin: 0 2px 0 0;
 }
 
 .text--uppercase {
@@ -96,4 +99,8 @@ a {
   .text--#{$name} {
     color: $tone-color;
   };
+}
+
+.event > h4 {
+  background-color: $mecum-bg-color;
 }

@@ -52,7 +52,7 @@
 }
 
 // Text Shadow
-@mixin text-shadow($dim: 0 0 0 0, $color: $black-base){
+@mixin text-shadow($dim: 0 0 0 0, $color: $mecum-dk-gray){
   -webkit-text-shadow: $dim $color;
   -moz-text-shadow:    $dim $color;
   -o-text-shadow:      $dim $color;
