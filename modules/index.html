@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design Guide | Mecum Auto Auctions</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+
+    <!-- Favicons -->
+
+    <!-- Stylesheets -->
+    <link href="../stylesheets/application.css" rel="stylesheet" type="text/css" /><link href="../stylesheets/syntax.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fonts -->
+
+    <link href="https://www.mecum.com/favicon.ico" type="image/x-icon" rel="icon">
+  
+    <link href="//cdn2.mecum.com/assets/builds/1.0.0-b391/images/icons/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="//cdn3.mecum.com/assets/builds/1.0.0-b391/images/icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="//cdn1.mecum.com/assets/builds/1.0.0-b391/images/icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="//cdn2.mecum.com/assets/builds/1.0.0-b391/images/icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="//cdn3.mecum.com/assets/builds/1.0.0-b391/images/icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="//cdn1.mecum.com/assets/builds/1.0.0-b391/images/icons/icon-hires.png" rel="icon" sizes="192x192">
+    <link href="//cdn2.mecum.com/assets/builds/1.0.0-b391/images/icons/icon-normal.png" rel="icon" sizes="128x128">
+    
+  </head>
+  <body class="modules modules_index">
+    <aside role="sidebar" class="page__navigation site__navigation">
+  <header role="banner" class="page__navigation__header">
+<a href="/style-guide">      <img class="logo" src="../images/logos/logo.png" />
+</a>  </header>
+  <nav role="navigation" class="page__navigation__navbar">
+    <h6 class="navbar__title">NAVIGATION</h6>
+    <ul class="navbar__links">
+        <li class="navbar__item">
+          <a class="navbar__link--toggle navbar__link--toggle-icon" href="#">Design Elements</a>
+          <ul class="navbar__submenu" aria-hidden="true">
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/style-guideelements/#colors">Colors</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/style-guideelements/#typography">Typography</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/style-guideelements/#flags">Flags</a>
+              </li>
+          </ul>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link--toggle navbar__link--toggle-icon" href="#">Design Components</a>
+          <ul class="navbar__submenu" aria-hidden="true">
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/style-guidecomponents/#buttons">Buttons</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/style-guidecomponents/#form-elements">Form Elements</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/style-guidecomponents/#tables">Tables</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/style-guidecomponents/#tabs">Tabs</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/style-guidecomponents/#pagination">Pagination</a>
+              </li>
+          </ul>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link--toggle navbar__link--toggle-icon" href="#">Design Modules</a>
+          <ul class="navbar__submenu" aria-hidden="true">
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/style-guidemodules/#navigation">Navigation</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/style-guidemodules/#footer">Footer</a>
+              </li>
+              <li class="navbar__submenu__item">
+                <a class="submenu__item__link" href="/style-guidemodules/#panels">Panels</a>
+              </li>
+          </ul>
+        </li>
+    </ul>
+  </nav>
+</aside>
+    <main role="main" class="page">
+      <header role="banner" aria-labelledby="styleguide-componets" class="section__header section__header--shadow">
+  <div class="header__container">
+    <h1 class="header__title" id="styleguide-components">Design Modules</h1>
+  </div>
+</header>
+<section role="region" aria-labelledby="navigation" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="navigation">Navigation</h4>
+    </div>
+  </header>
+
+  <!-- Primary Navigation -->
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Primary Navigation</h5>
+    </header>
+    <header id="main-header" class="darkgray hidden-xs hidden-ms hidden-print">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="logo-top">
+              <a href="#">
+                <img src="//cdn1.mecum.com/assets/builds/1.0.0-b391/images/MECUMAUCTIONSLogo.png" alt="Mecum Auctions">
+              </a>
+              
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <nav class="infonet-links">
+              
+                <a href="#" title="Sign Up">Sign Up</a>
+                <span class="slash"></span>
+                <span class="dropdown ">
+                  <a class="dropdown-toggle" href="#" data-toggle="dropdown" title="Log In to the Mecum InfoNet">Log In <strong class="caret"></strong></a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <form method="post" name="infonet-login" class="infonet-login">
+                      
+                      <div class="login-status"></div>
+
+                      <label for="email">Email Address</label>
+                      <input name="email" type="email" id="email" class="form_data" size="50" required="required">
+                      
+                      <button class="btn btn-branded btn-lg btn-block" type="submit" name="submit"><span class="btn-text-static">Login</span><span class="btn-text-loading"><i class="ma ma-loading ma-spin"></i> Submitting..</span></button>
+                      
+                    </form>
+                  </div>
+                </span>
+              
+              <a class="btn btn-mecum" href="/search/reset/1/"><i class="ma ma-search"></i> SEARCH</a>
+            </nav>
+            <nav class="header-links">
+              <ul class="nav">
+                <li><a href="#">Schedule</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
+                  <ul class="dropdown-menu sub-nav">
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Mecum Gear</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Mecum Monthly</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Tickets</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Catalogs</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Calendars</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Hotels</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Credential Requests</a></li>
+                    <li><a href="#">Mecum Monthly</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Photos</a></li>
+                  </ul>
+                </li>
+                <li class=""><a href="#">TV Times</a></li>
+                <li class=""><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Primary Navigation Email -->
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Primary Navigation with Email Dropdown</h5>
+    </header>
+    <header id="main-header" class="darkgray hidden-xs hidden-ms hidden-print">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="logo-top">
+              <a href="/">
+                <img src="//cdn1.mecum.com/assets/builds/1.0.0-b391/images/MECUMAUCTIONSLogo.png" alt="Mecum Auctions">
+              </a>
+              
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <nav class="infonet-links">
+              
+                <a href="/infonet/sign-up/" title="Sign Up">Sign Up</a>
+                <span class="slash"></span>
+                <span class="dropdown open">
+                  <a class="dropdown-toggle" href="#" data-toggle="dropdown" title="Log In to the Mecum InfoNet" aria-expanded="true">Log In <strong class="caret"></strong></a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <form method="post" name="infonet-login" class="infonet-login">
+                      
+                      <div class="login-status"></div>
+
+                      <label for="email">Email Address</label>
+                      <input name="email" type="email" id="email" class="form_data" size="50" required="required">
+                      
+                      <button class="btn btn-branded btn-lg btn-block" type="submit" name="submit"><span class="btn-text-static">Login</span><span class="btn-text-loading"><i class="ma ma-loading ma-spin"></i> Submitting..</span></button>
+                      
+                    </form>
+                  </div>
+                </span>
+              
+              <a class="btn btn-mecum" href="/search/reset/1/"><i class="ma ma-search"></i> SEARCH</a>
+            </nav>
+            <nav class="header-links">
+              <ul class="nav">
+                <li><a href="/auctions/">Schedule</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
+                  <ul class="dropdown-menu sub-nav">
+                    <li><a href="https://shop.mecum.com/" target="_blank" rel="noopener noreferrer">Mecum Gear</a></li>
+                    <li><a href="https://shop.mecum.com/collections/mecum-monthly" target="_blank" rel="noopener noreferrer">Mecum Monthly</a></li>
+                    <li><a href="https://shop.mecum.com/collections/daily-auction-tickets" target="_blank" rel="noopener noreferrer">Tickets</a></li>
+                    <li><a href="https://shop.mecum.com/collections/auction-catalog" target="_blank" rel="noopener noreferrer">Catalogs</a></li>
+                    <li><a href="https://shop.mecum.com/collections/calendars" target="_blank" rel="noopener noreferrer">Calendars</a></li>
+                    <li><a href="https://shop.mecum.com/collections/host-hotel-club" target="_blank" rel="noopener noreferrer">Hotels</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/media/request/">Credential Requests</a></li>
+                    <li><a href="/mecum-monthly/">Mecum Monthly</a></li>
+                    <li><a href="/news/">News</a></li>
+                    <li><a href="/photos/">Photos</a></li>
+                  </ul>
+                </li>
+                <li class=""><a href="/tv-times/">TV Times</a></li>
+                <li class=""><a href="/contact-us/">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <br><br><br><br><br><br>
+  </div>
+
+  <!-- Primary Navigation Submenu Dropdown -->
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Primary Navigation with Submenu Dropdown</h5>
+    </header>
+    <header id="main-header" class="darkgray hidden-xs hidden-ms hidden-print">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="logo-top">
+              <a href="/">
+                <img src="//cdn1.mecum.com/assets/builds/1.0.0-b391/images/MECUMAUCTIONSLogo.png" alt="Mecum Auctions">
+              </a>
+              
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <nav class="infonet-links">
+              
+                <a href="/infonet/sign-up/" title="Sign Up">Sign Up</a>
+                <span class="slash"></span>
+                <span class="dropdown">
+                  <a class="dropdown-toggle" href="#" data-toggle="dropdown" title="Log In to the Mecum InfoNet" aria-expanded="false">Log In <strong class="caret"></strong></a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <form method="post" name="infonet-login" class="infonet-login">
+                      
+                      <div class="login-status"></div>
+
+                      <label for="email">Email Address</label>
+                      <input name="email" type="email" id="email" class="form_data" size="50" required="required">
+                      
+                      <button class="btn btn-branded btn-lg btn-block" type="submit" name="submit"><span class="btn-text-static">Login</span><span class="btn-text-loading"><i class="ma ma-loading ma-spin"></i> Submitting..</span></button>
+                      
+                    </form>
+                  </div>
+                </span>
+              
+              <a class="btn btn-mecum" href="/search/reset/1/"><i class="ma ma-search"></i> SEARCH</a>
+            </nav>
+            <nav class="header-links">
+              <ul class="nav">
+                <li><a href="/auctions/">Schedule</a></li>
+                <li class="dropdown open">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Shop <span class="caret"></span></a>
+                  <ul class="dropdown-menu sub-nav">
+                    <li><a href="https://shop.mecum.com/" target="_blank" rel="noopener noreferrer">Mecum Gear</a></li>
+                    <li><a href="https://shop.mecum.com/collections/mecum-monthly" target="_blank" rel="noopener noreferrer">Mecum Monthly</a></li>
+                    <li><a href="https://shop.mecum.com/collections/daily-auction-tickets" target="_blank" rel="noopener noreferrer">Tickets</a></li>
+                    <li><a href="https://shop.mecum.com/collections/auction-catalog" target="_blank" rel="noopener noreferrer">Catalogs</a></li>
+                    <li><a href="https://shop.mecum.com/collections/calendars" target="_blank" rel="noopener noreferrer">Calendars</a></li>
+                    <li><a href="https://shop.mecum.com/collections/host-hotel-club" target="_blank" rel="noopener noreferrer">Hotels</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/media/request/">Credential Requests</a></li>
+                    <li><a href="/mecum-monthly/">Mecum Monthly</a></li>
+                    <li><a href="/news/">News</a></li>
+                    <li><a href="/photos/">Photos</a></li>
+                  </ul>
+                </li>
+                <li class=""><a href="/tv-times/">TV Times</a></li>
+                <li class=""><a href="/contact-us/">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br>
+  </div>
+
+
+  <!-- Offcanvas Navigation -->
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Offcanvas Mobile Navigation</h5>
+    </header>
+    <aside id="mobile-menu" class="navmenu navmenu-inverse navmenu-fixed-right offcanvas in canvas-slid" style="right: 0px; left: 357px;">
+      <h4>Menu</h4>
+      <ul class="nav navmenu-nav">
+        <li class="search">
+          <form method="post" action="/search/">
+            <div class="search-input">
+              <i class="ma ma-search"></i>
+              <input type="text" name="searchText" placeholder="SEARCH LOTS">
+              <input type="hidden" name="submit" value="submit">
+            </div>
+          </form>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span>Infonet</span></a>
+          <ul class="dropdown-menu navmenu-nav">
+            
+              <li><a href="/infonet/sign-up/">Signup</a></li>
+              <li><a href="/infonet/login/">Login</a></li>
+            
+          </ul>
+        </li>
+        <li class=" dropdown open">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span>Collector Cars</span></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="/collector-cars/">Auctions</a></li>
+            <li><a href="/collector-cars/auctions/">Schedule</a></li>
+            <li><a href="/collector-cars/results/">Results</a></li>
+            <li><a href="/collector-cars/newest-lots/">Newest Lots</a></li>
+            <li><a href="/collector-cars/videos/">Videos</a></li>
+            <li><a href="/collector-cars/register-to-bid/">Register To Bid</a></li>
+            <li><a href="/collector-cars/how-to-bid/">How To Bid</a></li>
+            <li><a href="/collector-cars/how-to-sell/">Consign</a></li>
+            <li><a href="/finance/">Finance</a></li>
+            <li><a href="/collector-cars/about/">About</a></li>
+          </ul>
+        </li>
+        <li class=" dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span>Motorcycles</span></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="/motorcycles/">Auctions</a></li>
+            <li><a href="/motorcycles/auctions/">Schedule</a></li>
+            <li><a href="/motorcycles/results/">Results</a></li>
+            <li><a href="/motorcycles/newest-lots/">Newest Lots</a></li>
+            <li><a href="/motorcycles/videos/">Videos</a></li>
+            <li><a href="/motorcycles/register-to-bid/">Register To Bid</a></li>
+            <li><a href="/motorcycles/how-to-bid/">How To Bid</a></li>
+            <li><a href="/motorcycles/how-to-sell/">Consign</a></li>
+            <li><a href="/finance/">Finance</a></li>
+            <li><a href="/motorcycles/about/">About</a></li>
+          </ul>
+        </li>
+        <li class=" dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span>Tractors</span></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="/tractors/">Auctions</a></li>
+            <li><a href="/tractors/auctions/">Schedule</a></li>
+            <li><a href="/tractors/results/">Results</a></li>
+            <li><a href="/tractors/newest-lots/">Newest Lots</a></li>
+            <li><a href="/tractors/videos/">Videos</a></li>
+            <li><a href="/tractors/register-to-bid/">Register To Bid</a></li>
+            <li><a href="/tractors/how-to-bid/">How To Bid</a></li>
+            <li><a href="/tractors/how-to-sell/">Consign</a></li>
+            <li><a href="/finance/">Finance</a></li>
+            <li><a href="/tractors/about/">About</a></li>
+          </ul>
+        </li>
+        <li class=" dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span>Road Art</span></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="/roadart/">Auctions</a></li>
+            <li><a href="/roadart/auctions/">Schedule</a></li>
+            <li><a href="/roadart/results/">Results</a></li>
+            <li><a href="/roadart/newest-lots/">Newest Lots</a></li>
+            <li><a href="/roadart/videos/">Videos</a></li>
+            <li><a href="/roadart/register-to-bid/">Register To Bid</a></li>
+            <li><a href="/roadart/how-to-bid/">How To Bid</a></li>
+            <li><a href="/roadart/how-to-sell/">Consign</a></li>
+            <li><a href="/finance/">Finance</a></li>
+            <li><a href="/roadart/about/">About</a></li>
+          </ul>
+        </li>
+        <li><a href="/auctions/">Schedule</a></li>
+        <li><a href="/tv-times/">TV Times</a></li>
+        <li><a href="/contact-us/">Contact Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span>Shop</span></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="https://shop.mecum.com" target="_blank" rel="noopener noreferrer">Mecum Gear</a></li>
+            <li><a href="https://shop.mecum.com/collections/mecum-monthly" target="_blank" rel="noopener noreferrer">Mecum Monthly</a></li>
+            <li><a href="https://shop.mecum.com/collections/daily-auction-tickets" target="_blank" rel="noopener noreferrer">Tickets</a></li>
+            <li><a href="https://shop.mecum.com/collections/auction-catalog" target="_blank" rel="noopener noreferrer">Catalogs</a></li>
+            <li><a href="https://shop.mecum.com/collections/calendars" target="_blank" rel="noopener noreferrer">Calendars</a></li>
+            <li><a href="https://shop.mecum.com/collections/host-hotel-club" target="_blank" rel="noopener noreferrer">Hotels</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span>Media</span></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="/media/request/">Credential Requests</a></li>
+            <li><a href="/mecum-monthly/">Mecum Monthly</a></li>
+            <li><a href="/news/">News</a></li>
+            <li><a href="/photos/">Photos</a></li>
+          </ul>
+        </li>
+        <li role="separator" class="divider"></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><span>More</span></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="/about-us/">About Mecum</a></li>
+            <li><a href="/sponsors/">Our Sponsors</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/jobs/">Jobs</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="/pdf/Auction_Charity_Guidelines.pdf">Charity Guidelines</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+  </div>
+  
+  <!-- Sub Navigation -->
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Sub Navigation</h5>
+    </header>
+    <div id="main-nav" class="affix-top">
+      <div class="navbar affix-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-target="#mobile-menu" data-toggle="offcanvas" data-canvas="#body-wrapper" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span>Menu</span>
+            </button>
+            <a class="navbar-brand" href="/">
+              <img alt="Mecum Auctions" src="//cdn2.mecum.com/assets/builds/1.0.0-b391/images/logo@2x.png" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);">
+            </a>
+          </div>
+          <nav id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="dropdown nav-collector-cars open">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Collector Cars <span class="caret"></span> <i class="logo"></i></a>
+                <ul class="dropdown-menu sub-nav">
+                  <li><a href="#">Auctions</a></li>
+                  <li><a href="#">Schedule</a></li>
+                  <li><a href="#">Results</a></li>
+                  <li><a href="#">Newest Lots</a></li>
+                  <li><a href="#">Register To Bid</a></li>
+                  <li><a href="#">How To Bid</a></li>
+                  <li><a href="#">Consign</a></li>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="#">Finance</a></li>
+                  <li><a href="#">About</a></li>
+                </ul>
+              </li>
+              <li class="dropdown nav-motorcycles">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Motorcycles <span class="caret"></span> <i class="logo"></i></a>
+                <ul class="dropdown-menu sub-nav">
+                  <li><a href="/motorcycles/">Auctions</a></li>
+                  <li><a href="/motorcycles/auctions/">Schedule</a></li>
+                  <li><a href="/motorcycles/results/">Results</a></li>
+                  <li><a href="/motorcycles/newest-lots/">Newest Lots</a></li>
+                  <li><a href="/motorcycles/register-to-bid/">Register To Bid</a></li>
+                  <li><a href="/motorcycles/how-to-bid/">How To Bid</a></li>
+                  <li><a href="/motorcycles/how-to-sell/">Consign</a></li>
+                  <li><a href="/motorcycles/videos/">Videos</a></li>
+                  <li><a href="/finance/#motorcycles">Finance</a></li>
+                  <li><a href="/motorcycles/about/">About</a></li>
+                </ul>
+              </li>
+              <li class="dropdown nav-tractors">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tractors <span class="caret"></span> <i class="logo"></i></a>
+                <ul class="dropdown-menu sub-nav">
+                  <li><a href="/tractors/">Auctions</a></li>
+                  <li><a href="/tractors/auctions/">Schedule</a></li>
+                  <li><a href="/tractors/results/">Results</a></li>
+                  <li><a href="/tractors/newest-lots/">Newest Lots</a></li>
+                  <li><a href="/tractors/how-to-bid/">How To Bid</a></li>
+                  <li><a href="/tractors/register-to-bid/">Register To Bid</a></li>
+                  <li><a href="/tractors/how-to-sell/">Consign</a></li>
+                  <li><a href="/tractors/videos/">Videos</a></li>
+                  <li><a href="/finance/#tractor">Finance</a></li>
+                  <li><a href="/tractors/about/">About</a></li>
+                </ul>
+              </li>
+              <li class="dropdown nav-roadart">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Road Art <span class="caret"></span> <i class="logo"></i></a>
+                <ul class="dropdown-menu sub-nav">
+                  <li><a href="/roadart/">Auctions</a></li>
+                  <li><a href="/roadart/auctions/">Schedule</a></li>
+                  <li><a href="/roadart/results/">Results</a></li>
+                  <li><a href="/roadart/newest-lots/">Newest Lots</a></li>
+                  <li><a href="/roadart/register-to-bid/">Register To Bid</a></li>
+                  <li><a href="/roadart/how-to-bid/">How To Bid</a></li>
+                  <li><a href="/roadart/how-to-sell/">Consign</a></li>
+                  <li><a href="/roadart/videos/">Videos</a></li>
+                  <li><a href="/finance/#anything">Finance</a></li>
+                  <li><a href="/roadart/about/">About</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+</section>
+<section role="region" aria-labelledby="footer" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="footer">Footer</h4>
+    </div>
+  </header>
+
+  <!-- Primary Navigation -->
+  <div class="section__body">
+    <header role="title" class="body__header">
+      <h5 class="body__header__title">Primary Navigation</h5>
+    </header>
+
+
+    <footer class="footer">
+      <div class="container">
+        
+        <div class="row">
+          <div class="brand col-xs-8 col-xs-offset-2 col-ms-6 col-ms-offset-3 col-sm-2 col-sm-offset-0 print-wide hidden-print">
+            <a href="/"><img class="img-responsive" alt="Mecum Auctions" src="//cdn3.mecum.com/assets/builds/1.0.0-b391/images/MECUMAUCTIONSLogo.png" onerror="this.onerror=null;pagespeed.lazyLoadImages.loadIfVisibleAndMaybeBeacon(this);"></a>
+          </div>
+          <div class="footer-content col-xs-12 col-ms-12 col-sm-10 print-wide">
+            <div class="row footer-top hidden-print">
+              <div class="col-sm-7 hidden-xs hidden-ms">
+                <ul class="list-inline">
+                  <li><a href="/photos/">Photos</a></li>
+                  <li><a href="/sponsors/">Sponsors</a></li>
+                  <li><a href="/jobs/">Jobs</a></li>
+                  <li><a href="https://shop.mecum.com" target="_blank" rel="noopener noreferrer">Shop</a></li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-ms-12 col-sm-5">
+                <ul class="list-inline footer-social">
+                  <li><a class="social-facebook" href="https://facebook.com/mecumauction" title="Follow us on Facebook" target="_blank" rel="noopener noreferrer"><i class="ma ma-facebook-official"></i></a></li>
+                  <li><a class="social-twitter" href="https://twitter.com/intent/follow?screen_name=mecum" title="Follow us on Twitter"><i class="ma ma-twitter-square"></i></a></li>
+                  <li><a class="social-instagram" href="https://instagram.com/mecum_auctions" title="Follow us on Instagram" target="_blank" rel="noopener noreferrer"><i class="ma ma-instagram"></i></a></li>
+                  <li><a class="social-pinterest" href="https://pinterest.com/mecumauctions" title="Follow us on Pinterest" target="_blank" rel="noopener noreferrer"><i class="ma ma-pinterest-square"></i></a></li>
+                  <li><a class="social-youtube" href="https://youtube.com/user/mecumauction" title="Follow us on Youtube" target="_blank" rel="noopener noreferrer"><i class="ma ma-youtube-square"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row footer-bottom hidden-xs hidden-ms hidden-print">
+              <div class="col-sm-8">
+                <ul class="list-inline">
+                  <li><a href="/about-us/">About Us</a></li>
+                  <li><a href="/contact-us/">Contact Us</a></li>
+                  <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4 text-right">
+                <ul class="list-inline footer-links-right">
+                  <li><a href="/pdf/Auction_Charity_Guidelines.pdf">Charity Guidelines</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row hidden-print">
+              <div class="col-xs-12">
+                <p class="copyright">
+                  Copyright © 2000-2016 Mecum Auction, Inc. All rights reserved.<br>
+                  Road Art®, Infonet® &amp; The Bid Goes On® are registered trademarks of Mecum Auction, Inc.<br>
+                  <span class="build-number">1.0.0-b391</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</section>
+<section role="region" aria-labelledby="panels" class="page__section">
+  <header role="banner" class="section__header section__header--alt">
+    <div class="header__container">
+      <h4 class="header__title--section" id="panels">Panels</h4>
+    </div>
+  </header>
+  <div class="section__body clearfix">
+    <nav class="panel panel-mecum viewlots hidden-print">
+      <div class="panel-heading">
+        <h3 class="panel-title">Chicago 2016</h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12 btn-container">
+            
+            
+            <div class="btn-group-vertical double-line-bottom" role="group">
+              
+                <h5 class="group-header">Vehicles</h5>
+                
+                    <a type="button" class="btn btn-default active" href="/auctions/chicago-2016/lots/10/06/">
+                      <span class="run-date">
+                        <i class="ma ma-chevron-right btngray"></i>
+                        Oct 6
+                      </span>
+
+                      <span class="run-feature">
+                        T - Thursday
+                      </span>
+                    </a>
+                  
+                    <a type="button" class="btn btn-default" href="/auctions/chicago-2016/lots/10/07/">
+                      <span class="run-date">
+                        <i class="ma ma-chevron-right btngray"></i>
+                        Oct 7
+                      </span>
+
+                      <span class="run-feature">
+                        F - Friday
+                      </span>
+                    </a>
+                  
+                    <a type="button" class="btn btn-default" href="/auctions/chicago-2016/lots/10/08/">
+                      <span class="run-date">
+                        <i class="ma ma-chevron-right btngray"></i>
+                        Oct 8
+                      </span>
+
+                      <span class="run-feature">
+                        S - Saturday
+                      </span>
+                    </a>
+                  
+                <h5 class="group-header">Road Art</h5>
+                
+                    <a type="button" class="btn btn-default" href="/auctions/chicago-2016/lots/roadart/10/06/">
+                      <span class="run-date">
+                        <i class="ma ma-chevron-right btngray"></i>
+                        Oct 6
+                      </span>
+
+                      <span class="run-feature">
+                        H - Thursday
+                      </span>
+                    </a>
+                  
+                    <a type="button" class="btn btn-default" href="/auctions/chicago-2016/lots/roadart/10/07/">
+                      <span class="run-date">
+                        <i class="ma ma-chevron-right btngray"></i>
+                        Oct 7
+                      </span>
+
+                      <span class="run-feature">
+                        J - Friday
+                      </span>
+                    </a>
+                  
+                    <a type="button" class="btn btn-default" href="/auctions/chicago-2016/lots/roadart/10/08/">
+                      <span class="run-date">
+                        <i class="ma ma-chevron-right btngray"></i>
+                        Oct 8
+                      </span>
+
+                      <span class="run-feature">
+                        K - Saturday
+                      </span>
+                    </a>
+                  
+            </div>
+            
+              <div class="btn-group-vertical" role="group">
+              
+              
+              <a type="button" class="btn btn-default" href="/auctions/chicago-2016/">
+                <i class="ma ma-chevron-right btngray"></i>
+                Auction Details
+              </a>
+              
+                <a type="button" class="btn btn-default" href="/auctions/chicago-2016/lots/featured/">
+                  <i class="ma ma-chevron-right btngray"></i>
+                  Featured Lots
+                </a>
+              
+              <a type="button" class="btn btn-default" href="/auctions/chicago-2016/lots/">
+                <i class="ma ma-chevron-right btngray"></i>
+                View All Lots
+              </a>
+              
+              <a type="button" class="btn btn-default" href="/auctions/chicago-2016/lots/list/">
+                <i class="ma ma-chevron-right btngray"></i>
+                Text List
+              </a>
+            </div>
+            
+            <div class="sidebar-search">
+              <a type="button" class="btn btn-branded btn-lg btn-block" id="expandSearch">
+                <i class="ma ma-caret-right" id="auction-search-arrow"></i>
+                Auction Search
+              </a>
+              <div id="searchArea" class="well well-sm">
+                <form action="/search/" method="post" name="search_form">
+                  <input type="hidden" name="searchScope" value="CH1016">
+
+                  
+                  <input type="hidden" name="viewlots" value="1">
+                  <div class="form-group">
+                    
+                    <input type="text" class="form-control input-sm" id="searchText" name="searchText" onchange="removeMakesRequired()" placeholder="Enter Lot Number or Make Model">
+                  </div>
+                
+                
+                  <div class="form-group">
+                    <select id="searchMakes" name="searchMake" class="form-control input-sm" required="">
+                      <option value="" disabled="" selected="">Make</option>
+                      
+                          <option value="Acura">Acura</option>
+                        
+                          <option value="AMC">AMC</option>
+                        
+                          <option value="Armstrong Siddeley">Armstrong Siddeley</option>
+                        
+                          <option value="Audi">Audi</option>
+                        
+                          <option value="Bentley">Bentley</option>
+                        
+                          <option value="BMW">BMW</option>
+                        
+                          <option value="Buick">Buick</option>
+                        
+                          <option value="Cadillac">Cadillac</option>
+                        
+                          <option value="Chevrolet">Chevrolet</option>
+                        
+                          <option value="Chrysler">Chrysler</option>
+                        
+                          <option value="Cushman">Cushman</option>
+                        
+                          <option value="Desoto">Desoto</option>
+                        
+                          <option value="Dodge">Dodge</option>
+                        
+                          <option value="Excalibur">Excalibur</option>
+                        
+                          <option value="Factory Five">Factory Five</option>
+                        
+                          <option value="Ferrari">Ferrari</option>
+                        
+                          <option value="Fiat">Fiat</option>
+                        
+                          <option value="Ford">Ford</option>
+                        
+                          <option value="GMC">GMC</option>
+                        
+                          <option value="Harley-Davidson">Harley-Davidson</option>
+                        
+                          <option value="Honda">Honda</option>
+                        
+                          <option value="Imperial">Imperial</option>
+                        
+                          <option value="International">International</option>
+                        
+                          <option value="Jaguar">Jaguar</option>
+                        
+                          <option value="Jeep">Jeep</option>
+                        
+                          <option value="Lamborghini">Lamborghini</option>
+                        
+                          <option value="Landrover">Landrover</option>
+                        
+                          <option value="Lincoln">Lincoln</option>
+                        
+                          <option value="Mazda">Mazda</option>
+                        
+                          <option value="Mercedes-Benz">Mercedes-Benz</option>
+                        
+                          <option value="Mercury">Mercury</option>
+                        
+                          <option value="Morris">Morris</option>
+                        
+                          <option value="Nash">Nash</option>
+                        
+                          <option value="Oldsmobile">Oldsmobile</option>
+                        
+                          <option value="Packard">Packard</option>
+                        
+                          <option value="Plymouth">Plymouth</option>
+                        
+                          <option value="Pontiac">Pontiac</option>
+                        
+                          <option value="Porsche">Porsche</option>
+                        
+                          <option value="Reo">Reo</option>
+                        
+                          <option value="Rolls-Royce">Rolls-Royce</option>
+                        
+                          <option value="Shelby">Shelby</option>
+                        
+                          <option value="Subaru">Subaru</option>
+                        
+                          <option value="Toyota">Toyota</option>
+                        
+                          <option value="Volkswagen">Volkswagen</option>
+                        
+                          <option value="Volvo">Volvo</option>
+                        
+                          <option value="Willys">Willys</option>
+                        
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control input-sm" name="searchModel" maxlength="75" placeholder="Model">
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-xs-6 startYear">
+                      <input type="number" class="form-control input-sm" name="searchYearStart" maxlength="4" min="1875" max="2016" placeholder="Start Year">
+                    </div>
+                    <div class="col-xs-6 endYear">
+                      <input type="number" class="form-control input-sm" name="searchYearEnd" maxlength="4" min="1875" max="2016" placeholder="End Year">
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-branded btn-block" name="Submit">Search</button>
+                  </div>
+                  <div class="form-group">
+                    <button type="reset" class="btn btn-branded btn-block" name="reset">Reset Search</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript" data-pagespeed-no-defer="">pagespeed.lazyLoadImages.overrideAttributeFunctions();</script><script>function removeMakesRequired(){document.getElementById("searchMakes").required=false;}</script>
+        </div>
+      </div>
+    </nav>
+  </div>
+</section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../javascript/application.js" type="text/javascript"></script>
+  </body>
+</html>
